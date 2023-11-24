@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraftmythologicalmod:ladny_patyk"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:stick_block"
+  }
+}
