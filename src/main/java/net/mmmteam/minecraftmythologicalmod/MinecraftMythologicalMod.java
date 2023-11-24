@@ -53,10 +53,7 @@ public class MinecraftMythologicalMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        // Dodajemy przedmiot do ekwipunku na trybie Kreatywnym
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(Moditems.ladny_patyk);
-        }
+
     }
 
     @SubscribeEvent
