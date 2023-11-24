@@ -15,6 +15,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.Moditems;
 import org.slf4j.Logger;
@@ -33,6 +34,7 @@ public class MinecraftMythologicalMod
         ModCreativeModTabs.register(modEventBus);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -51,10 +53,7 @@ public class MinecraftMythologicalMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        // Dodajemy przedmiot do ekwipunku na trybie Kreatywnym
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(Moditems.ladny_patyk);
-        }
+
     }
 
     @SubscribeEvent

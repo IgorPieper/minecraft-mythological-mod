@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
+import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -18,9 +19,15 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.ladny_patyk.get()))
                     .title(Component.translatable("creativetab.mythological"))
                     .displayItems((pParameters, pOutput) -> {
+
                         pOutput.accept(Moditems.ladny_patyk.get());
+
+                        pOutput.accept(ModBlocks.STICK_BLOCK.get());
+
                     })
                     .build());
+
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
