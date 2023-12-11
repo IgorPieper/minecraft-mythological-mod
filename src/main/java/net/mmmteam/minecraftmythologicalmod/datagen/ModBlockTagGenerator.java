@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
@@ -21,5 +22,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         //this.tag(BlockTags.NEEDS_IRON_TOOL)
                 //.add(ModBlocks.nasz_block.get()).addTag(Tag.Blocks.Ores)
+
+        //this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                //.add(ModBlocks.nasz_block.get());
     }
 }
