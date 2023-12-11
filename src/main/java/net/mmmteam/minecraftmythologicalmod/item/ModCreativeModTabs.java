@@ -21,6 +21,10 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(Moditems.ladny_patyk.get());
+                        pOutput.accept(Moditems.BAY_LEAF.get());
+
+                        pOutput.accept(Moditems.GRAPES.get());
+
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
 
