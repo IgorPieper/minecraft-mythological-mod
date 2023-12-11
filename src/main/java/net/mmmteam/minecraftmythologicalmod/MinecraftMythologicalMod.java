@@ -1,6 +1,7 @@
 package net.mmmteam.minecraftmythologicalmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -16,6 +17,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
+import net.mmmteam.minecraftmythologicalmod.entity.EntityInit;
+import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonRenderer;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.Moditems;
 import org.slf4j.Logger;
@@ -35,6 +38,7 @@ public class MinecraftMythologicalMod
 
         Moditems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        EntityInit.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -68,7 +72,9 @@ public class MinecraftMythologicalMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            //dodawanie moba do gry
+            //żeby mob pojawił się w grze wpisujemy "/summon minecraftmythologicalmod:racoon"
+            EntityRenderers.register(EntityInit.RACOON.get(), RacoonRenderer::new);
         }
     }
 }

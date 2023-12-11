@@ -28,6 +28,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
 
+                        pOutput.accept(Moditems.excalibur.get());
+
                     })
                     .build());
 
