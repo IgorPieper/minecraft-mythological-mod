@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "minecraftmythologicalmod:block/laurel_bush_stage0"
+    },
+    "age=1": {
+      "model": "minecraftmythologicalmod:block/laurel_bush_stage1"
+    },
+    "age=2": {
+      "model": "minecraftmythologicalmod:block/laurel_bush_stage2"
+    },
+    "age=3": {
+      "model": "minecraftmythologicalmod:block/laurel_bush_stage3"
+    },
+    "age=4": {
+      "model": "minecraftmythologicalmod:block/laurel_bush_stage4"
+    }
+  }
+}

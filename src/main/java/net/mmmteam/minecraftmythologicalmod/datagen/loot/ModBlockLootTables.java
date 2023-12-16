@@ -23,12 +23,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.STICK_BLOCK.get());
 
-        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.LAUREL_BUSH_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LaurelBushCrop.AGE, 4));
-
-        this.add(ModBlocks.LAUREL_BUSH_CROP.get(), createCropDrops(ModBlocks.LAUREL_BUSH_CROP.get(), Moditems.BAY_LEAF.get(),
-                Moditems.BAY_LEAF.get(), lootitemcondition$builder));
+        this.add(ModBlocks.LAUREL_BUSH_CROP.get(), this.createCropDrops(ModBlocks.LAUREL_BUSH_CROP.get(), Moditems.BAY_LEAF.get(),
+                Moditems.BAY_LEAF.get(), lootitemcondition$builder1));
 
     }
 

@@ -11,7 +11,7 @@ import net.mmmteam.minecraftmythologicalmod.item.Moditems;
 
 public class LaurelBushCrop extends CropBlock {
     public static final int MAX_AGE = 4;
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_4;
+    public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 4);
 
     public LaurelBushCrop(Properties pProperties) {
         super(pProperties);
