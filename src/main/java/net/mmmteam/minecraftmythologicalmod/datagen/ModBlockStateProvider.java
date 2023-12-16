@@ -25,16 +25,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels(){
         blockWithItem(ModBlocks.STICK_BLOCK);
 
-        makeLaurelCrop((CropBlock) ModBlocks.LAUREL_BUSH_CROP.get(), "laurel_bush_stage", "laurel_bush_stage");
+        makeCrop((LaurelBushCrop) ModBlocks.LAUREL_BUSH_CROP.get(), "laurel_bush_stage", "laurel_bush_stage");
     }
 
-    public void makeLaurelCrop(CropBlock block, String modelName, String textureName) {
-        Function<BlockState, ConfiguredModel[]> function = state -> laurelStates(state, block, modelName, textureName);
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
     }
 
-    private ConfiguredModel[] laurelStates(BlockState state, CropBlock block, String modelName, String textureName) {
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((LaurelBushCrop) block).getAgeProperty()),
                 new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/" + textureName + state.getValue(((LaurelBushCrop) block).getAgeProperty()))).renderType("cutout"));

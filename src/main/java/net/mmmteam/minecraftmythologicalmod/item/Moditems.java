@@ -1,11 +1,13 @@
 package net.mmmteam.minecraftmythologicalmod.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
+import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.item.custom.FuelItem;
 
 public class Moditems {
@@ -19,7 +21,7 @@ public class Moditems {
             () -> new Item(new Item.Properties().food(ModFoods.GRAPES)));
 
     public static final RegistryObject<Item> BAY_LEAF = ITEMS.register("bay_leaf",
-            () -> new FuelItem(new Item.Properties(), 40));
+            () -> new ItemNameBlockItem(ModBlocks.LAUREL_BUSH_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
