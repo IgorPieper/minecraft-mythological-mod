@@ -20,10 +20,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        //this.tag(BlockTags.NEEDS_IRON_TOOL)
-                //.add(ModBlocks.nasz_block.get()).addTag(Tag.Blocks.Ores)
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.OLIVE_LOG.get())
+                .add(ModBlocks.OLIVE_WOOD.get())
+                .add(ModBlocks.STRIPPED_OLIVE_LOG.get())
+                .add(ModBlocks.STRIPPED_OLIVE_WOOD.get());
 
-        //this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                //.add(ModBlocks.nasz_block.get());
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.OLIVE_PLANKS.get());
+    }
+
+    @Override
+    public String getName() {
+        return "Block Tags";
     }
 }

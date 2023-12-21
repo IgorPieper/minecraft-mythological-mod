@@ -34,6 +34,14 @@ public class ModCreativeModTabs {
 
                         //pOutput.accept(Moditems.excalibur.get());
 
+                        pOutput.accept(ModBlocks.OLIVE_LOG.get());
+                        pOutput.accept(ModBlocks.OLIVE_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_OLIVE_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_OLIVE_WOOD.get());
+                        pOutput.accept(ModBlocks.OLIVE_PLANKS.get());
+                        pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
+                        pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
+
                     })
                     .build());
 
