@@ -13,7 +13,6 @@ import net.mmmteam.minecraftmythologicalmod.item.custom.FuelItem;
 public class Moditems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MinecraftMythologicalMod.MOD_ID);
 
-    // Przykład dodania nowego itemka, na tym etapie tylko teoretycznie
     public static final RegistryObject<Item> ladny_patyk = ITEMS.register("ladny_patyk",
             () -> new Item(new Item.Properties()));
 
