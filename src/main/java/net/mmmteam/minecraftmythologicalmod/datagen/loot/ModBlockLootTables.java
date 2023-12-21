@@ -29,8 +29,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.LAUREL_BUSH_CROP.get(), this.createCropDrops(ModBlocks.LAUREL_BUSH_CROP.get(), Moditems.BAY_LEAF.get(),
                 Moditems.BAY_LEAF.get(), lootitemcondition$builder1));
 
+        this.dropSelf(ModBlocks.IRIS.get());
+        this.add(ModBlocks.POTTED_IRIS.get(), createPotFlowerItemTable(ModBlocks.IRIS.get()));
+        this.dropSelf(ModBlocks.ACONITE.get());
+        this.add(ModBlocks.POTTED_ACONITE.get(), createPotFlowerItemTable(ModBlocks.ACONITE.get()));
     }
-
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
