@@ -26,6 +26,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.STICK_BLOCK);
 
         makeCrop((LaurelBushCrop) ModBlocks.LAUREL_BUSH_CROP.get(), "laurel_bush_stage", "laurel_bush_stage");
+
+        simpleBlockWithItem(ModBlocks.IRIS.get(), models().cross(blockTexture(ModBlocks.IRIS.get()).getPath(),
+                blockTexture(ModBlocks.IRIS.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_IRIS.get(), models().singleTexture("potted_iris", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.IRIS.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.ACONITE.get(), models().cross(blockTexture(ModBlocks.ACONITE.get()).getPath(),
+                blockTexture(ModBlocks.ACONITE.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_ACONITE.get(), models().singleTexture("potted_aconite", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.ACONITE.get())).renderType("cutout"));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
