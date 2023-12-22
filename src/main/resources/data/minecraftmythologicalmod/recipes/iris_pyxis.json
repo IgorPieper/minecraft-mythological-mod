@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraftmythologicalmod:iris"
+    },
+    "X": {
+      "item": "minecraftmythologicalmod:pyxis"
+    }
+  },
+    "result": {
+      "item": "minecraftmythologicalmod:iris_pyxis"
+    }
+}

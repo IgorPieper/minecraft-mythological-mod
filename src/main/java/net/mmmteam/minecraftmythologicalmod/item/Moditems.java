@@ -26,6 +26,9 @@ public class Moditems {
     public static final RegistryObject<Item> PYXIS = ITEMS.register("pyxis",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> IRIS_PYXIS = ITEMS.register("iris_pyxis",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
