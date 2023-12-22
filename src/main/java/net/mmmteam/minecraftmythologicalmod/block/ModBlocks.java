@@ -17,6 +17,7 @@ import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.custom.LaurelBushCrop;
 import net.mmmteam.minecraftmythologicalmod.block.custom.ModFlammableRotatedPillarBlock;
 import net.mmmteam.minecraftmythologicalmod.item.Moditems;
+import net.mmmteam.minecraftmythologicalmod.worldgen.tree.OliveTreeGrower;
 
 import java.rmi.registry.Registry;
 import java.util.function.Supplier;
@@ -91,7 +92,7 @@ public class ModBlocks {
             });
 
     public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
-            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new OliveTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
