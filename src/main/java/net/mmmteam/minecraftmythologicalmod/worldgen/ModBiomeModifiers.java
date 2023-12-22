@@ -28,7 +28,7 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_IRIS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_MUSHROOM),
+                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.IRIS_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 

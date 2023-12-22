@@ -23,6 +23,9 @@ public class Moditems {
     public static final RegistryObject<Item> BAY_LEAF = ITEMS.register("bay_leaf",
             () -> new ItemNameBlockItem(ModBlocks.LAUREL_BUSH_CROP.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> PYXIS = ITEMS.register("pyxis",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
