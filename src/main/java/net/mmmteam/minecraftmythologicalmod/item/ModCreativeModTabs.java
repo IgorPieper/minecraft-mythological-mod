@@ -40,6 +40,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
                         pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
 
+                        pOutput.accept(Moditems.PYXIS.get());
+
                     })
                     .build());
 

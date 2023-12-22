@@ -26,6 +26,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItemBlockTexture(ModBlocks.ACONITE);
 
         saplingItem(ModBlocks.OLIVE_SAPLING);
+
+        simpleItem(Moditems.PYXIS);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
