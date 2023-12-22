@@ -1,6 +1,7 @@
 package net.mmmteam.minecraftmythologicalmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -23,6 +24,8 @@ import net.mmmteam.minecraftmythologicalmod.entity.EntityInit;
 import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonRenderer;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.Moditems;
+import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ModTrunkPlacerTypes;
+import net.mmmteam.minecraftmythologicalmod.util.ModWoodTypes;
 import org.slf4j.Logger;
 
 @Mod(MinecraftMythologicalMod.MOD_ID)
@@ -46,6 +49,8 @@ public class MinecraftMythologicalMod
 
         // Dzięki temu przedmioty z pliku item/Moditems działają
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModTrunkPlacerTypes.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
@@ -77,9 +82,13 @@ public class MinecraftMythologicalMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            //dodawanie moba do gry
-            //żeby mob pojawił się w grze wpisujemy "/summon minecraftmythologicalmod:racoon"
-            EntityRenderers.register(EntityInit.RACOON.get(), RacoonRenderer::new);
+            event.enqueueWork(() -> {
+                Sheets.addWoodType(ModWoodTypes.OLIVE);
+
+                //dodawanie moba do gry
+                //żeby mob pojawił się w grze wpisujemy "/summon minecraftmythologicalmod:racoon"
+                EntityRenderers.register(EntityInit.RACOON.get(), RacoonRenderer::new);
+            });
         }
     }
 }
