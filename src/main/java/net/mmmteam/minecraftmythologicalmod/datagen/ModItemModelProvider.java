@@ -28,6 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.OLIVE_SAPLING);
 
         simpleItem(Moditems.PYXIS);
+        simpleItem(Moditems.IRIS_PYXIS);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
