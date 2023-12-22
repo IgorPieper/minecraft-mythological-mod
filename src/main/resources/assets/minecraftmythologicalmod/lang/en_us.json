@@ -11,7 +11,14 @@
   "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
 
   "block.minecraftmythologicalmod.iris": "Iris",
+  "block.minecraftmythologicalmod.aconite": "Aconite",
 
-  "block.minecraftmythologicalmod.aconite": "Aconite"
+  "block.minecraftmythologicalmod.olive_log": "Olive Log",
+  "block.minecraftmythologicalmod.olive_wood": "Olive Wood",
+  "block.minecraftmythologicalmod.stripped_olive_log": "Stripped Olive Log",
+  "block.minecraftmythologicalmod.stripped_olive_wood": "Stripped Olive Wood",
+  "block.minecraftmythologicalmod.olive_planks": "Olive Planks",
+  "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
+  "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling"
 
 }

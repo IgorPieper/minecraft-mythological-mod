@@ -11,7 +11,14 @@
   "block.minecraftmythologicalmod.stick_block": "Góra Patyków",
 
   "block.minecraftmythologicalmod.iris": "Irys",
+  "block.minecraftmythologicalmod.aconite": "Tojad",
 
-  "block.minecraftmythologicalmod.aconite": "Tojad"
+  "block.minecraftmythologicalmod.olive_log": "Oliwny Pień",
+  "block.minecraftmythologicalmod.olive_wood": "Oliwne Drewno",
+  "block.minecraftmythologicalmod.stripped_olive_log": "Ociosany Oliwny Pień",
+  "block.minecraftmythologicalmod.stripped_olive_wood": "Ociosane Oliwne Drewno",
+  "block.minecraftmythologicalmod.olive_planks": "Oliwne Deski",
+  "block.minecraftmythologicalmod.olive_leaves": "Oliwne Liście",
+  "block.minecraftmythologicalmod.olive_sapling": "Oliwna Sadzonka"
 
 }
