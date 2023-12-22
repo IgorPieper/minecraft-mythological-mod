@@ -1,5 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.worldgen;
 
+import net.minecraft.world.level.levelgen.placement.*;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.minecraft.core.Holder;
@@ -11,13 +12,13 @@ import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
 import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> OLIVE_PLACED_KEY = registerKey("olive_placed");
+    public static final ResourceKey<PlacedFeature> IRIS_PLACED_KEY = registerKey("iris_placed");
+    public static final ResourceKey<PlacedFeature> ACONITE_PLACED_KEY = registerKey("aconite_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -25,6 +26,12 @@ public class ModPlacedFeatures {
         register(context, OLIVE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OLIVE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.OLIVE_SAPLING.get()));
+
+        register(context, IRIS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.IRIS_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, ACONITE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ACONITE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
     }
 
