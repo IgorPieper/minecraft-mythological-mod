@@ -29,6 +29,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(Moditems.PYXIS);
         simpleItem(Moditems.IRIS_PYXIS);
+
+        //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

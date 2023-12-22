@@ -14,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
+import net.mmmteam.minecraftmythologicalmod.block.custom.AncientPortalBlock;
 import net.mmmteam.minecraftmythologicalmod.block.custom.LaurelBushCrop;
 import net.mmmteam.minecraftmythologicalmod.block.custom.ModFlammableRotatedPillarBlock;
 import net.mmmteam.minecraftmythologicalmod.item.Moditems;
@@ -93,6 +94,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
             () -> new SaplingBlock(new OliveTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> ANCIENT_PORTAL = registerBlock("ancient_portal",
+            () -> new AncientPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable().noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -43,6 +43,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(Moditems.PYXIS.get());
                         pOutput.accept(Moditems.IRIS_PYXIS.get());
 
+                        pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
+
                     })
                     .build());
 
