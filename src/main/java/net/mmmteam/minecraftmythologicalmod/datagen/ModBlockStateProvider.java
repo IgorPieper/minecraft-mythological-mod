@@ -52,6 +52,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_OLIVE_WOOD);
 
         blockWithItem(ModBlocks.OLIVE_PLANKS);
+        blockWithItem(ModBlocks.ANCIENT_PORTAL);
 
         leavesBlock(ModBlocks.OLIVE_LEAVES);
         saplingBlock(ModBlocks.OLIVE_SAPLING);

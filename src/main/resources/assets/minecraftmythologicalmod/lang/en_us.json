@@ -22,5 +22,7 @@
   "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",
 
   "item.minecraftmythologicalmod.pyxis": "Pyxis",
-  "item.minecraftmythologicalmod.iris_pyxis": "Iris Pyxis"
+  "item.minecraftmythologicalmod.iris_pyxis": "Iris Pyxis",
+
+  "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal"
 }

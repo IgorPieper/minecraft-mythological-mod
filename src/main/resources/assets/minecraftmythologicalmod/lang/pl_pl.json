@@ -22,5 +22,7 @@
   "block.minecraftmythologicalmod.olive_sapling": "Oliwna Sadzonka",
 
   "item.minecraftmythologicalmod.pyxis": "Pyksis",
-  "item.minecraftmythologicalmod.iris_pyxis": "Pyksis Irysowy"
+  "item.minecraftmythologicalmod.iris_pyxis": "Pyksis Irysowy",
+
+  "block.minecraftmythologicalmod.ancient_portal": "Starożytny Portal"
 }
