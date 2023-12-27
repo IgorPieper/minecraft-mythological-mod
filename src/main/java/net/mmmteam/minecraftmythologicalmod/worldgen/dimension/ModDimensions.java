@@ -18,6 +18,7 @@ import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
+//import net.mmmteam.minecraftmythologicalmod.worldgen.biome.ModBiomes;
 
 import java.util.List;
 import java.util.OptionalLong;
@@ -63,10 +64,9 @@ public class ModDimensions {
                 MultiNoiseBiomeSource.createFromList(
                         new Climate.ParameterList<>(List.of(
                                 // Tutaj dodajemy z jakich biomów będzie składał się nasz świat
-                                //Pair.of(Climate.parameters(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.TEST_BIOME_2)),
                                 Pair.of(Climate.parameters(0.1F, 0F, 0.1F, 0.1F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.OCEAN)),
                                 Pair.of(Climate.parameters(0.4F, 0.3F, 0.2F, 0.1F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.PLAINS)),
-                                Pair.of(Climate.parameters(0.4F, 0.3F, 0.2F, 0.15F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.DEEP_DARK)),
+                                //Pair.of(Climate.parameters(0.4F, 0.3F, 0.2F, 0.15F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.GREEK_ISLAND)),
                                 Pair.of(Climate.parameters(0.4F, 0.3F, 0.2F, -0.5F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.CHERRY_GROVE))
                         ))),
                 noiseGenSettings.getOrThrow(NoiseGeneratorSettings.OVERWORLD));

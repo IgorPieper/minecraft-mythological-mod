@@ -30,18 +30,6 @@
           }
         },
         {
-          "biome": "minecraft:deep_dark",
-          "parameters": {
-            "continentalness": 0.2,
-            "depth": 0.0,
-            "erosion": 0.15,
-            "humidity": 0.3,
-            "offset": 0.0,
-            "temperature": 0.4,
-            "weirdness": 0.0
-          }
-        },
-        {
           "biome": "minecraft:cherry_grove",
           "parameters": {
             "continentalness": 0.2,
