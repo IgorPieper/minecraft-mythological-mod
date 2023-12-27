@@ -1,0 +1,10 @@
+{
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "minecraftmythologicalmod.water_dropping",
+        "stream": true
+      }
+    ]
+  }
+}
