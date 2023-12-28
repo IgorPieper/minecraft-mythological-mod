@@ -6,20 +6,20 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
-import net.mmmteam.minecraftmythologicalmod.entity.custom.RacoonEntity;
+import net.mmmteam.minecraftmythologicalmod.entity.custom.CyclopsEntity;
 
-public class RacoonRenderer extends MobRenderer<RacoonEntity, RacoonModel<RacoonEntity>> {
-    public RacoonRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new RacoonModel<>(pContext.bakeLayer(ModModelLayers.RACOON_LAYER)), 1f);
+public class CyclopsRenderer extends MobRenderer<CyclopsEntity, CyclopsModel<CyclopsEntity>> {
+    public CyclopsRenderer(EntityRendererProvider.Context pContext) {
+        super(pContext, new CyclopsModel<>(pContext.bakeLayer(ModModelLayers.CYCLOPS_LAYER)), 2f);
     }
 
     @Override
-    public ResourceLocation getTextureLocation(RacoonEntity pEntity) {
-        return new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "textures/entity/racoon.png");
+    public ResourceLocation getTextureLocation(CyclopsEntity pEntity) {
+        return new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "textures/entity/cyclops.png");
     }
 
     @Override
-    public void render(RacoonEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pPoseStack,
+    public void render(CyclopsEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pPoseStack,
                        MultiBufferSource pBuffer, int pPackedLight) {
 
         if (pEntity.isBaby()) {
@@ -29,3 +29,4 @@ public class RacoonRenderer extends MobRenderer<RacoonEntity, RacoonModel<Racoon
         super.render(pEntity, pEntityYaw, pPartialTicks, pPoseStack, pBuffer, pPackedLight);
     }
 }
+

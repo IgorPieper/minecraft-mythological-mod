@@ -44,6 +44,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 
+                        pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
+
                     })
                     .build());
 

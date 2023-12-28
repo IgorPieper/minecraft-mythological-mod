@@ -8,4 +8,7 @@ public class ModModelLayers {
 
     public static final ModelLayerLocation RACOON_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "racoon_layer"), "main");
+
+    public static final ModelLayerLocation CYCLOPS_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "cyclops_layer"), "main");
 }
