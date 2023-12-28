@@ -11,6 +11,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
+import net.mmmteam.minecraftmythologicalmod.entity.client.CyclopsModel;
 import net.mmmteam.minecraftmythologicalmod.entity.client.ModModelLayers;
 import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonModel;
 
@@ -20,6 +21,7 @@ public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelLayers.RACOON_LAYER, RacoonModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.CYCLOPS_LAYER, CyclopsModel::createBodyLayer);
     }
 
     @SubscribeEvent

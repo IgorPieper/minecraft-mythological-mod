@@ -21,7 +21,6 @@ public class RacoonEntity extends Animal {
         super(pEntityType, pLevel);
     }
 
-    //tutaj dojemy różne czynności, które mob może wykonywać / jak mob się zachowuje
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
@@ -33,7 +32,6 @@ public class RacoonEntity extends Animal {
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
     }
 
-    //atrybuty moba, można dodać więcej
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 20)
@@ -41,7 +39,7 @@ public class RacoonEntity extends Animal {
                 .add(Attributes.MOVEMENT_SPEED, 0.250)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.1f)
                 .add(Attributes.ATTACK_KNOCKBACK, 0.5f)
-                .add(Attributes.ATTACK_DAMAGE, 2f);
+                .add(Attributes.ATTACK_DAMAGE, 5f);
     }
 
     @Nullable

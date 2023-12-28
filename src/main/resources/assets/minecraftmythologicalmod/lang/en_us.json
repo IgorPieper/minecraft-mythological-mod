@@ -24,5 +24,8 @@
   "item.minecraftmythologicalmod.pyxis": "Pyxis",
   "item.minecraftmythologicalmod.iris_pyxis": "Iris Pyxis",
 
-  "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal"
+  "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal",
+
+  "item.minecraftmythologicalmod.cyclops_spawn_egg": "Cyclops Spawn Egg",
+  "entity.minecraftmythologicalmod.cyclops": "Cyclops"
 }

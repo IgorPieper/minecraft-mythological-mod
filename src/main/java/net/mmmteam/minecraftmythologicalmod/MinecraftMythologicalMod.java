@@ -19,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
+import net.mmmteam.minecraftmythologicalmod.entity.client.CyclopsRenderer;
 import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonRenderer;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
@@ -88,9 +89,9 @@ public class MinecraftMythologicalMod
             event.enqueueWork(() -> {
                 Sheets.addWoodType(ModWoodTypes.OLIVE);
 
-                //dodawanie moba do gry
-                //żeby mob pojawił się w grze wpisujemy "/summon minecraftmythologicalmod:racoon"
+                // /summon minecraftmythologicalmod:racoon, cyclops
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);
+                EntityRenderers.register(ModEntities.CYCLOPS.get(), CyclopsRenderer::new);
             });
         }
     }
