@@ -5,9 +5,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.mmmteam.minecraftmythologicalmod.item.Moditems;
+import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 
 public class LaurelBushCrop extends CropBlock {
     public static final int MAX_AGE = 4;
@@ -19,7 +18,7 @@ public class LaurelBushCrop extends CropBlock {
 
     @Override
     public ItemLike getBaseSeedId() {
-        return Moditems.BAY_LEAF.get();
+        return ModItems.BAY_LEAF.get();
     }
 
     @Override

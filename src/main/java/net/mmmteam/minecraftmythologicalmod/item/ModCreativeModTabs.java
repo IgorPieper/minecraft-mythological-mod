@@ -1,6 +1,5 @@
 package net.mmmteam.minecraftmythologicalmod.item;
 
-import jdk.jfr.Registered;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,14 +15,14 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MinecraftMythologicalMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> MYTHOLOGICAL = CREATIVE_MODE_TABS.register("mythological",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.ladny_patyk.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ladny_patyk.get()))
                     .title(Component.translatable("creativetab.mythological"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(Moditems.ladny_patyk.get());
-                        pOutput.accept(Moditems.BAY_LEAF.get());
+                        pOutput.accept(ModItems.ladny_patyk.get());
+                        pOutput.accept(ModItems.BAY_LEAF.get());
 
-                        pOutput.accept(Moditems.GRAPES.get());
+                        pOutput.accept(ModItems.GRAPES.get());
 
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
@@ -40,8 +39,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
                         pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
 
-                        pOutput.accept(Moditems.PYXIS.get());
-                        pOutput.accept(Moditems.IRIS_PYXIS.get());
+                        pOutput.accept(ModItems.PYXIS.get());
+                        pOutput.accept(ModItems.IRIS_PYXIS.get());
 
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 

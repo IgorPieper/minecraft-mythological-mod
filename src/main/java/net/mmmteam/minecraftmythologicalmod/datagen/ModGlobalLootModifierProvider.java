@@ -1,7 +1,7 @@
 package net.mmmteam.minecraftmythologicalmod.datagen;
 
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
-import net.mmmteam.minecraftmythologicalmod.item.Moditems;
+import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.AddItemModifier;
 import net.mmmteam.minecraftmythologicalmod.loot.AddSusSandItemModifier;
 import net.minecraft.data.PackOutput;
@@ -23,11 +23,11 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
         add("grapes_from_vines", new AddItemModifier(new LootItemCondition[] {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.VINE).build(),
-                LootItemRandomChanceCondition.randomChance(0.01f).build() }, Moditems.GRAPES.get()));
+                LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.GRAPES.get()));
 
         add("pyxis_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("archaeology/ocean_ruin_warm")).build() },
-                Moditems.PYXIS.get()));
+                ModItems.PYXIS.get()));
 
     }
 }
