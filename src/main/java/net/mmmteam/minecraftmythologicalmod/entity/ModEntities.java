@@ -9,7 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.RacoonEntity;
 
-public class EntityInit {
+public class ModEntities {
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MinecraftMythologicalMod.MOD_ID);

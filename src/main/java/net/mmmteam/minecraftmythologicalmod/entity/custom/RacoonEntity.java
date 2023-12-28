@@ -12,7 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
-import net.mmmteam.minecraftmythologicalmod.entity.EntityInit;
+import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import org.jetbrains.annotations.Nullable;
 
 public class RacoonEntity extends Animal {
@@ -47,7 +47,7 @@ public class RacoonEntity extends Animal {
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
-        return EntityInit.RACOON.get().create(pLevel);
+        return ModEntities.RACOON.get().create(pLevel);
     }
 
     @Override

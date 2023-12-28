@@ -17,10 +17,9 @@ import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.custom.AncientPortalBlock;
 import net.mmmteam.minecraftmythologicalmod.block.custom.LaurelBushCrop;
 import net.mmmteam.minecraftmythologicalmod.block.custom.ModFlammableRotatedPillarBlock;
-import net.mmmteam.minecraftmythologicalmod.item.Moditems;
+import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.OliveTreeGrower;
 
-import java.rmi.registry.Registry;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -106,7 +105,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return Moditems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

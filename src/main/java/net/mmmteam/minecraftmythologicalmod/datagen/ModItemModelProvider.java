@@ -10,7 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
-import net.mmmteam.minecraftmythologicalmod.item.Moditems;
+import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -19,16 +19,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(Moditems.ladny_patyk);
-        simpleItem(Moditems.BAY_LEAF);
-        simpleItem(Moditems.GRAPES);
+        simpleItem(ModItems.ladny_patyk);
+        simpleItem(ModItems.BAY_LEAF);
+        simpleItem(ModItems.GRAPES);
         simpleBlockItemBlockTexture(ModBlocks.IRIS);
         simpleBlockItemBlockTexture(ModBlocks.ACONITE);
 
         saplingItem(ModBlocks.OLIVE_SAPLING);
 
-        simpleItem(Moditems.PYXIS);
-        simpleItem(Moditems.IRIS_PYXIS);
+        simpleItem(ModItems.PYXIS);
+        simpleItem(ModItems.IRIS_PYXIS);
 
         //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
     }
