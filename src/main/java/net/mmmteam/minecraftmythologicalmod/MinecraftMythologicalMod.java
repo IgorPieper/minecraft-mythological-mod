@@ -24,6 +24,7 @@ import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonRenderer;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.ModLootModifiers;
+import net.mmmteam.minecraftmythologicalmod.util.ModItemProperties;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.mmmteam.minecraftmythologicalmod.util.ModWoodTypes;
 import org.slf4j.Logger;
@@ -92,6 +93,8 @@ public class MinecraftMythologicalMod
                 // /summon minecraftmythologicalmod:racoon, cyclops
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);
                 EntityRenderers.register(ModEntities.CYCLOPS.get(), CyclopsRenderer::new);
+
+                ModItemProperties.addCustomItemProperties();
             });
         }
     }

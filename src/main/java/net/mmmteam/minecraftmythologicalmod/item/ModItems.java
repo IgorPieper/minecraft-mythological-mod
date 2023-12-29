@@ -1,5 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.item;
 
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.SwordItem;
@@ -11,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
+import net.mmmteam.minecraftmythologicalmod.item.custom.ImmobilizingSwordItem;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ObscuringSwordItem;
 
 public class ModItems {
@@ -40,6 +42,14 @@ public class ModItems {
 
     public static final RegistryObject<Item> HADES_TRIDENT = ITEMS.register("hades_trident",
             () -> new ObscuringSwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
+
+    public static final RegistryObject<Item> POSEIDONS_TRIDENT = ITEMS.register("poseidons_trident",
+            () -> new ImmobilizingSwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
+
+    public static final RegistryObject<Item> APOLLO_BOW = ITEMS.register("apollo_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
