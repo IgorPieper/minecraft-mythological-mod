@@ -24,8 +24,9 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.GRAPES.get());
 
-
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
+
+                        pOutput.accept(ModItems.EXCALIBUR.get());
 
                         pOutput.accept(ModBlocks.IRIS.get());
 
@@ -45,6 +46,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 
                         pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
+
+                        pOutput.accept(ModItems.HADES_TRIDENT.get());
 
                     })
                     .build());
