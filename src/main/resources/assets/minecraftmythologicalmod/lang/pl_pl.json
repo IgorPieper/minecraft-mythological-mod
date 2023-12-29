@@ -29,5 +29,8 @@
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Jajko spawnu cyklopa",
   "entity.minecraftmythologicalmod.cyclops": "Cyklop",
 
-  "item.minecraftmythologicalmod.hades_trident": "Trójząb Hadesa"
+  "item.minecraftmythologicalmod.hades_trident": "Trójząb Hadesa",
+  "item.minecraftmythologicalmod.poseidons_trident": "Trójząb Posejdona",
+
+  "item.minecraftmythologicalmod.apollo_bow": "Łuk Apolla"
 }

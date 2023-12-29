@@ -1,0 +1,6 @@
+{
+  "parent": "minecraftmythologicalmod:item/apollo_bow",
+  "textures": {
+    "layer0": "minecraftmythologicalmod:item/apollo_bow_pulling_2"
+  }
+}

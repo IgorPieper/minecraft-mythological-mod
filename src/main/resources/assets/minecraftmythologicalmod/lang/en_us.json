@@ -29,5 +29,8 @@
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Cyclops Spawn Egg",
   "entity.minecraftmythologicalmod.cyclops": "Cyclops",
 
-  "item.minecraftmythologicalmod.hades_trident": "Hades Trident"
+  "item.minecraftmythologicalmod.hades_trident": "Hades Trident",
+  "item.minecraftmythologicalmod.poseidons_trident": "Poseidons Trident",
+
+  "item.minecraftmythologicalmod.apollo_bow": "Apollo Bow"
 }
