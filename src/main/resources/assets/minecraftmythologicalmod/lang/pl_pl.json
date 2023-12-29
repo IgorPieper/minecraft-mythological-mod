@@ -27,5 +27,7 @@
   "block.minecraftmythologicalmod.ancient_portal": "Starożytny Portal",
 
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Jajko spawnu cyklopa",
-  "entity.minecraftmythologicalmod.cyclops": "Cyklop"
+  "entity.minecraftmythologicalmod.cyclops": "Cyklop",
+
+  "item.minecraftmythologicalmod.hades_trident": "Trójząb Hadesa"
 }

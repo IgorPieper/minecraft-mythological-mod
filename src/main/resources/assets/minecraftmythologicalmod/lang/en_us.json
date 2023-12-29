@@ -27,5 +27,7 @@
   "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal",
 
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Cyclops Spawn Egg",
-  "entity.minecraftmythologicalmod.cyclops": "Cyclops"
+  "entity.minecraftmythologicalmod.cyclops": "Cyclops",
+
+  "item.minecraftmythologicalmod.hades_trident": "Hades Trident"
 }
