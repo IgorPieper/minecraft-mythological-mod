@@ -46,6 +46,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 
                         pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.RACOON_SPAWN_EGG.get());
 
                         pOutput.accept(ModItems.HADES_TRIDENT.get());
 

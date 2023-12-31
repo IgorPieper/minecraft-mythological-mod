@@ -31,6 +31,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IRIS_PYXIS);
 
         withExistingParent(ModItems.CYCLOPS_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.RACOON_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
         //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
     }
