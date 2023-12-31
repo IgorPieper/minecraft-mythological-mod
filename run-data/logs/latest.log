@@ -1,34 +1,34 @@
-[29Dec2023 19:02:07.269] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 8, --assetsDir, C:\Users\igorp\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 48.0.40, --fml.mcVersion, 1.20.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230921.100330, --mod, minecraftmythologicalmod, --all, --output, C:\Users\igorp\AppData\Roaming\minecraft-mythological-mod\src\generated\resources, --existing, C:\Users\igorp\AppData\Roaming\minecraft-mythological-mod\src\main\resources]
-[29Dec2023 19:02:07.273] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 17.0.4.1+1-LTS-2
-[29Dec2023 19:02:07.275] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.1 starting: java version 17.0.4.1 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[29Dec2023 19:02:07.398] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[29Dec2023 19:02:07.464] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/igorp/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23127!/ Service=ModLauncher Env=UNKNOWN
-[29Dec2023 19:02:07.722] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\igorp\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.2-48.0.40\7fe90280fb283d2ca798cafce08eff029246800b\fmlcore-1.20.2-48.0.40.jar is missing mods.toml file
-[29Dec2023 19:02:07.728] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\igorp\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.2-48.0.40\aa2a9750f76866b65577aca0bbe9a1cd3ab85c96\javafmllanguage-1.20.2-48.0.40.jar is missing mods.toml file
-[29Dec2023 19:02:07.734] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\igorp\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.2-48.0.40\d4fa834abaecd335aedd8ef2aab1710ccb400104\lowcodelanguage-1.20.2-48.0.40.jar is missing mods.toml file
-[29Dec2023 19:02:07.738] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\igorp\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.2-48.0.40\326ce442c5dcde4f3c0c01081409eae488ba94a1\mclanguage-1.20.2-48.0.40.jar is missing mods.toml file
-[29Dec2023 19:02:07.800] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[29Dec2023 19:02:08.906] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\igorp\.gradle\caches\forge_gradle\assets, --assetIndex, 8, --mod, minecraftmythologicalmod, --all, --output, C:\Users\igorp\AppData\Roaming\minecraft-mythological-mod\src\generated\resources, --existing, C:\Users\igorp\AppData\Roaming\minecraft-mythological-mod\src\main\resources]
-[29Dec2023 19:02:13.422] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 48.0.40, for MC 1.20.2 with MCP 20230921.100330
-[29Dec2023 19:02:13.424] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v48.0.40 Initialized
-[29Dec2023 19:02:13.898] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [minecraftmythologicalmod]
-[29Dec2023 19:02:13.941] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/igorp/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2/forge-1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23188!/assets/.mcassetsroot' uses unexpected schema
-[29Dec2023 19:02:13.941] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/igorp/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2/forge-1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23188!/data/.mcassetsroot' uses unexpected schema
-[29Dec2023 19:02:14.099] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[29Dec2023 19:02:14.102] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 2 ms
-[29Dec2023 19:02:14.102] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[29Dec2023 19:02:14.158] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 55 ms
-[29Dec2023 19:02:14.158] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
-[29Dec2023 19:02:14.242] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 84 ms
-[29Dec2023 19:02:14.242] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
-[29Dec2023 19:02:14.244] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 1 ms
-[29Dec2023 19:02:14.244] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: minecraftmythologicalmod
-[29Dec2023 19:02:14.256] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: minecraftmythologicalmod finished after 11 ms
-[29Dec2023 19:02:14.256] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: minecraftmythologicalmod
-[29Dec2023 19:02:14.373] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: minecraftmythologicalmod finished after 117 ms
-[29Dec2023 19:02:14.373] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : minecraftmythologicalmod
-[29Dec2023 19:02:14.380] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : minecraftmythologicalmod finished after 6 ms
-[29Dec2023 19:02:14.380] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[29Dec2023 19:02:14.401] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 20 ms
-[29Dec2023 19:02:14.401] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 302 ms
-[29Dec2023 19:02:14.412] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 86, old count: 88, new count: 87, removed stale: 0, written: 0
+[31Dec2023 12:28:28.978] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 8, --assetsDir, C:\Users\Zuzia\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 48.0.40, --fml.mcVersion, 1.20.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230921.100330, --mod, minecraftmythologicalmod, --all, --output, E:\program files\MMM\src\generated\resources, --existing, E:\program files\MMM\src\main\resources]
+[31Dec2023 12:28:28.982] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 17.0.2+8-LTS-86
+[31Dec2023 12:28:28.984] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.1 starting: java version 17.0.2 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[31Dec2023 12:28:29.125] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[31Dec2023 12:28:29.200] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Zuzia/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23127!/ Service=ModLauncher Env=UNKNOWN
+[31Dec2023 12:28:29.465] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Zuzia\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.2-48.0.40\7fe90280fb283d2ca798cafce08eff029246800b\fmlcore-1.20.2-48.0.40.jar is missing mods.toml file
+[31Dec2023 12:28:29.470] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Zuzia\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.2-48.0.40\aa2a9750f76866b65577aca0bbe9a1cd3ab85c96\javafmllanguage-1.20.2-48.0.40.jar is missing mods.toml file
+[31Dec2023 12:28:29.475] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Zuzia\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.2-48.0.40\d4fa834abaecd335aedd8ef2aab1710ccb400104\lowcodelanguage-1.20.2-48.0.40.jar is missing mods.toml file
+[31Dec2023 12:28:29.481] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Zuzia\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.2-48.0.40\326ce442c5dcde4f3c0c01081409eae488ba94a1\mclanguage-1.20.2-48.0.40.jar is missing mods.toml file
+[31Dec2023 12:28:29.554] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[31Dec2023 12:28:30.791] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\Zuzia\.gradle\caches\forge_gradle\assets, --assetIndex, 8, --mod, minecraftmythologicalmod, --all, --output, E:\program files\MMM\src\generated\resources, --existing, E:\program files\MMM\src\main\resources]
+[31Dec2023 12:28:36.314] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 48.0.40, for MC 1.20.2 with MCP 20230921.100330
+[31Dec2023 12:28:36.317] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v48.0.40 Initialized
+[31Dec2023 12:28:36.826] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [minecraftmythologicalmod]
+[31Dec2023 12:28:36.930] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Zuzia/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2/forge-1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23188!/assets/.mcassetsroot' uses unexpected schema
+[31Dec2023 12:28:36.930] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Zuzia/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2/forge-1.20.2-48.0.40_mapped_parchment_2023.10.08-1.20.2-recomp.jar%23188!/data/.mcassetsroot' uses unexpected schema
+[31Dec2023 12:28:37.130] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[31Dec2023 12:28:37.135] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 4 ms
+[31Dec2023 12:28:37.135] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[31Dec2023 12:28:37.209] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 74 ms
+[31Dec2023 12:28:37.210] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[31Dec2023 12:28:37.388] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 178 ms
+[31Dec2023 12:28:37.388] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
+[31Dec2023 12:28:37.390] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 1 ms
+[31Dec2023 12:28:37.390] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: minecraftmythologicalmod
+[31Dec2023 12:28:37.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: minecraftmythologicalmod finished after 487 ms
+[31Dec2023 12:28:37.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: minecraftmythologicalmod
+[31Dec2023 12:28:38.025] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: minecraftmythologicalmod finished after 146 ms
+[31Dec2023 12:28:38.026] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : minecraftmythologicalmod
+[31Dec2023 12:28:38.032] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : minecraftmythologicalmod finished after 6 ms
+[31Dec2023 12:28:38.032] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[31Dec2023 12:28:38.053] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 21 ms
+[31Dec2023 12:28:38.053] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 924 ms
+[31Dec2023 12:28:38.090] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 87, old count: 88, new count: 88, removed stale: 0, written: 1

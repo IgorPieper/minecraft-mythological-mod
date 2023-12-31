@@ -25,7 +25,7 @@ public class RacoonEntity extends Animal {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new BreedGoal(this, 1.150));
-        this.goalSelector.addGoal(2, new TemptGoal(this, 1.20, Ingredient.of(Items.BEEF), false));
+        this.goalSelector.addGoal(2, new TemptGoal(this, 1.20, Ingredient.of(Items.SWEET_BERRIES), false));
         this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.10));
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.10));
         this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 3f));
@@ -50,6 +50,6 @@ public class RacoonEntity extends Animal {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.is(Items.BEEF);
+        return pStack.is(Items.SWEET_BERRIES);
     }
 }

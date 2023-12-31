@@ -10,7 +10,7 @@ import net.mmmteam.minecraftmythologicalmod.entity.custom.CyclopsEntity;
 
 public class CyclopsRenderer extends MobRenderer<CyclopsEntity, CyclopsModel<CyclopsEntity>> {
     public CyclopsRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new CyclopsModel<>(pContext.bakeLayer(ModModelLayers.CYCLOPS_LAYER)), 2f);
+        super(pContext, new CyclopsModel<>(pContext.bakeLayer(ModModelLayers.CYCLOPS_LAYER)), 1f);
     }
 
     @Override
