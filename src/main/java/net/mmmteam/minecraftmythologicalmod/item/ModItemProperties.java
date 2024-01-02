@@ -1,4 +1,4 @@
-package net.mmmteam.minecraftmythologicalmod.util;
+package net.mmmteam.minecraftmythologicalmod.item;
 
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
