@@ -40,6 +40,10 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntities.CYCLOPS, 0x7e9680, 0xc5d1c5,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> RACOON_SPAWN_EGG = ITEMS.register("racoon_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RACOON, 0x7d6057, 0x000000,
+                    new Item.Properties()));
+
     public static final RegistryObject<Item> HADES_TRIDENT = ITEMS.register("hades_trident",
             () -> new ObscuringSwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
 

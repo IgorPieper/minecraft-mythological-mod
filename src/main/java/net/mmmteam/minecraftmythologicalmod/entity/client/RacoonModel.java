@@ -42,7 +42,6 @@ public class RacoonModel<T extends Entity> extends HierarchicalModel<T> {
 		return LayerDefinition.create(meshdefinition, 48, 32);
 	}
 
-	//TODO: animacje
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {}
 
