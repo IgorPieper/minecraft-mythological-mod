@@ -24,7 +24,7 @@ import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonRenderer;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.ModLootModifiers;
-import net.mmmteam.minecraftmythologicalmod.util.ModItemProperties;
+import net.mmmteam.minecraftmythologicalmod.item.ModItemProperties;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.mmmteam.minecraftmythologicalmod.util.ModWoodTypes;
 import org.slf4j.Logger;
