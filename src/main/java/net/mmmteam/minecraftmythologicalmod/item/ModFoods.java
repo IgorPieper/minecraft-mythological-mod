@@ -10,5 +10,9 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 100), 0.1f)
             .build();
 
+    public static final FoodProperties AMBROSIA = new FoodProperties.Builder().nutrition(1)
+            .saturationMod(0.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 100), 1f)
+            .build();
 
 }

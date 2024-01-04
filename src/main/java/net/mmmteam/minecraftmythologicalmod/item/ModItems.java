@@ -60,6 +60,9 @@ public class ModItems {
     public static final RegistryObject<Item> MINOTAUR_AXE = ITEMS.register("minotaur_axe",
             () -> new ImmobilizingSwordItem(ModItemTier.SWORD, 7, -3f, new Item.Properties()));
 
+    public static final RegistryObject<Item> AMBROSIA = ITEMS.register("ambrosia",
+            () -> new Item(new Item.Properties().food(ModFoods.AMBROSIA)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
