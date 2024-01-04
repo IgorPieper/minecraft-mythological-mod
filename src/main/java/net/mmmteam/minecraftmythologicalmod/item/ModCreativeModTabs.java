@@ -54,6 +54,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.POSEIDONS_TRIDENT.get());
 
                         pOutput.accept(ModItems.APOLLO_BOW.get());
+
+                        pOutput.accept(ModItems.MINOTAUR_AXE.get());
+
                     })
                     .build());
 
