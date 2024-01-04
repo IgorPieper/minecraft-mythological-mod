@@ -59,6 +59,8 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.AMBROSIA.get());
 
+                        pOutput.accept(ModBlocks.STICK_STAIRS.get());
+
                     })
                     .build());
 

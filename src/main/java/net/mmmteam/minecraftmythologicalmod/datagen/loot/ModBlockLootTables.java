@@ -42,6 +42,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.OLIVE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.OLIVE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
         this.dropSelf(ModBlocks.STICK_STAIRS.get());
     }
 

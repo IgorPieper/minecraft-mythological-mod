@@ -1,9 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.item;
 
-import net.minecraft.world.item.BowItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +11,8 @@ import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ImmobilizingSwordItem;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ObscuringSwordItem;
+
+import static net.minecraft.world.item.Items.registerItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MinecraftMythologicalMod.MOD_ID);
@@ -62,7 +61,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> AMBROSIA = ITEMS.register("ambrosia",
             () -> new Item(new Item.Properties().food(ModFoods.AMBROSIA)));
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -8,6 +8,7 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
@@ -36,11 +37,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModItems.RACOON_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.BALKANLYNX_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
-        evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
-
         //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
 
         simpleItem(ModItems.AMBROSIA);
+
+        evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
