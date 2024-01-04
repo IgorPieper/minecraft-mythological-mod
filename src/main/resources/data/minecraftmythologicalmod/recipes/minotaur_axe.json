@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "#X#",
+        "#/#",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_ingot"
+        },
+        "X": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {"item": "minecraftmythologicalmod:minotaur_axe",
+        "count": 1
+    }
+}
