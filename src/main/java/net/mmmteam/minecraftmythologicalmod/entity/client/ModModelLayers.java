@@ -11,4 +11,7 @@ public class ModModelLayers {
 
     public static final ModelLayerLocation CYCLOPS_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "cyclops_layer"), "main");
+
+    public static final ModelLayerLocation BALKANLYNX_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "balkanlynx_layer"), "main");
 }

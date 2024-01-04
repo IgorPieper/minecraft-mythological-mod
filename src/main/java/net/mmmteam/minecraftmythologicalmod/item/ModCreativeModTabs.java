@@ -47,6 +47,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
                         pOutput.accept(ModItems.RACOON_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.BALKANLYNX_SPAWN_EGG.get());
 
                         pOutput.accept(ModItems.HADES_TRIDENT.get());
 

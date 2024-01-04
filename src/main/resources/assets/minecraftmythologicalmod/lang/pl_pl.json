@@ -26,11 +26,14 @@
 
   "block.minecraftmythologicalmod.ancient_portal": "Starożytny Portal",
 
-  "item.minecraftmythologicalmod.cyclops_spawn_egg": "Jajko spawnu cyklopa",
+  "item.minecraftmythologicalmod.cyclops_spawn_egg": "Jajko Spawnu Cyklopa",
   "entity.minecraftmythologicalmod.cyclops": "Cyklop",
 
-  "item.minecraftmythologicalmod.racoon_spawn_egg": "Jajko spawnu szopa",
+  "item.minecraftmythologicalmod.racoon_spawn_egg": "Jajko Spawnu Szopa",
   "entity.minecraftmythologicalmod.racoon": "Szop",
+
+  "item.minecraftmythologicalmod.balkanlynx_spawn_egg": "Jajko Spawnu Rysia Bałkańskiego",
+  "entity.minecraftmythologicalmod.balkanlynx": "Ryś Bałkański",
 
   "item.minecraftmythologicalmod.hades_trident": "Trójząb Hadesa",
   "item.minecraftmythologicalmod.poseidons_trident": "Trójząb Posejdona",

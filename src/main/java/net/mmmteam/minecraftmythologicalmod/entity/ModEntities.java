@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
+import net.mmmteam.minecraftmythologicalmod.entity.custom.BalkanLynxEntity;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.CyclopsEntity;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.RacoonEntity;
 
@@ -22,6 +23,10 @@ public class ModEntities {
     public static final RegistryObject<EntityType<CyclopsEntity>> CYCLOPS =
             ENTITY_TYPES.register("cyclops", () -> EntityType.Builder.of(CyclopsEntity::new, MobCategory.CREATURE)
                     .sized(2f, 2f).build("cyclops"));
+
+    public static final RegistryObject<EntityType<BalkanLynxEntity>> BALKANLYNX =
+            ENTITY_TYPES.register("balkanlynx", () -> EntityType.Builder.of(BalkanLynxEntity::new, MobCategory.CREATURE)
+                    .sized(1f, 1f).build("balkanlynx"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

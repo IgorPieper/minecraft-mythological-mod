@@ -19,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
+import net.mmmteam.minecraftmythologicalmod.entity.client.BalkanLynxRenderer;
 import net.mmmteam.minecraftmythologicalmod.entity.client.CyclopsRenderer;
 import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonRenderer;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
@@ -93,6 +94,7 @@ public class MinecraftMythologicalMod
                 // /summon minecraftmythologicalmod:racoon, cyclops
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);
                 EntityRenderers.register(ModEntities.CYCLOPS.get(), CyclopsRenderer::new);
+                EntityRenderers.register(ModEntities.BALKANLYNX.get(), BalkanLynxRenderer::new);
 
                 ModItemProperties.addCustomItemProperties();
             });

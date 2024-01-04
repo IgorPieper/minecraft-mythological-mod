@@ -5,7 +5,6 @@ import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
 
-//TODO: animacje mobów
 public class CyclopsModAnimationDefinitions {
     public static final AnimationDefinition CYCLOPS_WALK = AnimationDefinition.Builder.withLength(2.25F).looping()
             .addAnimation("right_arm", new AnimationChannel(AnimationChannel.Targets.ROTATION,
