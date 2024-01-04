@@ -39,6 +39,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
 
         //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
+
+        simpleItem(ModItems.AMBROSIA);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
