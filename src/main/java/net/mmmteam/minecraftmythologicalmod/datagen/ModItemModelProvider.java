@@ -35,6 +35,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModItems.BALKANLYNX_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
         //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
+
+        simpleItem(ModItems.AMBROSIA);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
