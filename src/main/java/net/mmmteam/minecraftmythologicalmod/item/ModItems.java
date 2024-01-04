@@ -53,6 +53,8 @@ public class ModItems {
     public static final RegistryObject<Item> APOLLO_BOW = ITEMS.register("apollo_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
 
+    public static final RegistryObject<Item> MINOTAUR_AXE = ITEMS.register("minotaur_axe",
+            () -> new ImmobilizingSwordItem(ModItemTier.SWORD, 7, -3f, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
