@@ -42,6 +42,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.AMBROSIA);
 
         evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

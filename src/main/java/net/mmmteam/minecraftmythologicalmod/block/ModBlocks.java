@@ -1,5 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.block;
 
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.effect.MobEffects;
@@ -48,6 +49,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> STICK_STAIRS = registerBlock("stick_stairs",
             () -> new StairBlock(() -> ModBlocks.STICK_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> CALCITE_STAIRS = registerBlock("calcite_stairs",
+            () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.CALCITE).sound(SoundType.CALCITE)));
 
     public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
