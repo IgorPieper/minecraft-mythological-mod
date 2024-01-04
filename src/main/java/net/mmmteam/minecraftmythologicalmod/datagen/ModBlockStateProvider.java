@@ -58,6 +58,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.OLIVE_SAPLING);
 
         stairsBlock(((StairBlock) ModBlocks.STICK_STAIRS.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        stairsBlock(((StairBlock) ModBlocks.CALCITE_STAIRS.get()), blockTexture(Blocks.CALCITE));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
