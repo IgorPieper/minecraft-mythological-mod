@@ -45,7 +45,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_ACONITE = BLOCKS.register("potted_aconite",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.ACONITE,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_TORCHFLOWER).noOcclusion()));
-
+    public static final RegistryObject<Block> STICK_STAIRS = registerBlock("stick_stairs",
+            () -> new StairBlock(() -> ModBlocks.STICK_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> OLIVE_WOOD = registerBlock("olive_wood",

@@ -57,6 +57,9 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.MINOTAUR_AXE.get());
 
+                        pOutput.accept(ModBlocks.STICK_STAIRS.get());
+
+
                     })
                     .build());
 
