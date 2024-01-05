@@ -106,6 +106,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
             () -> new SaplingBlock(new OliveTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> POTTED_OLIVE_SAPLING = BLOCKS.register("potted_olive_sapling",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.OLIVE_SAPLING,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
+
     public static final RegistryObject<Block> ANCIENT_PORTAL = registerBlock("ancient_portal",
             () -> new AncientPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable().noOcclusion().noCollission()));
 

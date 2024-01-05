@@ -15,59 +15,48 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MinecraftMythologicalMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> MYTHOLOGICAL = CREATIVE_MODE_TABS.register("mythological",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMBROSIA.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GRAPES.get()))
                     .title(Component.translatable("creativetab.mythological"))
                     .displayItems((pParameters, pOutput) -> {
-
-                        pOutput.accept(ModItems.GOOD_LOOKING_STICK.get());
-                        pOutput.accept(ModItems.BAY_LEAF.get());
-
-                        pOutput.accept(ModItems.GRAPES.get());
-
-                        pOutput.accept(ModBlocks.STICK_BLOCK.get());
-
-                        pOutput.accept(ModItems.EXCALIBUR.get());
-
-                        pOutput.accept(ModBlocks.IRIS.get());
-
-                        pOutput.accept(ModBlocks.ACONITE.get());
 
                         pOutput.accept(ModBlocks.OLIVE_LOG.get());
                         pOutput.accept(ModBlocks.OLIVE_WOOD.get());
                         pOutput.accept(ModBlocks.STRIPPED_OLIVE_LOG.get());
                         pOutput.accept(ModBlocks.STRIPPED_OLIVE_WOOD.get());
                         pOutput.accept(ModBlocks.OLIVE_PLANKS.get());
-                        pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
                         pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
+
+                        pOutput.accept(ModBlocks.STICK_BLOCK.get());
+                        pOutput.accept(ModBlocks.STICK_STAIRS.get());
+                        pOutput.accept(ModBlocks.STICK_SLAB.get());
+
+                        pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
+
+                        pOutput.accept(ModBlocks.CALCITE_STAIRS.get());
+                        pOutput.accept(ModBlocks.CALCITE_SLAB.get());
+
+                        pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
+                        pOutput.accept(ModBlocks.IRIS.get());
+                        pOutput.accept(ModBlocks.ACONITE.get());
+
+                        pOutput.accept(ModItems.BAY_LEAF.get());
+                        pOutput.accept(ModItems.GRAPES.get());
+
+                        pOutput.accept(ModItems.AMBROSIA.get());
 
                         pOutput.accept(ModItems.PYXIS.get());
                         pOutput.accept(ModItems.IRIS_PYXIS.get());
 
-                        pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
+                        pOutput.accept(ModItems.EXCALIBUR.get());
+                        pOutput.accept(ModItems.HADES_TRIDENT.get());
+                        pOutput.accept(ModItems.POSEIDONS_TRIDENT.get());
+                        pOutput.accept(ModItems.APOLLO_BOW.get());
+                        pOutput.accept(ModItems.MINOTAUR_AXE.get());
 
                         pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
                         pOutput.accept(ModItems.RACOON_SPAWN_EGG.get());
                         pOutput.accept(ModItems.BALKANLYNX_SPAWN_EGG.get());
                         pOutput.accept(ModItems.MINOTAUR_SPAWN_EGG.get());
-
-                        pOutput.accept(ModItems.HADES_TRIDENT.get());
-
-                        pOutput.accept(ModItems.POSEIDONS_TRIDENT.get());
-
-                        pOutput.accept(ModItems.APOLLO_BOW.get());
-
-                        pOutput.accept(ModItems.MINOTAUR_AXE.get());
-
-                        pOutput.accept(ModItems.AMBROSIA.get());
-
-                        pOutput.accept(ModBlocks.STICK_STAIRS.get());
-                        pOutput.accept(ModBlocks.CALCITE_STAIRS.get());
-
-                        pOutput.accept(ModBlocks.STICK_SLAB.get());
-                        pOutput.accept(ModBlocks.CALCITE_SLAB.get());
-
-
-
 
                     })
                     .build());

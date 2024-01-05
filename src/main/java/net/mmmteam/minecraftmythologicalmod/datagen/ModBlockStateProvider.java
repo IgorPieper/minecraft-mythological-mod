@@ -39,6 +39,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.POTTED_ACONITE.get(), models().singleTexture("potted_aconite", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.ACONITE.get())).renderType("cutout"));
 
+        simpleBlockWithItem(ModBlocks.POTTED_OLIVE_SAPLING.get(), models().singleTexture("potted_olive_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.OLIVE_SAPLING.get())).renderType("cutout"));
+
+
         logBlock(((RotatedPillarBlock) ModBlocks.OLIVE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.OLIVE_WOOD.get()), blockTexture(ModBlocks.OLIVE_LOG.get()), blockTexture(ModBlocks.OLIVE_LOG.get()));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_OLIVE_LOG.get(), new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/stripped_olive_log"),
