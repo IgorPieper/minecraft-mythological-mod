@@ -54,6 +54,8 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.CALCITE).sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> STICK_SLAB = registerBlock("stick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CALCITE_SLAB = registerBlock("calcite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CALCITE).sound(SoundType.CALCITE)));
 
     public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));

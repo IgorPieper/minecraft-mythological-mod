@@ -47,6 +47,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CALCITE_STAIRS.get());
         this.add(ModBlocks.STICK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.STICK_SLAB.get()));
+        this.add(ModBlocks.CALCITE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CALCITE_SLAB.get()));
     }
 
     @Override
