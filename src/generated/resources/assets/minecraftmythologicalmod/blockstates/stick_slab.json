@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraftmythologicalmod:block/stick_slab"
+    },
+    "type=double": {
+      "model": "minecraftmythologicalmod:block/stick_block"
+    },
+    "type=top": {
+      "model": "minecraftmythologicalmod:block/stick_slab_top"
+    }
+  }
+}

@@ -48,11 +48,12 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.POTTED_TORCHFLOWER).noOcclusion()));
     public static final RegistryObject<Block> STICK_STAIRS = registerBlock("stick_stairs",
             () -> new StairBlock(() -> ModBlocks.STICK_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-
+                    BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CALCITE_STAIRS = registerBlock("calcite_stairs",
             () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.CALCITE).sound(SoundType.CALCITE)));
+    public static final RegistryObject<Block> STICK_SLAB = registerBlock("stick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "   ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraftmythologicalmod:stick_block"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:stick_slab",
+    "count": 6
+  }
+}
