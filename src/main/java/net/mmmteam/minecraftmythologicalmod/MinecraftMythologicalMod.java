@@ -21,6 +21,7 @@ import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.client.BalkanLynxRenderer;
 import net.mmmteam.minecraftmythologicalmod.entity.client.CyclopsRenderer;
+import net.mmmteam.minecraftmythologicalmod.entity.client.MinotaurRenderer;
 import net.mmmteam.minecraftmythologicalmod.entity.client.RacoonRenderer;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
@@ -95,6 +96,7 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);
                 EntityRenderers.register(ModEntities.CYCLOPS.get(), CyclopsRenderer::new);
                 EntityRenderers.register(ModEntities.BALKANLYNX.get(), BalkanLynxRenderer::new);
+                EntityRenderers.register(ModEntities.MINOTAUR.get(), MinotaurRenderer::new);
 
                 ModItemProperties.addCustomItemProperties();
             });

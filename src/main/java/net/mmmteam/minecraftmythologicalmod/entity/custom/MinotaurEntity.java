@@ -16,18 +16,18 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
-import net.mmmteam.minecraftmythologicalmod.entity.ai.CyclopsAttackGoal;
+import net.mmmteam.minecraftmythologicalmod.entity.ai.MinotaurAttackGoal;
 import org.jetbrains.annotations.Nullable;
 
-public class CyclopsEntity extends Animal {
+public class MinotaurEntity extends Animal {
 
     private static final EntityDataAccessor<Boolean> ATTACKING =
-            SynchedEntityData.defineId(CyclopsEntity.class, EntityDataSerializers.BOOLEAN);
+            SynchedEntityData.defineId(MinotaurEntity.class, EntityDataSerializers.BOOLEAN);
 
     public final AnimationState attackAnimationState = new AnimationState();
     public int attackAnimationTimeout = 0;
 
-    public CyclopsEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
+    public MinotaurEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
@@ -40,7 +40,7 @@ public class CyclopsEntity extends Animal {
         this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 3f));
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 
-        this.goalSelector.addGoal(1, new CyclopsAttackGoal(this, 1.00, true));
+        this.goalSelector.addGoal(1, new MinotaurAttackGoal(this, 1.00, true));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<Player>(this, Player.class, true, true));
 
     }
@@ -52,13 +52,13 @@ public class CyclopsEntity extends Animal {
                 .add(Attributes.MOVEMENT_SPEED, 0.250)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.1f)
                 .add(Attributes.ATTACK_KNOCKBACK, 0.5f)
-                .add(Attributes.ATTACK_DAMAGE, 5f);
+                .add(Attributes.ATTACK_DAMAGE, 6f);
     }
 
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
-        return ModEntities.CYCLOPS.get().create(pLevel);
+        return ModEntities.MINOTAUR.get().create(pLevel);
     }
 
     private void setUpAnimationStates() {
