@@ -43,6 +43,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
         evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.STICK_SLAB);
+
 
     }
 

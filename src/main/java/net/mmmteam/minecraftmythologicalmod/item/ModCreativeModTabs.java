@@ -63,6 +63,9 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.CALCITE_STAIRS.get());
 
+                        pOutput.accept(ModBlocks.STICK_SLAB.get());
+
+
 
                     })
                     .build());
