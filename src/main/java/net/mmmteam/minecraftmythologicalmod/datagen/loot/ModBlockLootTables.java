@@ -39,6 +39,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_OLIVE_WOOD.get());
         this.dropSelf(ModBlocks.OLIVE_PLANKS.get());
         this.dropSelf(ModBlocks.OLIVE_SAPLING.get());
+        this.add(ModBlocks.POTTED_OLIVE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.OLIVE_SAPLING.get()));
 
         this.add(ModBlocks.OLIVE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.OLIVE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
