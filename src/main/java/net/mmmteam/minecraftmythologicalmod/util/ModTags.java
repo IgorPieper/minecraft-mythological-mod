@@ -9,6 +9,18 @@ import net.minecraft.world.level.block.Block;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 
 public class ModTags {
+
+    public static class Items{
+
+        public static TagKey<Item> tag(String name) {
+            return ItemTags.create(new ResourceLocation(MinecraftMythologicalMod.MOD_ID, name));
+        }
+
+        private static TagKey<Item> forgeTag(String name) {
+            return ItemTags.create(new ResourceLocation("forge", name));
+        }
+    }
+
     public static class Blocks{
 
         // Przykładowy customowy tag dla bloków
@@ -17,14 +29,11 @@ public class ModTags {
         public static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(MinecraftMythologicalMod.MOD_ID, name));
         }
-    }
 
-    public static class Items{
-
-
-        public static TagKey<Item> tag(String name) {
-            return ItemTags.create(new ResourceLocation(MinecraftMythologicalMod.MOD_ID, name));
+        private static TagKey<Block> forgeTag(String name) {
+            return BlockTags.create(new ResourceLocation("forge", name));
         }
+
     }
 
 }
