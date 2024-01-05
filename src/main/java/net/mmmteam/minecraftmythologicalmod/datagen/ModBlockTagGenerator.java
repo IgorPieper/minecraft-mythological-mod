@@ -33,9 +33,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CALCITE_STAIRS.get(),
                         ModBlocks.CALCITE_SLAB.get());
 
-        this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.CALCITE_STAIRS.get(),
-                        ModBlocks.CALCITE_SLAB.get());
     }
 
 
