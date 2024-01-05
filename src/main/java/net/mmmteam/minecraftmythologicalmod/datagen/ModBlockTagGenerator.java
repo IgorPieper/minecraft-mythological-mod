@@ -28,7 +28,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.OLIVE_PLANKS.get());
+
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.CALCITE_STAIRS.get(),
+                        ModBlocks.CALCITE_SLAB.get());
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.CALCITE_STAIRS.get(),
+                        ModBlocks.CALCITE_SLAB.get());
     }
+
+
 
     @Override
     public String getName() {
