@@ -60,6 +60,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(((StairBlock) ModBlocks.STICK_STAIRS.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
         stairsBlock(((StairBlock) ModBlocks.CALCITE_STAIRS.get()), blockTexture(Blocks.CALCITE));
         slabBlock(((SlabBlock) ModBlocks.STICK_SLAB.get()), blockTexture(ModBlocks.STICK_BLOCK.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.CALCITE_SLAB.get()), blockTexture(Blocks.CALCITE), blockTexture(Blocks.CALCITE));
+
 
     }
 

@@ -60,10 +60,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.AMBROSIA.get());
 
                         pOutput.accept(ModBlocks.STICK_STAIRS.get());
-
                         pOutput.accept(ModBlocks.CALCITE_STAIRS.get());
 
                         pOutput.accept(ModBlocks.STICK_SLAB.get());
+                        pOutput.accept(ModBlocks.CALCITE_SLAB.get());
+
 
 
 
