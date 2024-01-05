@@ -22,7 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.ladny_patyk);
+        simpleItem(ModItems.GOOD_LOOKING_STICK);
         simpleItem(ModItems.BAY_LEAF);
         simpleItem(ModItems.GRAPES);
         simpleBlockItemBlockTexture(ModBlocks.IRIS);

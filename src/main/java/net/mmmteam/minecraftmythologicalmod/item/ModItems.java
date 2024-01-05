@@ -17,7 +17,7 @@ import static net.minecraft.world.item.Items.registerItem;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MinecraftMythologicalMod.MOD_ID);
 
-    public static final RegistryObject<Item> ladny_patyk = ITEMS.register("ladny_patyk",
+    public static final RegistryObject<Item> GOOD_LOOKING_STICK = ITEMS.register("good_looking_stick",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> GRAPES = ITEMS.register("grapes",

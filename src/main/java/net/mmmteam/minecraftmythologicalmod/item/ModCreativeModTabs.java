@@ -15,11 +15,11 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MinecraftMythologicalMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> MYTHOLOGICAL = CREATIVE_MODE_TABS.register("mythological",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ladny_patyk.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMBROSIA.get()))
                     .title(Component.translatable("creativetab.mythological"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(ModItems.ladny_patyk.get());
+                        pOutput.accept(ModItems.GOOD_LOOKING_STICK.get());
                         pOutput.accept(ModItems.BAY_LEAF.get());
 
                         pOutput.accept(ModItems.GRAPES.get());
