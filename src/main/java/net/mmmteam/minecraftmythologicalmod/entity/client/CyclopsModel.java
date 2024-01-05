@@ -39,7 +39,7 @@ public class CyclopsModel<T extends CyclopsEntity> extends HierarchicalModel<T> 
 
 		PartDefinition left_leg = cyclops.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(58, 33).addBox(-3.5F, 1.0F, -3.0F, 6.0F, 12.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(5.0F, -13.0F, 0.0F));
 
-		return LayerDefinition.create(meshdefinition, 80, 70);
+		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
 
 	@Override

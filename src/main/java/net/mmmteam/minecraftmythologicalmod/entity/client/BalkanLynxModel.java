@@ -7,7 +7,6 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.mmmteam.minecraftmythologicalmod.entity.animations.BalkanLynxModAnimationDefinitions;
-import net.mmmteam.minecraftmythologicalmod.entity.animations.CyclopsModAnimationDefinitions;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.BalkanLynxEntity;
 
 public class BalkanLynxModel<T extends BalkanLynxEntity> extends HierarchicalModel<T> {

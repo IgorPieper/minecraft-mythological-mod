@@ -10,7 +10,7 @@ import net.mmmteam.minecraftmythologicalmod.entity.custom.RacoonEntity;
 
 public class RacoonRenderer extends MobRenderer<RacoonEntity, RacoonModel<RacoonEntity>> {
     public RacoonRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new RacoonModel<>(pContext.bakeLayer(ModModelLayers.RACOON_LAYER)), 1f);
+        super(pContext, new RacoonModel<>(pContext.bakeLayer(ModModelLayers.RACOON_LAYER)), 0.5f);
     }
 
     @Override
