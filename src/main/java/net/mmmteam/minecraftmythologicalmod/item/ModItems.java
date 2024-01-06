@@ -11,6 +11,7 @@ import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ImmobilizingSwordItem;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ObscuringSwordItem;
+import net.mmmteam.minecraftmythologicalmod.item.custom.WeakeningSwordItem;
 
 import static net.minecraft.world.item.Items.registerItem;
 
@@ -59,6 +60,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> APOLLO_BOW = ITEMS.register("apollo_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
+
+    public static final RegistryObject<Item> SPEAR_OF_ATHENA = ITEMS.register("spear_of_athena",
+            () -> new WeakeningSwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
 
     public static final RegistryObject<Item> MINOTAUR_AXE = ITEMS.register("minotaur_axe",
             () -> new ImmobilizingSwordItem(ModItemTier.SWORD, 7, -3f, new Item.Properties()));
