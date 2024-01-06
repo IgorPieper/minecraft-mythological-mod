@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-06T12:33:32.3568283	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-06T22:53:08.9990241	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -7,6 +7,11 @@ f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/
 3dd0d4cc7715391ba53d7b497ca99fc6acef94da assets/minecraftmythologicalmod/models/item/calcite_slab.json
 3ccb358c458814d35e815e7a454878d4e3b48c41 assets/minecraftmythologicalmod/models/item/calcite_stairs.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/cyclops_spawn_egg.json
+b59cb35b63cce90f1385cd2f49ff3b2fe820a58b assets/minecraftmythologicalmod/models/item/gift_of_apollo.json
+95748b2c1283d7d556e99296de542d8e719e1875 assets/minecraftmythologicalmod/models/item/gift_of_athena.json
+1ae142e0b6f496835e6c2384a9dadf8f2c05e6a3 assets/minecraftmythologicalmod/models/item/gift_of_hades.json
+071aa508c37e66e81470a07e42a91f5276108663 assets/minecraftmythologicalmod/models/item/gift_of_hephaestus.json
+9d3e01547d15213294a6e3a9474a31e9761ef733 assets/minecraftmythologicalmod/models/item/gift_of_poseidon.json
 2c590dae5e8edfdf5be0f8fa7986bf86ef32f4bb assets/minecraftmythologicalmod/models/item/good_looking_stick.json
 a74014d5e6fd87265f51518dbea8cb134859ee9f assets/minecraftmythologicalmod/models/item/grapes.json
 b3359063cc1f87388a499ba3062eb7a00a77c5cc assets/minecraftmythologicalmod/models/item/iris.json

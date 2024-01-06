@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraftmythologicalmod:gift_of_hephaestus"
+    },
+    {
+      "item": "minecraft:netherite_sword"
+    }
+  ],
+  "result": {
+    "item": "minecraftmythologicalmod:sword_of_peleus",
+    "count": 1
+  }
+}

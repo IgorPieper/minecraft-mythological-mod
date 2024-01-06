@@ -76,6 +76,21 @@ public class ModItems {
     public static final RegistryObject<SwordItem> SWORD_OF_PELEUS = ITEMS.register("sword_of_peleus",
             () -> new SwordItem(ModItemTier.PELEUS, 1, -3f, new Item.Properties()));
 
+    public static final RegistryObject<Item> GIFT_OF_APOLLO = ITEMS.register("gift_of_apollo",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GIFT_OF_ATHENA = ITEMS.register("gift_of_athena",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GIFT_OF_HADES = ITEMS.register("gift_of_hades",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GIFT_OF_HEPHAESTUS = ITEMS.register("gift_of_hephaestus",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GIFT_OF_POSEIDON = ITEMS.register("gift_of_poseidon",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
