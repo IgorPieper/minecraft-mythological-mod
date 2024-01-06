@@ -24,7 +24,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.GRAPES)));
 
     public static final RegistryObject<SwordItem> EXCALIBUR = ITEMS.register("excalibur",
-            () -> new SwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
+            () -> new SwordItem(ModItemTier.EXCALIBUR, 9, -3f, new Item.Properties()));
 
     public static final RegistryObject<Item> BAY_LEAF = ITEMS.register("bay_leaf",
             () -> new ItemNameBlockItem(ModBlocks.LAUREL_BUSH_CROP.get(), new Item.Properties()));

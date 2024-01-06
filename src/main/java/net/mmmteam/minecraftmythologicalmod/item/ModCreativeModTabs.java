@@ -24,7 +24,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STRIPPED_OLIVE_LOG.get());
                         pOutput.accept(ModBlocks.STRIPPED_OLIVE_WOOD.get());
                         pOutput.accept(ModBlocks.OLIVE_PLANKS.get());
-                        pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
                         pOutput.accept(ModBlocks.STICK_STAIRS.get());
@@ -35,7 +34,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.CALCITE_STAIRS.get());
                         pOutput.accept(ModBlocks.CALCITE_SLAB.get());
 
+                        pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
                         pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
+                        pOutput.accept(ModBlocks.LAUREL_BUSH.get());
                         pOutput.accept(ModBlocks.IRIS.get());
                         pOutput.accept(ModBlocks.ACONITE.get());
 

@@ -1,30 +1,41 @@
 {
   "creativetab.mythological": "Mitologiczne",
 
-  "item.minecraftmythologicalmod.good_looking_stick": "Ładny Patyk",
-  "item.minecraftmythologicalmod.bay_leaf": "Liść Laurowy",
-
-  "item.minecraftmythologicalmod.grapes": "Winogrona",
-
-  "item.minecraftmythologicalmod.excalibur": "Miecz Excalibur",
-
-  "block.minecraftmythologicalmod.stick_block": "Góra Patyków",
-
-  "block.minecraftmythologicalmod.iris": "Irys",
-  "block.minecraftmythologicalmod.aconite": "Tojad",
-
   "block.minecraftmythologicalmod.olive_log": "Oliwny Pień",
   "block.minecraftmythologicalmod.olive_wood": "Oliwne Drewno",
   "block.minecraftmythologicalmod.stripped_olive_log": "Ociosany Oliwny Pień",
   "block.minecraftmythologicalmod.stripped_olive_wood": "Ociosane Oliwne Drewno",
   "block.minecraftmythologicalmod.olive_planks": "Oliwne Deski",
+
+  "block.minecraftmythologicalmod.stick_block": "Góra Patyków",
+  "block.minecraftmythologicalmod.stick_stairs": "Patykowe Schody",
+  "block.minecraftmythologicalmod.stick_slab": "Patykowa Płyta",
+
+  "block.minecraftmythologicalmod.ancient_portal": "Starożytny Portal",
+
+  "block.minecraftmythologicalmod.calcite_stairs": "Kalcytowe Schody",
+  "block.minecraftmythologicalmod.calcite_slab": "Kalcytowa Płyta",
+
   "block.minecraftmythologicalmod.olive_leaves": "Oliwne Liście",
   "block.minecraftmythologicalmod.olive_sapling": "Oliwna Sadzonka",
+  "item.minecraftmythologicalmod.laurel_bush": "Krzew Laurowy",
+  "block.minecraftmythologicalmod.iris": "Irys",
+  "block.minecraftmythologicalmod.aconite": "Tojad",
 
+  "item.minecraftmythologicalmod.bay_leaf": "Liść Laurowy",
+  "item.minecraftmythologicalmod.grapes": "Winogrona",
+
+  "item.minecraftmythologicalmod.ambrosia": "Ambrozja",
+
+  "item.minecraftmythologicalmod.good_looking_stick": "Ładny Patyk",
   "item.minecraftmythologicalmod.pyxis": "Pyksis",
   "item.minecraftmythologicalmod.iris_pyxis": "Pyksis Irysowy",
 
-  "block.minecraftmythologicalmod.ancient_portal": "Starożytny Portal",
+  "item.minecraftmythologicalmod.excalibur": "Miecz Excalibur",
+  "item.minecraftmythologicalmod.hades_trident": "Trójząb Hadesa",
+  "item.minecraftmythologicalmod.poseidons_trident": "Trójząb Posejdona",
+  "item.minecraftmythologicalmod.apollo_bow": "Łuk Apolla",
+  "item.minecraftmythologicalmod.minotaur_axe": "Topór Minotaura",
 
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Jajko Spawnu Cyklopa",
   "entity.minecraftmythologicalmod.cyclops": "Cyklop",
@@ -36,21 +47,6 @@
   "entity.minecraftmythologicalmod.balkanlynx": "Ryś Bałkański",
 
   "item.minecraftmythologicalmod.minotaur_spawn_egg": "Jajko Spawnu Minotaura",
-  "entity.minecraftmythologicalmod.minotaur": "Minotaur",
+  "entity.minecraftmythologicalmod.minotaur": "Minotaur"
 
-  "item.minecraftmythologicalmod.hades_trident": "Trójząb Hadesa",
-  "item.minecraftmythologicalmod.poseidons_trident": "Trójząb Posejdona",
-
-  "item.minecraftmythologicalmod.apollo_bow": "Łuk Apolla",
-
-  "item.minecraftmythologicalmod.minotaur_axe": "Topór Minotaura",
-
-  "item.minecraftmythologicalmod.ambrosia": "Ambrozja",
-  "item.minecraftmythologicalmod.aconite_root": "Korzeń Akonitu",
-
-
-  "block.minecraftmythologicalmod.stick_stairs": "Patykowe Schody",
-  "block.minecraftmythologicalmod.calcite_stairs": "Kalcytowe Schody",
-  "block.minecraftmythologicalmod.stick_slab": "Patykowa Płyta",
-  "block.minecraftmythologicalmod.calcite_slab": "Kalcytowa Płyta"
 }

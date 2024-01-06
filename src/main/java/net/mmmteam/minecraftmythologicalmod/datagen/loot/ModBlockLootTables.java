@@ -1,4 +1,5 @@
 package net.mmmteam.minecraftmythologicalmod.datagen.loot;
+import net.minecraft.world.level.storage.loot.LootTable;
 import net.mmmteam.minecraftmythologicalmod.block.custom.LaurelBushCrop;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -11,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 
 import java.util.Set;
+import java.util.function.Function;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
     public ModBlockLootTables() {
@@ -27,6 +29,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LaurelBushCrop.AGE, 4));
         this.add(ModBlocks.LAUREL_BUSH_CROP.get(), this.createCropDrops(ModBlocks.LAUREL_BUSH_CROP.get(), ModItems.BAY_LEAF.get(),
                 ModItems.BAY_LEAF.get(), lootitemcondition$builder1));
+
+        this.add(ModBlocks.LAUREL_BUSH.get(),
+                block -> createOreDrop(ModBlocks.LAUREL_BUSH.get(), ModItems.BAY_LEAF.get()));
 
         this.dropSelf(ModBlocks.IRIS.get());
         this.add(ModBlocks.POTTED_IRIS.get(), createPotFlowerItemTable(ModBlocks.IRIS.get()));
