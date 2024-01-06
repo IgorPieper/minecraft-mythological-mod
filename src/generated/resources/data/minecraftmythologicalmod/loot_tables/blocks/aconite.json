@@ -11,7 +11,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraftmythologicalmod:aconite"
+          "name": "minecraftmythologicalmod:aconite",
+          "weight": 9
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraftmythologicalmod:aconite_root",
+          "weight": 1
         }
       ],
       "rolls": 1.0
