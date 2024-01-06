@@ -18,6 +18,8 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_IRIS = registerKey("add_iris");
     public static final ResourceKey<BiomeModifier> ADD_ACONITE = registerKey("add_aconite");
 
+    public static final ResourceKey<BiomeModifier> ADD_LAUREL = registerKey("add_laurel");
+
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -35,6 +37,11 @@ public class ModBiomeModifiers {
         context.register(ADD_ACONITE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_MUSHROOM),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ACONITE_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_LAUREL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.LAUREL_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }

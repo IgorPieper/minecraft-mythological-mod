@@ -16,48 +16,51 @@ public enum ModItemTier implements Tier {
     // damage: ile zadaje obrażeń
     // enchantability: ile razy może być enchantowany (max 5 ??)
     // repair ingredient: czym możemy go naprawić w kowadle
+        SWORD(1, 3000, 10.0F, 10.0F, 5, () -> {
+            return Ingredient.of(Items.GOLDEN_SWORD);
+        }),
 
-    SWORD(1, 3000, 10.0F, 10.0F, 5, () -> {
-        return Ingredient.of(Items.GOLDEN_SWORD);
-    });
+        EXCALIBUR(4, 40, 10.0F, 10.0F, 5, () -> {
+            return Ingredient.of(Items.GOLD_INGOT);
+        });
 
-    private final int level;
-    private final int uses;
-    private final float speed;
-    private final float damage;
-    private final int enchantmentValue;
-    private final LazyLoadedValue<Ingredient> repairIngredient;
+        private final int level;
+        private final int uses;
+        private final float speed;
+        private final float damage;
+        private final int enchantmentValue;
+        private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    ModItemTier(int level, int durability, float miningSpeed, float damage, int enchantability, Supplier<Ingredient> repairIngredient) {
-        this.level = level;
-        this.uses = durability;
-        this.speed = miningSpeed;
-        this.damage = damage;
-        this.enchantmentValue = enchantability;
-        this.repairIngredient = new LazyLoadedValue<>(repairIngredient);
+        ModItemTier(int level, int durability, float miningSpeed, float damage, int enchantability, Supplier<Ingredient> repairIngredient) {
+            this.level = level;
+            this.uses = durability;
+            this.speed = miningSpeed;
+            this.damage = damage;
+            this.enchantmentValue = enchantability;
+            this.repairIngredient = new LazyLoadedValue<>(repairIngredient);
+        }
+
+        public int getUses() {
+            return this.uses;
+        }
+
+        public float getSpeed() {
+            return this.speed;
+        }
+
+        public float getAttackDamageBonus() {
+            return this.damage;
+        }
+
+        public int getLevel() {
+            return this.level;
+        }
+
+        public int getEnchantmentValue() {
+            return this.enchantmentValue;
+        }
+
+        public Ingredient getRepairIngredient() {
+            return this.repairIngredient.get();
+        }
     }
-
-    public int getUses() {
-        return this.uses;
-    }
-
-    public float getSpeed() {
-        return this.speed;
-    }
-
-    public float getAttackDamageBonus() {
-        return this.damage;
-    }
-
-    public int getLevel() {
-        return this.level;
-    }
-
-    public int getEnchantmentValue() {
-        return this.enchantmentValue;
-    }
-
-    public Ingredient getRepairIngredient() {
-        return this.repairIngredient.get();
-    }
-}

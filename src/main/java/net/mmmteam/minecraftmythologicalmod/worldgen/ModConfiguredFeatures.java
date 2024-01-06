@@ -25,6 +25,8 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> IRIS_KEY = registerKey("iris");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ACONITE_KEY = registerKey("aconite");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LAUREL_KEY = registerKey("laurel_bush");
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
 
@@ -42,7 +44,12 @@ public class ModConfiguredFeatures {
         register(context, ACONITE_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ACONITE.get())))));
+
+        register(context, LAUREL_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LAUREL_BUSH.get())))));
     }
+
 
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

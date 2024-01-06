@@ -1,30 +1,41 @@
 {
   "creativetab.mythological": "Mythological",
 
-  "item.minecraftmythologicalmod.good_looking_stick": "Good Looking Stick",
-  "item.minecraftmythologicalmod.bay_leaf": "Bay Leaf",
-
-  "item.minecraftmythologicalmod.grapes": "Grapes",
-
-  "item.minecraftmythologicalmod.excalibur": "Excalibur Sword",
-
-  "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
-
-  "block.minecraftmythologicalmod.iris": "Iris",
-  "block.minecraftmythologicalmod.aconite": "Aconite",
-
   "block.minecraftmythologicalmod.olive_log": "Olive Log",
   "block.minecraftmythologicalmod.olive_wood": "Olive Wood",
   "block.minecraftmythologicalmod.stripped_olive_log": "Stripped Olive Log",
   "block.minecraftmythologicalmod.stripped_olive_wood": "Stripped Olive Wood",
   "block.minecraftmythologicalmod.olive_planks": "Olive Planks",
+
+  "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
+  "block.minecraftmythologicalmod.stick_stairs": "Stick Stairs",
+  "block.minecraftmythologicalmod.stick_slab": "Stick Slab",
+
+  "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal",
+
+  "block.minecraftmythologicalmod.calcite_stairs": "Calcite Stairs",
+  "block.minecraftmythologicalmod.calcite_slab": "Calcite Slab",
+
   "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
   "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",
+  "item.minecraftmythologicalmod.laurel_bush": "Laurel Bush",
+  "block.minecraftmythologicalmod.iris": "Iris",
+  "block.minecraftmythologicalmod.aconite": "Aconite",
 
+  "item.minecraftmythologicalmod.bay_leaf": "Bay Leaf",
+  "item.minecraftmythologicalmod.grapes": "Grapes",
+
+  "item.minecraftmythologicalmod.ambrosia": "Ambrosia",
+
+  "item.minecraftmythologicalmod.good_looking_stick": "Good Looking Stick",
   "item.minecraftmythologicalmod.pyxis": "Pyxis",
   "item.minecraftmythologicalmod.iris_pyxis": "Iris Pyxis",
 
-  "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal",
+  "item.minecraftmythologicalmod.excalibur": "Excalibur Sword",
+  "item.minecraftmythologicalmod.hades_trident": "Hades Trident",
+  "item.minecraftmythologicalmod.poseidons_trident": "Poseidons Trident",
+  "item.minecraftmythologicalmod.apollo_bow": "Apollo Bow",
+  "item.minecraftmythologicalmod.minotaur_axe": "Minotaurs Axe",
 
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Cyclops Spawn Egg",
   "entity.minecraftmythologicalmod.cyclops": "Cyclops",
@@ -36,20 +47,6 @@
   "entity.minecraftmythologicalmod.balkanlynx": "Balkan Lynx",
 
   "item.minecraftmythologicalmod.minotaur_spawn_egg": "Minotaur Spawn Egg",
-  "entity.minecraftmythologicalmod.minotaur": "Minotaur",
-
-  "item.minecraftmythologicalmod.hades_trident": "Hades Trident",
-  "item.minecraftmythologicalmod.poseidons_trident": "Poseidons Trident",
-
-  "item.minecraftmythologicalmod.apollo_bow": "Apollo Bow",
-
-  "item.minecraftmythologicalmod.minotaur_axe": "Minotaurs Axe",
-
-  "item.minecraftmythologicalmod.ambrosia": "Ambrosia",
-
-  "block.minecraftmythologicalmod.stick_stairs": "Stick Stairs",
-  "block.minecraftmythologicalmod.calcite_stairs": "Calcite Stairs",
-  "block.minecraftmythologicalmod.stick_slab": "Stick Slab",
-  "block.minecraftmythologicalmod.calcite_slab": "Calcite Slab"
+  "entity.minecraftmythologicalmod.minotaur": "Minotaur"
 
 }
