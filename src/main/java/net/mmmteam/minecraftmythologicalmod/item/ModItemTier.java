@@ -16,12 +16,20 @@ public enum ModItemTier implements Tier {
     // damage: ile zadaje obrażeń
     // enchantability: ile razy może być enchantowany (max 5 ??)
     // repair ingredient: czym możemy go naprawić w kowadle
-        SWORD(1, 3000, 10.0F, 10.0F, 5, () -> {
-            return Ingredient.of(Items.GOLDEN_SWORD);
+        TRIDENTS(1, 500, 10.0F, 10.0F, 5, () -> {
+            return Ingredient.of(Items.PRISMARINE_SHARD);
         }),
 
         EXCALIBUR(4, 40, 10.0F, 10.0F, 5, () -> {
             return Ingredient.of(Items.GOLD_INGOT);
+        }),
+
+        SPEAR(3, 100, 10.0F, 10.0F, 5, () -> {
+            return Ingredient.of(Items.PRISMARINE_SHARD);
+        }),
+
+        AXE(3, 1000, 10.0F, 10.0F, 5, () -> {
+            return Ingredient.of(Items.IRON_AXE);
         }),
 
         PELEUS(1, 1, 10.0F, 0.1F, 5, () -> {
