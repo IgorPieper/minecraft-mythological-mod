@@ -23,11 +23,15 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
         add("grapes_from_vines", new AddItemModifier(new LootItemCondition[] {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.VINE).build(),
-                LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.GRAPES.get()));
+                LootItemRandomChanceCondition.randomChance(0.1f).build() }, ModItems.GRAPES.get()));
 
         add("pyxis_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("archaeology/ocean_ruin_warm")).build() },
                 ModItems.PYXIS.get()));
+
+        add("excalibur_from_stone", new AddItemModifier(new LootItemCondition[] {
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.STONE).build(),
+                LootItemRandomChanceCondition.randomChance(0.0001f).build() }, ModItems.EXCALIBUR.get()));
 
     }
 }

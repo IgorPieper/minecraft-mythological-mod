@@ -29,6 +29,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCrop((LaurelBushCrop) ModBlocks.LAUREL_BUSH_CROP.get(), "laurel_bush_stage", "laurel_bush_stage");
 
+        simpleBlockWithItem(ModBlocks.LAUREL_BUSH.get(), models().cross(blockTexture(ModBlocks.LAUREL_BUSH.get()).getPath(),
+                blockTexture(ModBlocks.LAUREL_BUSH.get())).renderType("cutout"));
+
         simpleBlockWithItem(ModBlocks.IRIS.get(), models().cross(blockTexture(ModBlocks.IRIS.get()).getPath(),
                 blockTexture(ModBlocks.IRIS.get())).renderType("cutout"));
         simpleBlockWithItem(ModBlocks.POTTED_IRIS.get(), models().singleTexture("potted_iris", new ResourceLocation("flower_pot_cross"), "plant",
