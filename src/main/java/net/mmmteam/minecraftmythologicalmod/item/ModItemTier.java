@@ -22,6 +22,10 @@ public enum ModItemTier implements Tier {
 
         EXCALIBUR(4, 40, 10.0F, 10.0F, 5, () -> {
             return Ingredient.of(Items.GOLD_INGOT);
+        }),
+
+        PELEUS(1, 1, 10.0F, 0.1F, 5, () -> {
+            return Ingredient.of(Items.OAK_WOOD);
         });
 
         private final int level;
