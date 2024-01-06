@@ -66,6 +66,9 @@ public class ModItems {
     public static final RegistryObject<Item> AMBROSIA = ITEMS.register("ambrosia",
             () -> new Item(new Item.Properties().food(ModFoods.AMBROSIA)));
 
+    public static final RegistryObject<Item> ACONITE_ROOT = ITEMS.register("aconite_root",
+            () -> new Item(new Item.Properties().food(ModFoods.ACONITE_ROOT)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -44,6 +44,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.GRAPES.get());
 
                         pOutput.accept(ModItems.AMBROSIA.get());
+                        pOutput.accept(ModItems.ACONITE_ROOT.get());
+
 
                         pOutput.accept(ModItems.PYXIS.get());
                         pOutput.accept(ModItems.IRIS_PYXIS.get());
