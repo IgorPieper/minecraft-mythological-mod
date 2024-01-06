@@ -49,7 +49,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.STICK_SLAB);
         evenSimplerBlockItem(ModBlocks.CALCITE_SLAB);
 
-
+        simpleItem(ModItems.GIFT_OF_APOLLO);
+        simpleItem(ModItems.GIFT_OF_ATHENA);
+        simpleItem(ModItems.GIFT_OF_HADES);
+        simpleItem(ModItems.GIFT_OF_HEPHAESTUS);
+        simpleItem(ModItems.GIFT_OF_POSEIDON);
 
     }
 

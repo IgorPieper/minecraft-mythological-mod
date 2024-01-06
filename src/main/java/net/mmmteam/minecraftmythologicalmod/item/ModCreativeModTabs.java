@@ -46,6 +46,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.AMBROSIA.get());
                         pOutput.accept(ModItems.ACONITE_ROOT.get());
 
+                        pOutput.accept(ModItems.GIFT_OF_APOLLO.get());
+                        pOutput.accept(ModItems.GIFT_OF_ATHENA.get());
+                        pOutput.accept(ModItems.GIFT_OF_HADES.get());
+                        pOutput.accept(ModItems.GIFT_OF_HEPHAESTUS.get());
+                        pOutput.accept(ModItems.GIFT_OF_POSEIDON.get());
 
                         pOutput.accept(ModItems.PYXIS.get());
                         pOutput.accept(ModItems.IRIS_PYXIS.get());

@@ -18,7 +18,7 @@
 
   "block.minecraftmythologicalmod.olive_leaves": "Oliwne Liście",
   "block.minecraftmythologicalmod.olive_sapling": "Oliwna Sadzonka",
-  "item.minecraftmythologicalmod.laurel_bush": "Krzew Laurowy",
+  "block.minecraftmythologicalmod.laurel_bush": "Krzew Laurowy",
   "block.minecraftmythologicalmod.iris": "Irys",
   "block.minecraftmythologicalmod.aconite": "Tojad",
 
@@ -31,6 +31,13 @@
   "item.minecraftmythologicalmod.good_looking_stick": "Ładny Patyk",
   "item.minecraftmythologicalmod.pyxis": "Pyksis",
   "item.minecraftmythologicalmod.iris_pyxis": "Pyksis Irysowy",
+
+  "item.minecraftmythologicalmod.gift_of_apollo": "Dar Apolla",
+  "item.minecraftmythologicalmod.gift_of_athena": "Dar Ateny",
+  "item.minecraftmythologicalmod.gift_of_hades": "Dar Hadesa",
+  "item.minecraftmythologicalmod.gift_of_hephaestus": "Dar Hefajstosa",
+  "item.minecraftmythologicalmod.gift_of_poseidon": "Dar Posejdona",
+
 
   "item.minecraftmythologicalmod.excalibur": "Miecz Excalibur",
   "item.minecraftmythologicalmod.hades_trident": "Trójząb Hadesa",
