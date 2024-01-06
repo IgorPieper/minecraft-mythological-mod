@@ -53,19 +53,19 @@ public class ModItems {
                     new Item.Properties()));
 
     public static final RegistryObject<Item> HADES_TRIDENT = ITEMS.register("hades_trident",
-            () -> new ObscuringSwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
+            () -> new ObscuringSwordItem(ModItemTier.TRIDENTS, 9, -3f, new Item.Properties()));
 
     public static final RegistryObject<Item> POSEIDONS_TRIDENT = ITEMS.register("poseidons_trident",
-            () -> new ImmobilizingSwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
+            () -> new ImmobilizingSwordItem(ModItemTier.TRIDENTS, 9, -3f, new Item.Properties()));
 
     public static final RegistryObject<Item> APOLLO_BOW = ITEMS.register("apollo_bow",
-            () -> new BowItem(new Item.Properties().durability(500)));
+            () -> new BowItem(new Item.Properties().durability(1500)));
 
     public static final RegistryObject<Item> SPEAR_OF_ATHENA = ITEMS.register("spear_of_athena",
-            () -> new WeakeningSwordItem(ModItemTier.SWORD, 9, -3f, new Item.Properties()));
+            () -> new WeakeningSwordItem(ModItemTier.SPEAR, 9, -3f, new Item.Properties()));
 
     public static final RegistryObject<Item> MINOTAUR_AXE = ITEMS.register("minotaur_axe",
-            () -> new ImmobilizingSwordItem(ModItemTier.SWORD, 7, -3f, new Item.Properties()));
+            () -> new ImmobilizingSwordItem(ModItemTier.AXE, 7, -3f, new Item.Properties()));
 
     public static final RegistryObject<Item> AMBROSIA = ITEMS.register("ambrosia",
             () -> new Item(new Item.Properties().food(ModFoods.AMBROSIA)));
