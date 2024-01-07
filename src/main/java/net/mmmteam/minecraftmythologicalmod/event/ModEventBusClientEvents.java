@@ -22,6 +22,7 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.CYCLOPS_LAYER, CyclopsModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.BALKANLYNX_LAYER, BalkanLynxModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.MINOTAUR_LAYER, MinotaurModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.KITSUNE_LAYER, KitsuneModel::createBodyLayer);
     }
 
     @SubscribeEvent

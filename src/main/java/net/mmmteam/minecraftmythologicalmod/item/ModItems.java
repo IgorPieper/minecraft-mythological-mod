@@ -52,6 +52,10 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntities.MINOTAUR, 0xffffff, 0xff0000,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> KITSUNE_SPAWN_EGG = ITEMS.register("kitsune_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.KITSUNE, 0xffffff, 0xffc0cb,
+                    new Item.Properties()));
+
     public static final RegistryObject<Item> HADES_TRIDENT = ITEMS.register("hades_trident",
             () -> new ObscuringSwordItem(ModItemTier.TRIDENTS, 9, -3f, new Item.Properties()));
 

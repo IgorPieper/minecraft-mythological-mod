@@ -16,9 +16,9 @@ import net.minecraft.world.level.Level;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import org.jetbrains.annotations.Nullable;
 
-public class RacoonEntity extends Animal {
+public class KitsuneEntity extends Animal {
 
-    public RacoonEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
+    public KitsuneEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
@@ -26,7 +26,7 @@ public class RacoonEntity extends Animal {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new BreedGoal(this, 1.150));
-        this.goalSelector.addGoal(2, new TemptGoal(this, 1.20, Ingredient.of(Items.SWEET_BERRIES), false));
+        this.goalSelector.addGoal(2, new TemptGoal(this, 1.20, Ingredient.of(Items.COCOA_BEANS), false));
         this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.10));
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.10));
         this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 3f));
@@ -46,7 +46,7 @@ public class RacoonEntity extends Animal {
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
-        return ModEntities.RACOON.get().create(pLevel);
+        return ModEntities.KITSUNE.get().create(pLevel);
     }
 
     protected void updateWalkAnimation(float pPartialTick) {
@@ -62,6 +62,6 @@ public class RacoonEntity extends Animal {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.is(Items.SWEET_BERRIES);
+        return pStack.is(Items.COCOA_BEANS);
     }
 }

@@ -57,6 +57,9 @@
   "entity.minecraftmythologicalmod.balkanlynx": "Ryś Bałkański",
 
   "item.minecraftmythologicalmod.minotaur_spawn_egg": "Jajko Spawnu Minotaura",
-  "entity.minecraftmythologicalmod.minotaur": "Minotaur"
+  "entity.minecraftmythologicalmod.minotaur": "Minotaur",
+
+  "item.minecraftmythologicalmod.kitsune_spawn_egg": "Jajko Spawnu Kitsune",
+  "entity.minecraftmythologicalmod.kitsune": "Kitsune"
 
 }
