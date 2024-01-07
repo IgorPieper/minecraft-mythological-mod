@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#forge:is_mushroom",
+  "biomes": "#forge:is_mountain",
   "features": "minecraftmythologicalmod:aconite_placed",
   "step": "vegetal_decoration"
 }

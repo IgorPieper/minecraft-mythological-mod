@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:ender_eye"
+          "name": "minecraftmythologicalmod:ambrosia"
         }
       ],
       "rolls": 1.0
