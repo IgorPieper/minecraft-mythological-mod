@@ -69,6 +69,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MINOTAUR_SPAWN_EGG.get());
                         pOutput.accept(ModItems.KITSUNE_SPAWN_EGG.get());
 
+                        pOutput.accept(ModBlocks.CALCITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.CARVED_CALCITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.CALCITE_BRICKS.get());
+
                     })
                     .build());
 

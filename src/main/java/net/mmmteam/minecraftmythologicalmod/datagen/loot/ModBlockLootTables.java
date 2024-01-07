@@ -38,6 +38,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ACONITE.get());
         this.add(ModBlocks.POTTED_ACONITE.get(), createPotFlowerItemTable(ModBlocks.ACONITE.get()));
 
+
+        this.dropSelf(ModBlocks.CALCITE_BRICKS.get());
+        this.dropSelf(ModBlocks.CALCITE_BLOCK.get());
+        this.dropSelf(ModBlocks.CARVED_CALCITE_BLOCK.get());
+
         this.dropSelf(ModBlocks.OLIVE_LOG.get());
         this.dropSelf(ModBlocks.OLIVE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_OLIVE_LOG.get());

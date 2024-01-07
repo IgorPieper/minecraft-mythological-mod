@@ -58,6 +58,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_OLIVE_LOG);
         blockItem(ModBlocks.STRIPPED_OLIVE_WOOD);
 
+        blockItem(ModBlocks.CALCITE_BLOCK);
+        blockItem(ModBlocks.CARVED_CALCITE_BLOCK);
+        blockItem(ModBlocks.CALCITE_BRICKS);
+
         blockWithItem(ModBlocks.OLIVE_PLANKS);
         blockWithItem(ModBlocks.ANCIENT_PORTAL);
 
