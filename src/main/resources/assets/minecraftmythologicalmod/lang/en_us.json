@@ -56,6 +56,8 @@
   "entity.minecraftmythologicalmod.balkanlynx": "Balkan Lynx",
 
   "item.minecraftmythologicalmod.minotaur_spawn_egg": "Minotaur Spawn Egg",
-  "entity.minecraftmythologicalmod.minotaur": "Minotaur"
+  "entity.minecraftmythologicalmod.minotaur": "Minotaur",
 
+  "item.minecraftmythologicalmod.kitsune_spawn_egg": "Kitsune Spawn Egg",
+  "entity.minecraftmythologicalmod.kitsune": "Kitsune"
 }
