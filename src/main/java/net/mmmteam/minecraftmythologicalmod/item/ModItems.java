@@ -71,6 +71,9 @@ public class ModItems {
     public static final RegistryObject<Item> MINOTAUR_AXE = ITEMS.register("minotaur_axe",
             () -> new ImmobilizingSwordItem(ModItemTier.AXE, 7, -3f, new Item.Properties()));
 
+    public static final RegistryObject<Item> SPARTAN_SHIELD = ITEMS.register("spartan_shield",
+            () -> new ShieldItem(new Item.Properties().durability(500)));
+
     public static final RegistryObject<Item> AMBROSIA = ITEMS.register("ambrosia",
             () -> new Item(new Item.Properties().food(ModFoods.AMBROSIA)));
 
