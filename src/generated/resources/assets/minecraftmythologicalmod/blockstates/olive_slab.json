@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraftmythologicalmod:block/olive_slab"
+    },
+    "type=double": {
+      "model": "minecraftmythologicalmod:block/olive_planks"
+    },
+    "type=top": {
+      "model": "minecraftmythologicalmod:block/olive_slab_top"
+    }
+  }
+}
