@@ -17,4 +17,7 @@ public class ModModelLayers {
 
     public static final ModelLayerLocation MINOTAUR_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "minotaur"), "main");
+
+    public static final ModelLayerLocation KITSUNE_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "kitsune"), "main");
 }
