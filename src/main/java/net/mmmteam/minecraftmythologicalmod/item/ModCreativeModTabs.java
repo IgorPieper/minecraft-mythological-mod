@@ -26,6 +26,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OLIVE_PLANKS.get());
                         pOutput.accept(ModBlocks.OLIVE_STAIRS.get());
                         pOutput.accept(ModBlocks.OLIVE_SLAB.get());
+                        pOutput.accept(ModBlocks.OLIVE_BUTTON.get());
+                        pOutput.accept(ModBlocks.OLIVE_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.OLIVE_FENCE.get());
+                        pOutput.accept(ModBlocks.OLIVE_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.OLIVE_DOOR.get());
+                        pOutput.accept(ModBlocks.OLIVE_TRAPDOOR.get());
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
                         pOutput.accept(ModBlocks.STICK_STAIRS.get());
