@@ -59,6 +59,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.OLIVE_WALL, ModBlocks.OLIVE_PLANKS);
         evenSimplerBlockItem(ModBlocks.OLIVE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
+        simpleItem(ModItems.OLIVE_BOAT);
+        simpleItem(ModItems.OLIVE_CHEST_BOAT);
 
 
 

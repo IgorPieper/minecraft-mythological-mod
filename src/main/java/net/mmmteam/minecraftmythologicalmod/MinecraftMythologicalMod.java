@@ -96,6 +96,8 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.BALKANLYNX.get(), BalkanLynxRenderer::new);
                 EntityRenderers.register(ModEntities.MINOTAUR.get(), MinotaurRenderer::new);
                 EntityRenderers.register(ModEntities.KITSUNE.get(), KitsuneRenderer::new);
+                EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+                EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
                 ModItemProperties.addCustomItemProperties();
             });

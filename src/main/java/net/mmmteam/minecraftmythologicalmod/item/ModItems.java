@@ -9,7 +9,9 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
+import net.mmmteam.minecraftmythologicalmod.entity.custom.ModBoatEntity;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ImmobilizingSwordItem;
+import net.mmmteam.minecraftmythologicalmod.item.custom.ModBoatItem;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ObscuringSwordItem;
 import net.mmmteam.minecraftmythologicalmod.item.custom.WeakeningSwordItem;
 
@@ -94,6 +96,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> GIFT_OF_POSEIDON = ITEMS.register("gift_of_poseidon",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OLIVE_BOAT = ITEMS.register("olive_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.OLIVE, new Item.Properties()));
+    public static final RegistryObject<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
