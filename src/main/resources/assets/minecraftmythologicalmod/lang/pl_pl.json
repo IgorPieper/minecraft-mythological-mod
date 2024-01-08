@@ -8,7 +8,13 @@
   "block.minecraftmythologicalmod.olive_planks": "Oliwne Deski",
   "block.minecraftmythologicalmod.olive_stairs": "Oliwne Schody",
   "block.minecraftmythologicalmod.olive_slab": "Oliwna Płyta",
-
+  "block.minecraftmythologicalmod.olive_button": "Oliwny Przycisk",
+  "block.minecraftmythologicalmod.olive_pressure_plate": "Oliwna Płytka Naciskowa",
+  "block.minecraftmythologicalmod.olive_fence": "Oliwny Płotek",
+  "block.minecraftmythologicalmod.olive_fence_gate": "Oliwna Furtka",
+  "block.minecraftmythologicalmod.olive_wall": "Oliwna Ściana",
+  "block.minecraftmythologicalmod.olive_door": "Oliwne Drzwi",
+  "block.minecraftmythologicalmod.olive_trapdoor": "Oliwny Trapdoor",
 
   "block.minecraftmythologicalmod.stick_block": "Góra Patyków",
   "block.minecraftmythologicalmod.stick_stairs": "Patykowe Schody",

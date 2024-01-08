@@ -59,36 +59,33 @@ public class ModBlocks {
             () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.CALCITE)));
 
-    public static final RegistryObject<Block> OLIVE_STAIRS = registerBlock("olive_stairs",
-            () -> new StairBlock(() -> ModBlocks.OLIVE_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
-
     public static final RegistryObject<Block> STICK_SLAB = registerBlock("stick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> OLIVE_SLAB = registerBlock("olive_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CALCITE_SLAB = registerBlock("calcite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE_SLAB).sound(SoundType.CALCITE)));
 
-//    public static final RegistryObject<Block> OLIVE_BUTTON = registerBlock("olive_button",
-//            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.WOOD),
-//                    BlockSetType.IRON, 10, true));
-//    public static final RegistryObject<Block> OLIVE_PRESSURE_PLATE = registerBlock("olive_pressure_plate",
-//            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD),
-//                    BlockSetType.IRON));
 
-//    public static final RegistryObject<Block> OLIVE_FENCE = registerBlock("olive_fence",
-//            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
-//    public static final RegistryObject<Block> OLIVE_FENCE_GATE = registerBlock("olive_fence_gate",
-//            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
-//    public static final RegistryObject<Block> OLIVE_WALL = registerBlock("olive_wall",
-//            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
-//
-//    public static final RegistryObject<Block> OLIVE_DOOR = registerBlock("olive_door",
-//            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.IRON));
-//    public static final RegistryObject<Block> OLIVE_TRAPDOOR = registerBlock("olive_trapdoor",
-//            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.IRON));
-    
+    public static final RegistryObject<Block> OLIVE_SLAB = registerBlock("olive_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OLIVE_STAIRS = registerBlock("olive_stairs",
+            () -> new StairBlock(() -> ModBlocks.OLIVE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OLIVE_BUTTON = registerBlock("olive_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.WOOD),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> OLIVE_PRESSURE_PLATE = registerBlock("olive_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> OLIVE_FENCE = registerBlock("olive_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OLIVE_FENCE_GATE = registerBlock("olive_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+    public static final RegistryObject<Block> OLIVE_WALL = registerBlock("olive_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OLIVE_DOOR = registerBlock("olive_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> OLIVE_TRAPDOOR = registerBlock("olive_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
     
     public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
