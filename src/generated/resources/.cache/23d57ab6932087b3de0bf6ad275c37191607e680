@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-08T00:22:24.5260504	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-08T20:52:05.0763233	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -19,7 +19,9 @@ b3359063cc1f87388a499ba3062eb7a00a77c5cc assets/minecraftmythologicalmod/models/
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/kitsune_spawn_egg.json
 e09972512e7cc74e16632d4ad1bbf60bb364883d assets/minecraftmythologicalmod/models/item/laurel_bush.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/minotaur_spawn_egg.json
+169b34e125505323da4b080ee0fd30f6b0a649d4 assets/minecraftmythologicalmod/models/item/olive_boat.json
 48e84b4f4f04a77f74bf2d97181810e81beb1cad assets/minecraftmythologicalmod/models/item/olive_button.json
+2df4f656022246e686856b24e17c3966c6b5a562 assets/minecraftmythologicalmod/models/item/olive_chest_boat.json
 d080a8ff334f52c59f22ebe6e9b50c28c98e0b40 assets/minecraftmythologicalmod/models/item/olive_door.json
 68cb972a0c815f60f94838fa46100153b5133d0b assets/minecraftmythologicalmod/models/item/olive_fence.json
 d43fb6629ef89d3aa31a8cff9aa209dbaca01b20 assets/minecraftmythologicalmod/models/item/olive_fence_gate.json
@@ -30,5 +32,6 @@ ee668cfb1ce43337abfb5c26d52ca7f5487e8470 assets/minecraftmythologicalmod/models/
 67880131ec113c016978ec1636c0345846076fcb assets/minecraftmythologicalmod/models/item/olive_wall.json
 dba21c8d51593e1950ba687461e0e43b397ebee5 assets/minecraftmythologicalmod/models/item/pyxis.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/racoon_spawn_egg.json
+99addb6803d0cf214c710cf900f3b3f8f3924767 assets/minecraftmythologicalmod/models/item/spider_lily.json
 968867b95ee41bfa6791eae4d6d4b7ac663a16cb assets/minecraftmythologicalmod/models/item/stick_slab.json
 93c31c4196e3dea1233aef185642f37a565ae9ad assets/minecraftmythologicalmod/models/item/stick_stairs.json

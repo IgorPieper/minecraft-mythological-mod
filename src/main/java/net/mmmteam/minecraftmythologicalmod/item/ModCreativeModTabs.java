@@ -32,6 +32,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OLIVE_FENCE_GATE.get());
                         pOutput.accept(ModBlocks.OLIVE_DOOR.get());
                         pOutput.accept(ModBlocks.OLIVE_TRAPDOOR.get());
+                        pOutput.accept(ModItems.OLIVE_BOAT.get());
+                        pOutput.accept(ModItems.OLIVE_CHEST_BOAT.get());
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
                         pOutput.accept(ModBlocks.STICK_STAIRS.get());
@@ -47,6 +49,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());
                         pOutput.accept(ModBlocks.IRIS.get());
                         pOutput.accept(ModBlocks.ACONITE.get());
+                        pOutput.accept(ModBlocks.SPIDER_LILY.get());
 
                         pOutput.accept(ModItems.BAY_LEAF.get());
                         pOutput.accept(ModItems.GRAPES.get());

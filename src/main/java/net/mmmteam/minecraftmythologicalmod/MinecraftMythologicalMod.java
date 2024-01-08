@@ -64,6 +64,7 @@ public class MinecraftMythologicalMod
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.IRIS.getId(), ModBlocks.POTTED_IRIS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ACONITE.getId(), ModBlocks.POTTED_ACONITE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SPIDER_LILY.getId(), ModBlocks.POTTED_SPIDER_LILY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.OLIVE_SAPLING.getId(), ModBlocks.POTTED_OLIVE_SAPLING);
 
             //SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
@@ -96,6 +97,8 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.BALKANLYNX.get(), BalkanLynxRenderer::new);
                 EntityRenderers.register(ModEntities.MINOTAUR.get(), MinotaurRenderer::new);
                 EntityRenderers.register(ModEntities.KITSUNE.get(), KitsuneRenderer::new);
+                EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+                EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
                 ModItemProperties.addCustomItemProperties();
             });

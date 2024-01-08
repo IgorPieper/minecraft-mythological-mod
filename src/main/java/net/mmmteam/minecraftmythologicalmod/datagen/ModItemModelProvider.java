@@ -28,6 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GRAPES);
         simpleBlockItemBlockTexture(ModBlocks.IRIS);
         simpleBlockItemBlockTexture(ModBlocks.ACONITE);
+        simpleBlockItemBlockTexture(ModBlocks.SPIDER_LILY);
 
         saplingItem(ModBlocks.OLIVE_SAPLING);
 
@@ -59,6 +60,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.OLIVE_WALL, ModBlocks.OLIVE_PLANKS);
         evenSimplerBlockItem(ModBlocks.OLIVE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
+        simpleItem(ModItems.OLIVE_BOAT);
+        simpleItem(ModItems.OLIVE_CHEST_BOAT);
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);

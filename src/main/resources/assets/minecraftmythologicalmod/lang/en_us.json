@@ -15,6 +15,9 @@
   "block.minecraftmythologicalmod.olive_wall": "Olive Wall",
   "block.minecraftmythologicalmod.olive_door": "Olive Door",
   "block.minecraftmythologicalmod.olive_trapdoor": "Olive Trapdoor",
+  "item.minecraftmythologicalmod.olive_boat": "Olive Boat",
+  "item.minecraftmythologicalmod.olive_chest_boat": "Olive Chest Boat",
+  "entity.minecraftmythologicalmod.mod_chest_boat": "Boat with Chest",
 
 
   "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
@@ -31,6 +34,7 @@
   "block.minecraftmythologicalmod.laurel_bush": "Laurel Bush",
   "block.minecraftmythologicalmod.iris": "Iris",
   "block.minecraftmythologicalmod.aconite": "Aconite",
+  "block.minecraftmythologicalmod.spider_lily": "Spider Lily",
 
   "item.minecraftmythologicalmod.bay_leaf": "Bay Leaf",
   "item.minecraftmythologicalmod.grapes": "Grapes",

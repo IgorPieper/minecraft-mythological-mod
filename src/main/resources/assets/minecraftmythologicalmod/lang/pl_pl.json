@@ -15,6 +15,9 @@
   "block.minecraftmythologicalmod.olive_wall": "Oliwna Ściana",
   "block.minecraftmythologicalmod.olive_door": "Oliwne Drzwi",
   "block.minecraftmythologicalmod.olive_trapdoor": "Oliwny Trapdoor",
+  "item.minecraftmythologicalmod.olive_boat": "Oliwba Łódka",
+  "block.minecraftmythologicalmod.olive_chest_boat": "Olive Łódka ze Skrzynką",
+  "entity.minecraftmythologicalmod.mod_chest_boat": "Łódka ze Skrzynką",
 
   "block.minecraftmythologicalmod.stick_block": "Góra Patyków",
   "block.minecraftmythologicalmod.stick_stairs": "Patykowe Schody",
@@ -30,6 +33,7 @@
   "block.minecraftmythologicalmod.laurel_bush": "Krzew Laurowy",
   "block.minecraftmythologicalmod.iris": "Irys",
   "block.minecraftmythologicalmod.aconite": "Tojad",
+  "block.minecraftmythologicalmod.spider_lily": "Lilia Pajęcza",
 
   "item.minecraftmythologicalmod.bay_leaf": "Liść Laurowy",
   "item.minecraftmythologicalmod.grapes": "Winogrona",

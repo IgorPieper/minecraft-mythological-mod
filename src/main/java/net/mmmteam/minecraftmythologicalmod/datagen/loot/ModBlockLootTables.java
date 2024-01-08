@@ -37,6 +37,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_IRIS.get(), createPotFlowerItemTable(ModBlocks.IRIS.get()));
         this.dropSelf(ModBlocks.ACONITE.get());
         this.add(ModBlocks.POTTED_ACONITE.get(), createPotFlowerItemTable(ModBlocks.ACONITE.get()));
+        this.dropSelf(ModBlocks.SPIDER_LILY.get());
+        this.add(ModBlocks.POTTED_SPIDER_LILY.get(), createPotFlowerItemTable(ModBlocks.SPIDER_LILY.get()));
 
         this.dropSelf(ModBlocks.OLIVE_LOG.get());
         this.dropSelf(ModBlocks.OLIVE_WOOD.get());
