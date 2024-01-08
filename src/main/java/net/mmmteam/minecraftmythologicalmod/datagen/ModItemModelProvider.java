@@ -53,16 +53,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.OLIVE_SLAB);
         evenSimplerBlockItem(ModBlocks.CALCITE_SLAB);
 
-//        simpleBlockItem(ModBlocks.OLIVE_DOOR);
-//
-//        fenceItem(ModBlocks.OLIVE_FENCE, ModBlocks.OLIVE_PLANKS);
-//        buttonItem(ModBlocks.OLIVE_BUTTON, ModBlocks.OLIVE_PLANKS);
-//        wallItem(ModBlocks.OLIVE_WALL, ModBlocks.OLIVE_PLANKS);
-//
-//        evenSimplerBlockItem(ModBlocks.OLIVE_PRESSURE_PLATE);
-//        evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
-//
-//        trapdoorItem(ModBlocks.OLIVE_TRAPDOOR);
+        simpleBlockItem(ModBlocks.OLIVE_DOOR);
+        fenceItem(ModBlocks.OLIVE_FENCE, ModBlocks.OLIVE_PLANKS);
+        buttonItem(ModBlocks.OLIVE_BUTTON, ModBlocks.OLIVE_PLANKS);
+        wallItem(ModBlocks.OLIVE_WALL, ModBlocks.OLIVE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.OLIVE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
+
+
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);

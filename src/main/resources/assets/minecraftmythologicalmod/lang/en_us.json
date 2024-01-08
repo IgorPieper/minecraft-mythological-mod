@@ -8,6 +8,13 @@
   "block.minecraftmythologicalmod.olive_planks": "Olive Planks",
   "block.minecraftmythologicalmod.olive_stairs": "Olive Stairs",
   "block.minecraftmythologicalmod.olive_slab": "Olive Slab",
+  "block.minecraftmythologicalmod.olive_button": "Olive Button",
+  "block.minecraftmythologicalmod.olive_pressure_plate": "Olive Pressure Plate",
+  "block.minecraftmythologicalmod.olive_fence": "Olive Fence",
+  "block.minecraftmythologicalmod.olive_fence_gate": "Olive Fence Gate",
+  "block.minecraftmythologicalmod.olive_wall": "Olive Wall",
+  "block.minecraftmythologicalmod.olive_door": "Olive Door",
+  "block.minecraftmythologicalmod.olive_trapdoor": "Olive Trapdoor",
 
 
   "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
@@ -48,6 +55,8 @@
   "item.minecraftmythologicalmod.minotaur_axe": "Minotaurs Axe",
   "item.minecraftmythologicalmod.spear_of_athena": "Spear of Athena",
   "item.minecraftmythologicalmod.sword_of_peleus": "Peleus Sword",
+  "item.minecraftmythologicalmod.spartan_shield": "Spartan Shield",
+
 
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Cyclops Spawn Egg",
   "entity.minecraftmythologicalmod.cyclops": "Cyclops",

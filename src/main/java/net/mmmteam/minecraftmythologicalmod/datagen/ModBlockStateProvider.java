@@ -71,17 +71,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.STICK_SLAB.get()), blockTexture(ModBlocks.STICK_BLOCK.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.OLIVE_SLAB.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
         slabBlock(((SlabBlock) ModBlocks.CALCITE_SLAB.get()), blockTexture(Blocks.CALCITE), blockTexture(Blocks.CALCITE));
-//
-//        buttonBlock(((ButtonBlock) ModBlocks.OLIVE_BUTTON.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-//        pressurePlateBlock(((PressurePlateBlock) ModBlocks.OLIVE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-//
-//        fenceBlock(((FenceBlock) ModBlocks.OLIVE_FENCE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-//        fenceGateBlock(((FenceGateBlock) ModBlocks.OLIVE_FENCE_GATE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-//        wallBlock(((WallBlock) ModBlocks.OLIVE_WALL.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-//
-//        doorBlockWithRenderType(((DoorBlock) ModBlocks.OLIVE_DOOR.get()), modLoc("block/olive_door_bottom"), modLoc("block/olive_door_top"), "cutout");
-//        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.OLIVE_TRAPDOOR.get()), modLoc("block/olive_trapdoor"), true, "cutout");
 
+        buttonBlock(((ButtonBlock) ModBlocks.OLIVE_BUTTON.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.OLIVE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+
+        fenceBlock(((FenceBlock) ModBlocks.OLIVE_FENCE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.OLIVE_FENCE_GATE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+        wallBlock(((WallBlock) ModBlocks.OLIVE_WALL.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.OLIVE_DOOR.get()), modLoc("block/olive_door_bottom"), modLoc("block/olive_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.OLIVE_TRAPDOOR.get(), modLoc("block/olive_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.OLIVE_TRAPDOOR, "_bottom");
 
     }
 
