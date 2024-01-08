@@ -28,6 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GRAPES);
         simpleBlockItemBlockTexture(ModBlocks.IRIS);
         simpleBlockItemBlockTexture(ModBlocks.ACONITE);
+        simpleBlockItemBlockTexture(ModBlocks.SPIDER_LILY);
 
         saplingItem(ModBlocks.OLIVE_SAPLING);
 
