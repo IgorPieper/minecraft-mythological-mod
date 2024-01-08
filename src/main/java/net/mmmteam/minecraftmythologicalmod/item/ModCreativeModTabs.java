@@ -49,6 +49,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());
                         pOutput.accept(ModBlocks.IRIS.get());
                         pOutput.accept(ModBlocks.ACONITE.get());
+                        pOutput.accept(ModBlocks.SPIDER_LILY.get());
 
                         pOutput.accept(ModItems.BAY_LEAF.get());
                         pOutput.accept(ModItems.GRAPES.get());

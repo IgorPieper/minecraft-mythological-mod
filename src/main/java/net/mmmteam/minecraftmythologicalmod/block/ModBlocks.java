@@ -45,13 +45,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_IRIS = BLOCKS.register("potted_iris",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.IRIS,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
-
     public static final RegistryObject<Block> ACONITE = registerBlock("aconite",
             () -> new FlowerBlock(MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.TORCHFLOWER).noOcclusion().noCollission()));
     public static final RegistryObject<Block> POTTED_ACONITE = BLOCKS.register("potted_aconite",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.ACONITE,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_TORCHFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> SPIDER_LILY = registerBlock("spider_lily",
+            () -> new FlowerBlock(MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.BLUE_ORCHID).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_SPIDER_LILY = BLOCKS.register("potted_spider_lily",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.SPIDER_LILY,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_BLUE_ORCHID).noOcclusion()));
+
     public static final RegistryObject<Block> STICK_STAIRS = registerBlock("stick_stairs",
             () -> new StairBlock(() -> ModBlocks.STICK_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));

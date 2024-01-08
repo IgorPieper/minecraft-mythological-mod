@@ -42,6 +42,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.POTTED_ACONITE.get(), models().singleTexture("potted_aconite", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.ACONITE.get())).renderType("cutout"));
 
+        simpleBlockWithItem(ModBlocks.SPIDER_LILY.get(), models().cross(blockTexture(ModBlocks.SPIDER_LILY.get()).getPath(),
+                blockTexture(ModBlocks.SPIDER_LILY.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_SPIDER_LILY.get(), models().singleTexture("potted_spider_lily", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.SPIDER_LILY.get())).renderType("cutout"));
+
         simpleBlockWithItem(ModBlocks.POTTED_OLIVE_SAPLING.get(), models().singleTexture("potted_olive_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.OLIVE_SAPLING.get())).renderType("cutout"));
 
