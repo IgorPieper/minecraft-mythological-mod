@@ -60,8 +60,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.OLIVE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
 
-
-
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);
         simpleItem(ModItems.GIFT_OF_HADES);
