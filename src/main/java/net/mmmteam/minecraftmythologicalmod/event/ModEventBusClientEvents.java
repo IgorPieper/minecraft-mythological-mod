@@ -1,5 +1,7 @@
 package net.mmmteam.minecraftmythologicalmod.event;
 
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.FoliageColor;
@@ -23,6 +25,9 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.BALKANLYNX_LAYER, BalkanLynxModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.MINOTAUR_LAYER, MinotaurModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.KITSUNE_LAYER, KitsuneModel::createBodyLayer);
+
+        event.registerLayerDefinition(ModModelLayers.OLIVE_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.OLIVE_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
     }
 
     @SubscribeEvent

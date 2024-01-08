@@ -20,4 +20,9 @@ public class ModModelLayers {
 
     public static final ModelLayerLocation KITSUNE_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "kitsune"), "main");
+
+    public static final ModelLayerLocation OLIVE_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "boat/olive"), "main");
+    public static final ModelLayerLocation OLIVE_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "chest_boat/olive"), "main");
 }

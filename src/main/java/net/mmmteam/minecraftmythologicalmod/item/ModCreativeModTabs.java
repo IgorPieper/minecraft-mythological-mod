@@ -32,6 +32,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OLIVE_FENCE_GATE.get());
                         pOutput.accept(ModBlocks.OLIVE_DOOR.get());
                         pOutput.accept(ModBlocks.OLIVE_TRAPDOOR.get());
+                        pOutput.accept(ModItems.OLIVE_BOAT.get());
+                        pOutput.accept(ModItems.OLIVE_CHEST_BOAT.get());
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
                         pOutput.accept(ModBlocks.STICK_STAIRS.get());
