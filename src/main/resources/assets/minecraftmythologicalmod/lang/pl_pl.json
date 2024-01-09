@@ -74,6 +74,7 @@
   "entity.minecraftmythologicalmod.minotaur": "Minotaur",
 
   "item.minecraftmythologicalmod.kitsune_spawn_egg": "Jajko Spawnu Kitsune",
-  "entity.minecraftmythologicalmod.kitsune": "Kitsune"
+  "entity.minecraftmythologicalmod.kitsune": "Kitsune",
 
+  "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Boży Kowal"
 }

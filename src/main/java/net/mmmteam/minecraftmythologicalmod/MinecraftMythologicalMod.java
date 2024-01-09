@@ -24,6 +24,7 @@ import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.ModLootModifiers;
 import net.mmmteam.minecraftmythologicalmod.item.ModItemProperties;
+import net.mmmteam.minecraftmythologicalmod.villager.ModVillager;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.mmmteam.minecraftmythologicalmod.util.ModWoodTypes;
 import org.slf4j.Logger;
@@ -44,6 +45,8 @@ public class MinecraftMythologicalMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+
+        ModVillager.ModVillagers.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
 
