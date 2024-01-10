@@ -63,8 +63,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.OLIVE_BOAT);
         simpleItem(ModItems.OLIVE_CHEST_BOAT);
 
-
-
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);
         simpleItem(ModItems.GIFT_OF_HADES);
