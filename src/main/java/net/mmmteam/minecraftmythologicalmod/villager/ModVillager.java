@@ -21,7 +21,7 @@ public class ModVillager {
                 DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, MinecraftMythologicalMod.MOD_ID);
 
         public static final RegistryObject<PoiType> GOD_POI = POI_TYPES.register("god_poi",
-                () -> new PoiType(ImmutableSet.copyOf(ModBlocks.STICK_BLOCK.get().getStateDefinition().getPossibleStates()),
+                () -> new PoiType(ImmutableSet.copyOf(Blocks.CAMPFIRE.getStateDefinition().getPossibleStates()),
                         1, 1));
 
         public static final RegistryObject<VillagerProfession> GODS_SMITH =
