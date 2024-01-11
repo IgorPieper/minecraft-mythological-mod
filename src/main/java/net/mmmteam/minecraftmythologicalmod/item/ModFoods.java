@@ -20,6 +20,7 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.POISON, 100), 1f)
             .build();
 
-
-
+    public static final FoodProperties ONIGIRI = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(0.6f)
+            .build();
 }

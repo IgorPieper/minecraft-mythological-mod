@@ -83,6 +83,9 @@ public class ModItems {
     public static final RegistryObject<Item> ACONITE_ROOT = ITEMS.register("aconite_root",
             () -> new Item(new Item.Properties().food(ModFoods.ACONITE_ROOT)));
 
+    public static final RegistryObject<Item> ONIGIRI = ITEMS.register("onigiri",
+            () -> new Item(new Item.Properties().food(ModFoods.ONIGIRI)));
+
     public static final RegistryObject<SwordItem> SWORD_OF_PELEUS = ITEMS.register("sword_of_peleus",
             () -> new SwordItem(ModItemTier.PELEUS, 1, -3f, new Item.Properties()));
 
