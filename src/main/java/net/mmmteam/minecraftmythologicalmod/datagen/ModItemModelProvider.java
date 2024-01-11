@@ -69,6 +69,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GIFT_OF_HEPHAESTUS);
         simpleItem(ModItems.GIFT_OF_POSEIDON);
 
+        simpleItem(ModItems.HADES_WATER_BUCKET);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

@@ -76,5 +76,7 @@
   "item.minecraftmythologicalmod.kitsune_spawn_egg": "Jajko Spawnu Kitsune",
   "entity.minecraftmythologicalmod.kitsune": "Kitsune",
 
-  "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Boży Kowal"
+  "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Boży Kowal",
+
+  "item.minecraftmythologicalmod.hades_water_bucket": "Wiadro Wody Podziemnej"
 }

@@ -1,6 +1,8 @@
 package net.mmmteam.minecraftmythologicalmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
@@ -20,6 +22,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.client.*;
+import net.mmmteam.minecraftmythologicalmod.fluid.ModFluidTypes;
+import net.mmmteam.minecraftmythologicalmod.fluid.ModFluids;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.ModLootModifiers;
@@ -47,6 +51,9 @@ public class MinecraftMythologicalMod
         ModEntities.register(modEventBus);
 
         ModVillager.ModVillagers.register(modEventBus);
+
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
 
@@ -104,6 +111,9 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
                 ModItemProperties.addCustomItemProperties();
+
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_HADES_WATER.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_HADES_WATER.get(), RenderType.translucent());
             });
         }
     }
