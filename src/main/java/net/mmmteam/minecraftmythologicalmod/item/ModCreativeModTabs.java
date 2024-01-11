@@ -57,6 +57,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.AMBROSIA.get());
                         pOutput.accept(ModItems.ACONITE_ROOT.get());
                         pOutput.accept(ModItems.ONIGIRI.get());
+                        pOutput.accept(ModItems.DANGO.get());
 
                         pOutput.accept(ModItems.GIFT_OF_APOLLO.get());
                         pOutput.accept(ModItems.GIFT_OF_ATHENA.get());
