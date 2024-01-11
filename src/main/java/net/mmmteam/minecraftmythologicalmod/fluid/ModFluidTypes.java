@@ -23,8 +23,6 @@ public class ModFluidTypes {
                     FluidType.Properties.create().lightLevel(2).viscosity(1).density(1)));
                     //FluidType.Properties.create().lightLevel(2).viscosity(5).density(15).sound(coś))); możemy dodać dźwięk
 
-
-
     private static RegistryObject<FluidType> registerFluidType(String name, FluidType fluidType) {
         return FLUID_TYPES.register(name, () -> fluidType);
     }
