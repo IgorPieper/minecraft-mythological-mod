@@ -18,6 +18,7 @@ import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.custom.AncientPortalBlock;
 import net.mmmteam.minecraftmythologicalmod.block.custom.LaurelBushCrop;
 import net.mmmteam.minecraftmythologicalmod.block.custom.ModFlammableRotatedPillarBlock;
+import net.mmmteam.minecraftmythologicalmod.fluid.ModFluids;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.OliveTreeGrower;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -101,6 +102,9 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_OLIVE_WOOD = registerBlock("stripped_olive_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<LiquidBlock> HADES_WATER_BLOCK = BLOCKS.register("hades_water_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_HADES_WATER, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
     public static final RegistryObject<Block> OLIVE_PLANKS = registerBlock("olive_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {

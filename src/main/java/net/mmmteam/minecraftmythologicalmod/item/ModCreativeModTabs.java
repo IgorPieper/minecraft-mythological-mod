@@ -81,6 +81,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MINOTAUR_SPAWN_EGG.get());
                         pOutput.accept(ModItems.KITSUNE_SPAWN_EGG.get());
 
+                        pOutput.accept(ModItems.HADES_WATER_BUCKET.get());
                     })
                     .build());
 

@@ -10,6 +10,7 @@ import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.ModBoatEntity;
+import net.mmmteam.minecraftmythologicalmod.fluid.ModFluids;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ImmobilizingSwordItem;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ModBoatItem;
 import net.mmmteam.minecraftmythologicalmod.item.custom.ObscuringSwordItem;
@@ -103,6 +104,9 @@ public class ModItems {
             () -> new ModBoatItem(false, ModBoatEntity.Type.OLIVE, new Item.Properties()));
     public static final RegistryObject<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE, new Item.Properties()));
+
+    public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
