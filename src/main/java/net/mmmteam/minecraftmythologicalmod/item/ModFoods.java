@@ -23,4 +23,8 @@ public class ModFoods {
     public static final FoodProperties ONIGIRI = new FoodProperties.Builder().nutrition(4)
             .saturationMod(0.6f)
             .build();
+
+    public static final FoodProperties DANGO = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(0.6f)
+            .build();
 }
