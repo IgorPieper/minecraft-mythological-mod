@@ -47,6 +47,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ACONITE_ROOT);
         simpleItem(ModItems.ONIGIRI);
         simpleItem(ModItems.DANGO);
+        simpleItem(ModItems.MOCHI);
 
         evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
         evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);

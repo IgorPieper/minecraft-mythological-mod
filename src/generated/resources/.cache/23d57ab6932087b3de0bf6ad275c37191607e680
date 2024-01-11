@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-11T21:44:28.2575313	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-11T22:09:48.5120331	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -21,6 +21,7 @@ b3359063cc1f87388a499ba3062eb7a00a77c5cc assets/minecraftmythologicalmod/models/
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/kitsune_spawn_egg.json
 e09972512e7cc74e16632d4ad1bbf60bb364883d assets/minecraftmythologicalmod/models/item/laurel_bush.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/minotaur_spawn_egg.json
+4867d00db44aa0462187b79811e874358c4ecc4f assets/minecraftmythologicalmod/models/item/mochi.json
 169b34e125505323da4b080ee0fd30f6b0a649d4 assets/minecraftmythologicalmod/models/item/olive_boat.json
 48e84b4f4f04a77f74bf2d97181810e81beb1cad assets/minecraftmythologicalmod/models/item/olive_button.json
 2df4f656022246e686856b24e17c3966c6b5a562 assets/minecraftmythologicalmod/models/item/olive_chest_boat.json
