@@ -139,7 +139,6 @@ public class ModEvents {
                     new ItemStack(ModItems.SWORD_OF_PELEUS.get()),
                     new ItemStack(Items.EMERALD, 15 ), 1, 2, 0.02f
             ));
-
         }
     }
 }
