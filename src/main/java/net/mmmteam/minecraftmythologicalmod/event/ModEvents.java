@@ -136,8 +136,8 @@ public class ModEvents {
             ));
 
             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 60),
-                    new ItemStack(ModItems.SWORD_OF_PELEUS.get()), 1, 2, 0.02f
+                    new ItemStack(ModItems.SWORD_OF_PELEUS.get()),
+                    new ItemStack(Items.EMERALD, 15 ), 1, 2, 0.02f
             ));
 
         }
