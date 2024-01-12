@@ -31,7 +31,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.CALCITE_STAIRS.get(),
-                        ModBlocks.CALCITE_SLAB.get());
+                        ModBlocks.CALCITE_SLAB.get(),
+                        ModBlocks.CALCITE_BRICKS.get(),
+                        ModBlocks.POLISHED_CALCITE.get(),
+                        ModBlocks.CHISELED_CALCITE.get());
 
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.OLIVE_FENCE.get());

@@ -1,6 +1,9 @@
 {
   "values": [
     "minecraftmythologicalmod:calcite_stairs",
-    "minecraftmythologicalmod:calcite_slab"
+    "minecraftmythologicalmod:calcite_slab",
+    "minecraftmythologicalmod:calcite_bricks",
+    "minecraftmythologicalmod:polished_calcite",
+    "minecraftmythologicalmod:chiseled_calcite"
   ]
 }

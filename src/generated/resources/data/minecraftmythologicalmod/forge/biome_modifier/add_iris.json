@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraftmythologicalmod:is_cherry",
+  "biomes": "#forge:is_mountain",
   "features": "minecraftmythologicalmod:iris_placed",
   "step": "vegetal_decoration"
 }

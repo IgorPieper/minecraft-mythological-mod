@@ -106,6 +106,15 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> HADES_WATER_BLOCK = BLOCKS.register("hades_water_block",
             () -> new LiquidBlock(ModFluids.SOURCE_HADES_WATER, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
+    public static final RegistryObject<Block> CALCITE_BRICKS = registerBlock("calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
+
+    public static final RegistryObject<Block> CHISELED_CALCITE = registerBlock("chiseled_calcite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
+
+    public static final RegistryObject<Block> POLISHED_CALCITE = registerBlock("polished_calcite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
+
     public static final RegistryObject<Block> OLIVE_PLANKS = registerBlock("olive_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
                 @Override
