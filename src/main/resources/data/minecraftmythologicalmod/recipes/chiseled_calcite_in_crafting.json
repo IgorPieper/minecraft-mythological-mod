@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraftmythologicalmod:calcite_slab"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:chiseled_calcite",
+    "count": 1
+  }
+}
