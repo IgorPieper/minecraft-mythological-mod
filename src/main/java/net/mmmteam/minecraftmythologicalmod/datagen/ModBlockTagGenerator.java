@@ -43,7 +43,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.OLIVE_WALL.get());
 
-        
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.STICK_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.STICK_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.STICK_WALL.get());
+
     }
 
 

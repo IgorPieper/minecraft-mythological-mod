@@ -50,14 +50,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DANGO);
         simpleItem(ModItems.MOCHI);
 
-        evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
-        evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
-        evenSimplerBlockItem(ModBlocks.OLIVE_STAIRS);
 
-        evenSimplerBlockItem(ModBlocks.STICK_SLAB);
-        evenSimplerBlockItem(ModBlocks.OLIVE_SLAB);
+        evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.CALCITE_SLAB);
 
+        evenSimplerBlockItem(ModBlocks.OLIVE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.OLIVE_SLAB);
         simpleBlockItem(ModBlocks.OLIVE_DOOR);
         fenceItem(ModBlocks.OLIVE_FENCE, ModBlocks.OLIVE_PLANKS);
         buttonItem(ModBlocks.OLIVE_BUTTON, ModBlocks.OLIVE_PLANKS);
@@ -66,6 +64,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
         simpleItem(ModItems.OLIVE_BOAT);
         simpleItem(ModItems.OLIVE_CHEST_BOAT);
+
+
+        evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
+        evenSimplerBlockItem(ModBlocks.STICK_SLAB);
+        simpleBlockItem(ModBlocks.STICK_DOOR);
+        fenceItem(ModBlocks.STICK_FENCE, ModBlocks.STICK_BLOCK);
+        buttonItem(ModBlocks.STICK_BUTTON, ModBlocks.STICK_BLOCK);
+        wallItem(ModBlocks.STICK_WALL, ModBlocks.STICK_BLOCK);
+        evenSimplerBlockItem(ModBlocks.STICK_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.STICK_FENCE_GATE);
+
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);

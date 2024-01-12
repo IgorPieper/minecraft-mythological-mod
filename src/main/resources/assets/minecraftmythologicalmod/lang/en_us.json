@@ -22,6 +22,14 @@
   "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
   "block.minecraftmythologicalmod.stick_stairs": "Stick Stairs",
   "block.minecraftmythologicalmod.stick_slab": "Stick Slab",
+  "block.minecraftmythologicalmod.stick_button": "Stick Button",
+  "block.minecraftmythologicalmod.stick_pressure_plate": "Stick Pressure Plate",
+  "block.minecraftmythologicalmod.stick_fence": "Stick Fence",
+  "block.minecraftmythologicalmod.stick_fence_gate": "Stick Fence Gate",
+  "block.minecraftmythologicalmod.stick_wall": "Stick Wall",
+  "block.minecraftmythologicalmod.stick_door": "Stick Door",
+  "block.minecraftmythologicalmod.stick_trapdoor": "Stick Trapdoor",
+
 
   "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal",
 

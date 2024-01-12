@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraftmythologicalmod:block/stick_door_bottom",
+    "top": "minecraftmythologicalmod:block/stick_door_top"
+  }
+}

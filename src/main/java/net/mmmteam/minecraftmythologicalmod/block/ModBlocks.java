@@ -30,9 +30,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MinecraftMythologicalMod.MOD_ID);
 
-    public static final RegistryObject<Block> STICK_BLOCK = registerBlock("stick_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
-
     public static final RegistryObject<Block> LAUREL_BUSH_CROP = BLOCKS.register("laurel_bush_crop",
             () -> new LaurelBushCrop(BlockBehaviour.Properties.copy(Blocks.CARROTS).noCollission().noOcclusion()));
 
@@ -59,15 +56,10 @@ public class ModBlocks {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.SPIDER_LILY,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BLUE_ORCHID).noOcclusion()));
 
-    public static final RegistryObject<Block> STICK_STAIRS = registerBlock("stick_stairs",
-            () -> new StairBlock(() -> ModBlocks.STICK_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+
     public static final RegistryObject<Block> CALCITE_STAIRS = registerBlock("calcite_stairs",
             () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.CALCITE)));
-
-    public static final RegistryObject<Block> STICK_SLAB = registerBlock("stick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CALCITE_SLAB = registerBlock("calcite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE_SLAB).sound(SoundType.CALCITE)));
 
@@ -93,7 +85,6 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Block> OLIVE_TRAPDOOR = registerBlock("olive_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
-    
     public static final RegistryObject<Block> OLIVE_LOG = registerBlock("olive_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> OLIVE_WOOD = registerBlock("olive_wood",
@@ -102,6 +93,31 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_OLIVE_WOOD = registerBlock("stripped_olive_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> STICK_STAIRS = registerBlock("stick_stairs",
+            () -> new StairBlock(() -> ModBlocks.STICK_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> STICK_SLAB = registerBlock("stick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> STICK_BUTTON = registerBlock("stick_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.WOOD),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> STICK_PRESSURE_PLATE = registerBlock("stick_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> STICK_FENCE = registerBlock("stick_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> STICK_FENCE_GATE = registerBlock("stick_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+    public static final RegistryObject<Block> STICK_WALL = registerBlock("stick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> STICK_DOOR = registerBlock("stick_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> STICK_TRAPDOOR = registerBlock("stick_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> STICK_BLOCK = registerBlock("stick_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
 
     public static final RegistryObject<LiquidBlock> HADES_WATER_BLOCK = BLOCKS.register("hades_water_block",
             () -> new LiquidBlock(ModFluids.SOURCE_HADES_WATER, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
