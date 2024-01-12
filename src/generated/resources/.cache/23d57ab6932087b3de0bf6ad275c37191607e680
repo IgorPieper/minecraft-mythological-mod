@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-11T22:09:48.5120331	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-12T19:55:13.2353136	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -34,6 +34,7 @@ d43fb6629ef89d3aa31a8cff9aa209dbaca01b20 assets/minecraftmythologicalmod/models/
 ee668cfb1ce43337abfb5c26d52ca7f5487e8470 assets/minecraftmythologicalmod/models/item/olive_stairs.json
 67880131ec113c016978ec1636c0345846076fcb assets/minecraftmythologicalmod/models/item/olive_wall.json
 977c13bdbd9b175e0b0fa24d86915033e2f8330c assets/minecraftmythologicalmod/models/item/onigiri.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/oni_spawn_egg.json
 dba21c8d51593e1950ba687461e0e43b397ebee5 assets/minecraftmythologicalmod/models/item/pyxis.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/racoon_spawn_egg.json
 99addb6803d0cf214c710cf900f3b3f8f3924767 assets/minecraftmythologicalmod/models/item/spider_lily.json
