@@ -25,7 +25,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels(){
-        blockWithItem(ModBlocks.STICK_BLOCK);
 
         makeCrop((LaurelBushCrop) ModBlocks.LAUREL_BUSH_CROP.get(), "laurel_bush_stage", "laurel_bush_stage");
 
@@ -60,33 +59,46 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockItem(ModBlocks.OLIVE_LOG);
         blockItem(ModBlocks.OLIVE_WOOD);
-        blockItem(ModBlocks.STRIPPED_OLIVE_LOG);
-        blockItem(ModBlocks.STRIPPED_OLIVE_WOOD);
-
-        blockWithItem(ModBlocks.OLIVE_PLANKS);
-        blockWithItem(ModBlocks.ANCIENT_PORTAL);
-
         leavesBlock(ModBlocks.OLIVE_LEAVES);
         saplingBlock(ModBlocks.OLIVE_SAPLING);
-
-        stairsBlock(((StairBlock) ModBlocks.STICK_STAIRS.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
-        stairsBlock(((StairBlock) ModBlocks.CALCITE_STAIRS.get()), blockTexture(Blocks.CALCITE));
-        stairsBlock(((StairBlock) ModBlocks.OLIVE_STAIRS.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-
-        slabBlock(((SlabBlock) ModBlocks.STICK_SLAB.get()), blockTexture(ModBlocks.STICK_BLOCK.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        blockItem(ModBlocks.STRIPPED_OLIVE_LOG);
+        blockItem(ModBlocks.STRIPPED_OLIVE_WOOD);
+        blockWithItem(ModBlocks.OLIVE_PLANKS);
         slabBlock(((SlabBlock) ModBlocks.OLIVE_SLAB.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-        slabBlock(((SlabBlock) ModBlocks.CALCITE_SLAB.get()), blockTexture(Blocks.CALCITE), blockTexture(Blocks.CALCITE));
-
+        stairsBlock(((StairBlock) ModBlocks.OLIVE_STAIRS.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
         buttonBlock(((ButtonBlock) ModBlocks.OLIVE_BUTTON.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.OLIVE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-
         fenceBlock(((FenceBlock) ModBlocks.OLIVE_FENCE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.OLIVE_FENCE_GATE.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
         wallBlock(((WallBlock) ModBlocks.OLIVE_WALL.get()), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-
         doorBlockWithRenderType(((DoorBlock) ModBlocks.OLIVE_DOOR.get()), modLoc("block/olive_door_bottom"), modLoc("block/olive_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.OLIVE_TRAPDOOR.get(), modLoc("block/olive_trapdoor"), true, "cutout");
         blockItem(ModBlocks.OLIVE_TRAPDOOR, "_bottom");
+
+
+        blockWithItem(ModBlocks.STICK_BLOCK);
+        slabBlock(((SlabBlock) ModBlocks.STICK_SLAB.get()), blockTexture(ModBlocks.STICK_BLOCK.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        stairsBlock(((StairBlock) ModBlocks.STICK_STAIRS.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.STICK_BUTTON.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.STICK_PRESSURE_PLATE.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        fenceBlock(((FenceBlock) ModBlocks.STICK_FENCE.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.STICK_FENCE_GATE.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.STICK_WALL.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.STICK_DOOR.get()), modLoc("block/stick_door_bottom"), modLoc("block/stick_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.STICK_TRAPDOOR.get(), modLoc("block/stick_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.STICK_TRAPDOOR, "_bottom");
+
+
+
+        blockWithItem(ModBlocks.ANCIENT_PORTAL);
+
+
+
+        stairsBlock(((StairBlock) ModBlocks.CALCITE_STAIRS.get()), blockTexture(Blocks.CALCITE));
+        slabBlock(((SlabBlock) ModBlocks.CALCITE_SLAB.get()), blockTexture(Blocks.CALCITE), blockTexture(Blocks.CALCITE));
+
+
+
 
         blockWithItem(ModBlocks.CALCITE_BRICKS);
         blockWithItem(ModBlocks.POLISHED_CALCITE);
