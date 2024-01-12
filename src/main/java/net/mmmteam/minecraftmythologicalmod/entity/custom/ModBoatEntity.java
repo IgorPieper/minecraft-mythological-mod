@@ -38,6 +38,7 @@ public class ModBoatEntity extends Boat {
     public Item getDropItem() {
         return switch (getModVariant()) {
             case OLIVE -> ModItems.OLIVE_BOAT.get();
+            case STICK -> ModItems.STICK_BOAT.get();
         };
     }
 
@@ -65,7 +66,8 @@ public class ModBoatEntity extends Boat {
     }
 
     public static enum Type implements StringRepresentable {
-        OLIVE(ModBlocks.OLIVE_PLANKS.get(), "olive");
+        OLIVE(ModBlocks.OLIVE_PLANKS.get(), "olive"),
+        STICK(ModBlocks.STICK_BLOCK.get(), "stick");
 
         private final String name;
         private final Block planks;
