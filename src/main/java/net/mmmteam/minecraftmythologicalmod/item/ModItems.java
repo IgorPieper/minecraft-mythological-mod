@@ -117,6 +117,10 @@ public class ModItems {
             () -> new ModBoatItem(false, ModBoatEntity.Type.OLIVE, new Item.Properties()));
     public static final RegistryObject<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE, new Item.Properties()));
+    public static final RegistryObject<Item> STICK_BOAT = ITEMS.register("stick_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.STICK, new Item.Properties()));
+    public static final RegistryObject<Item> STICK_CHEST_BOAT = ITEMS.register("stick_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.STICK, new Item.Properties()));
 
     public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
