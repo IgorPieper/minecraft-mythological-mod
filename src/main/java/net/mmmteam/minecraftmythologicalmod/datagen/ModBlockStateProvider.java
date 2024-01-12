@@ -88,6 +88,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.OLIVE_TRAPDOOR.get(), modLoc("block/olive_trapdoor"), true, "cutout");
         blockItem(ModBlocks.OLIVE_TRAPDOOR, "_bottom");
 
+        blockWithItem(ModBlocks.CALCITE_BRICKS);
+        blockWithItem(ModBlocks.POLISHED_CALCITE);
+        blockWithItem(ModBlocks.CHISELED_CALCITE);
+
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

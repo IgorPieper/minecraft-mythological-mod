@@ -4,6 +4,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -41,6 +42,10 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 
+                        pOutput.accept(Blocks.CALCITE);
+                        pOutput.accept(ModBlocks.CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.POLISHED_CALCITE.get());
+                        pOutput.accept(ModBlocks.CHISELED_CALCITE.get());
                         pOutput.accept(ModBlocks.CALCITE_STAIRS.get());
                         pOutput.accept(ModBlocks.CALCITE_SLAB.get());
 
@@ -53,12 +58,12 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.BAY_LEAF.get());
                         pOutput.accept(ModItems.GRAPES.get());
-
-                        pOutput.accept(ModItems.AMBROSIA.get());
-                        pOutput.accept(ModItems.ACONITE_ROOT.get());
                         pOutput.accept(ModItems.ONIGIRI.get());
                         pOutput.accept(ModItems.DANGO.get());
                         pOutput.accept(ModItems.MOCHI.get());
+
+                        pOutput.accept(ModItems.AMBROSIA.get());
+                        pOutput.accept(ModItems.ACONITE_ROOT.get());
 
                         pOutput.accept(ModItems.GIFT_OF_APOLLO.get());
                         pOutput.accept(ModItems.GIFT_OF_ATHENA.get());
@@ -68,6 +73,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.PYXIS.get());
                         pOutput.accept(ModItems.IRIS_PYXIS.get());
+                        pOutput.accept(ModItems.HADES_WATER_BUCKET.get());
 
                         pOutput.accept(ModItems.EXCALIBUR.get());
                         pOutput.accept(ModItems.HADES_TRIDENT.get());
@@ -84,7 +90,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MINOTAUR_SPAWN_EGG.get());
                         pOutput.accept(ModItems.KITSUNE_SPAWN_EGG.get());
 
-                        pOutput.accept(ModItems.HADES_WATER_BUCKET.get());
                     })
                     .build());
 

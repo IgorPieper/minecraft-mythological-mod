@@ -73,6 +73,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.OLIVE_SLAB.get()));
         this.add(ModBlocks.OLIVE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OLIVE_DOOR.get()));
+
+        this.dropSelf(ModBlocks.CALCITE_BRICKS.get());
+        this.dropSelf(ModBlocks.POLISHED_CALCITE.get());
+        this.dropSelf(ModBlocks.CHISELED_CALCITE.get());
     }
 
     @Override

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "#minecraftmythologicalmod:is_cherry",
+  "biomes": "#forge:is_mountain",
   "spawners": {
     "type": "minecraftmythologicalmod:minotaur",
     "maxCount": 1,
