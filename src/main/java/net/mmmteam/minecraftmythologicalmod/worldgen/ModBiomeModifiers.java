@@ -1,5 +1,7 @@
 package net.mmmteam.minecraftmythologicalmod.worldgen;
 
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.minecraft.core.HolderSet;
@@ -73,4 +75,7 @@ public class ModBiomeModifiers {
     private static ResourceKey<BiomeModifier> registerKey(String name) {
         return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, name));
     }
+
+    //public static final TagKey<Biome> IS_CHERRY = TagKey.create(ForgeRegistries.Keys.BIOMES, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "is_cherry"));
+
 }
