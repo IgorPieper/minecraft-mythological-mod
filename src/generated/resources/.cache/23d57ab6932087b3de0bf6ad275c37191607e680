@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-12T22:23:16.9397449	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-12T22:50:23.4556649	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -38,7 +38,9 @@ ee668cfb1ce43337abfb5c26d52ca7f5487e8470 assets/minecraftmythologicalmod/models/
 dba21c8d51593e1950ba687461e0e43b397ebee5 assets/minecraftmythologicalmod/models/item/pyxis.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/racoon_spawn_egg.json
 99addb6803d0cf214c710cf900f3b3f8f3924767 assets/minecraftmythologicalmod/models/item/spider_lily.json
+f24c93d019a51d1d699c41b0bfe20e61cece2590 assets/minecraftmythologicalmod/models/item/stick_boat.json
 2e8088ef14567e8c95401f0b16d568ae57ab246b assets/minecraftmythologicalmod/models/item/stick_button.json
+78c841d5b6cce64ec77459b45f364033cf1c0751 assets/minecraftmythologicalmod/models/item/stick_chest_boat.json
 51ea292b30e0e21ede16f110212e2ae8fa8493c0 assets/minecraftmythologicalmod/models/item/stick_door.json
 8477fe0aeb2927ada01254e98b8d5269464e8f0c assets/minecraftmythologicalmod/models/item/stick_fence.json
 16a02a67f1991abf94f476b04ab61b473762acde assets/minecraftmythologicalmod/models/item/stick_fence_gate.json

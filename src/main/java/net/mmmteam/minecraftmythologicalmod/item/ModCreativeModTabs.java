@@ -45,6 +45,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STICK_FENCE_GATE.get());
                         pOutput.accept(ModBlocks.STICK_DOOR.get());
                         pOutput.accept(ModBlocks.STICK_TRAPDOOR.get());
+                        pOutput.accept(ModItems.STICK_BOAT.get());
+                        pOutput.accept(ModItems.STICK_CHEST_BOAT.get());
 
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 

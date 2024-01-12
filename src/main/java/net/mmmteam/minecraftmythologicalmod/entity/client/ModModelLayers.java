@@ -27,4 +27,9 @@ public class ModModelLayers {
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "boat/olive"), "main");
     public static final ModelLayerLocation OLIVE_CHEST_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "chest_boat/olive"), "main");
+
+    public static final ModelLayerLocation STICK_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "boat/stick"), "main");
+    public static final ModelLayerLocation STICK_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "chest_boat/stick"), "main");
 }

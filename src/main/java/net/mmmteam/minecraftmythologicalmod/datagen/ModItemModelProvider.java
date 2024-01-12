@@ -74,7 +74,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.STICK_WALL, ModBlocks.STICK_BLOCK);
         evenSimplerBlockItem(ModBlocks.STICK_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.STICK_FENCE_GATE);
-
+        simpleItem(ModItems.STICK_BOAT);
+        simpleItem(ModItems.STICK_CHEST_BOAT);
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);
