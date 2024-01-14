@@ -110,6 +110,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.POLISHED_CALCITE);
         blockWithItem(ModBlocks.CHISELED_CALCITE);
 
+        blockWithItem(ModBlocks.DIMOND_BLOCK);
+        slabBlock(((SlabBlock) ModBlocks.DIMOND_SLAB.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        stairsBlock(((StairBlock) ModBlocks.DIMOND_STAIRS.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.DIMOND_BUTTON.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.DIMOND_PRESSURE_PLATE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        fenceBlock(((FenceBlock) ModBlocks.DIMOND_FENCE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.DIMOND_FENCE_GATE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.DIMOND_WALL.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.DIMOND_DOOR.get()), modLoc("block/dimond_door_bottom"), modLoc("block/dimond_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.DIMOND_TRAPDOOR.get(), modLoc("block/dimond_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.DIMOND_TRAPDOOR, "_bottom");
+
+
+
+
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

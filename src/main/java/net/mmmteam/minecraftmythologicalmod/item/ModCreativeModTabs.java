@@ -20,6 +20,8 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.mythological"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
+                        pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
                         pOutput.accept(ModBlocks.OLIVE_LOG.get());
                         pOutput.accept(ModBlocks.OLIVE_WOOD.get());
                         pOutput.accept(ModBlocks.STRIPPED_OLIVE_LOG.get());
@@ -63,8 +65,18 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.CALCITE_BUTTON.get());
                         pOutput.accept(ModBlocks.CALCITE_PRESSURE_PLATE.get());
 
-                        pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
-                        pOutput.accept(ModBlocks.OLIVE_SAPLING.get());
+
+                        pOutput.accept(ModBlocks.DIMOND_BLOCK.get());
+                        pOutput.accept(ModBlocks.DIMOND_STAIRS.get());
+                        pOutput.accept(ModBlocks.DIMOND_SLAB.get());
+                        pOutput.accept(ModBlocks.DIMOND_BUTTON.get());
+                        pOutput.accept(ModBlocks.DIMOND_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.DIMOND_FENCE.get());
+                        pOutput.accept(ModBlocks.DIMOND_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.DIMOND_DOOR.get());
+                        pOutput.accept(ModBlocks.DIMOND_TRAPDOOR.get());
+
+
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());
                         pOutput.accept(ModBlocks.IRIS.get());
                         pOutput.accept(ModBlocks.ACONITE.get());

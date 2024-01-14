@@ -149,6 +149,33 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.WET_SPONGE),
                     BlockSetType.STONE));
 
+
+    public static final RegistryObject<Block> DIMOND_BLOCK = registerBlock("dimond_block",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> DIMOND_STAIRS = registerBlock("dimond_stairs",
+            () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.PINK_PETALS)));
+    public static final RegistryObject<Block> DIMOND_SLAB = registerBlock("dimond_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE_SLAB).sound(SoundType.PINK_PETALS)));
+    public static final RegistryObject<Block> DIMOND_BUTTON = registerBlock("dimond_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.PINK_PETALS),
+                    BlockSetType.STONE, 10, true));
+    public static final RegistryObject<Block> DIMOND_PRESSURE_PLATE = registerBlock("dimond_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.PINK_PETALS),
+                    BlockSetType.STONE));
+    public static final RegistryObject<Block> DIMOND_FENCE = registerBlock("dimond_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS)));
+    public static final RegistryObject<Block> DIMOND_FENCE_GATE = registerBlock("dimond_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+    public static final RegistryObject<Block> DIMOND_WALL = registerBlock("dimond_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS)));
+    public static final RegistryObject<Block> DIMOND_DOOR = registerBlock("dimond_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS).noOcclusion(), BlockSetType.IRON));
+    public static final RegistryObject<Block> DIMOND_TRAPDOOR = registerBlock("dimond_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS).noOcclusion(), BlockSetType.IRON));
+
+
+
     public static final RegistryObject<Block> OLIVE_PLANKS = registerBlock("olive_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
                 @Override
