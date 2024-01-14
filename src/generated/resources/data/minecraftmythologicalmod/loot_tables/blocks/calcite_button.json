@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraftmythologicalmod:olive_hanging_sign"
+          "name": "minecraftmythologicalmod:calcite_button"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraftmythologicalmod:blocks/olive_wall_hanging_sign"
+  "random_sequence": "minecraftmythologicalmod:blocks/calcite_button"
 }

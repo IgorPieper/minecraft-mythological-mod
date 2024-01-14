@@ -35,8 +35,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OLIVE_TRAPDOOR.get());
                         pOutput.accept(ModItems.OLIVE_BOAT.get());
                         pOutput.accept(ModItems.OLIVE_CHEST_BOAT.get());
-                        pOutput.accept(ModItems.OLIVE_SIGN.get());
-                        pOutput.accept(ModItems.OLIVE_HANGING_SIGN.get());
+//                        pOutput.accept(ModItems.OLIVE_SIGN.get());
+//                        pOutput.accept(ModItems.OLIVE_HANGING_SIGN.get());
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
                         pOutput.accept(ModBlocks.STICK_STAIRS.get());
@@ -49,8 +49,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STICK_TRAPDOOR.get());
                         pOutput.accept(ModItems.STICK_BOAT.get());
                         pOutput.accept(ModItems.STICK_CHEST_BOAT.get());
-                        pOutput.accept(ModItems.STICK_SIGN.get());
-                        pOutput.accept(ModItems.STICK_HANGING_SIGN.get());
+//                        pOutput.accept(ModItems.STICK_SIGN.get());
+//                        pOutput.accept(ModItems.STICK_HANGING_SIGN.get());
 
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 
@@ -60,6 +60,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.CHISELED_CALCITE.get());
                         pOutput.accept(ModBlocks.CALCITE_STAIRS.get());
                         pOutput.accept(ModBlocks.CALCITE_SLAB.get());
+                        pOutput.accept(ModBlocks.CALCITE_BUTTON.get());
+                        pOutput.accept(ModBlocks.CALCITE_PRESSURE_PLATE.get());
 
                         pOutput.accept(ModBlocks.OLIVE_LEAVES.get());
                         pOutput.accept(ModBlocks.OLIVE_SAPLING.get());

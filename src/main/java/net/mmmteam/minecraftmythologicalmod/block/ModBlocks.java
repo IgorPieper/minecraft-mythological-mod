@@ -55,14 +55,6 @@ public class ModBlocks {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.SPIDER_LILY,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_BLUE_ORCHID).noOcclusion()));
 
-
-    public static final RegistryObject<Block> CALCITE_STAIRS = registerBlock("calcite_stairs",
-            () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.CALCITE)));
-    public static final RegistryObject<Block> CALCITE_SLAB = registerBlock("calcite_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE_SLAB).sound(SoundType.CALCITE)));
-
-
     public static final RegistryObject<Block> OLIVE_SLAB = registerBlock("olive_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> OLIVE_STAIRS = registerBlock("olive_stairs",
@@ -92,14 +84,14 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_OLIVE_WOOD = registerBlock("stripped_olive_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final RegistryObject<Block> OLIVE_SIGN = BLOCKS.register("olive_sign",
-            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.OLIVE));
-    public static final RegistryObject<Block> OLIVE_WALL_SIGN = BLOCKS.register("olive_wall_sign",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.OLIVE));
-    public static final RegistryObject<Block> OLIVE_HANGING_SIGN = BLOCKS.register("olive_hanging_sign",
-            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.OLIVE));
-    public static final RegistryObject<Block> OLIVE_WALL_HANGING_SIGN = BLOCKS.register("olive_wall_hanging_sign",
-            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.OLIVE));
+//    public static final RegistryObject<Block> OLIVE_SIGN = BLOCKS.register("olive_sign",
+//            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.OLIVE));
+//    public static final RegistryObject<Block> OLIVE_WALL_SIGN = BLOCKS.register("olive_wall_sign",
+//            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.OLIVE));
+//    public static final RegistryObject<Block> OLIVE_HANGING_SIGN = BLOCKS.register("olive_hanging_sign",
+//            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.OLIVE));
+//    public static final RegistryObject<Block> OLIVE_WALL_HANGING_SIGN = BLOCKS.register("olive_wall_hanging_sign",
+//            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.OLIVE));
   
 
     public static final RegistryObject<Block> STICK_STAIRS = registerBlock("stick_stairs",
@@ -125,15 +117,14 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Block> STICK_BLOCK = registerBlock("stick_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
-    public static final RegistryObject<Block> STICK_SIGN = BLOCKS.register("stick_sign",
-            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.STICK));
-    public static final RegistryObject<Block> STICK_WALL_SIGN = BLOCKS.register("stick_wall_sign",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.STICK));
-
-    public static final RegistryObject<Block> STICK_HANGING_SIGN = BLOCKS.register("stick_hanging_sign",
-            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.STICK));
-    public static final RegistryObject<Block> STICK_WALL_HANGING_SIGN = BLOCKS.register("stick_wall_hanging_sign",
-            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.STICK));
+//    public static final RegistryObject<Block> STICK_SIGN = BLOCKS.register("stick_sign",
+//            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.STICK));
+//    public static final RegistryObject<Block> STICK_WALL_SIGN = BLOCKS.register("stick_wall_sign",
+//            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.STICK));
+//    public static final RegistryObject<Block> STICK_HANGING_SIGN = BLOCKS.register("stick_hanging_sign",
+//            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.STICK));
+//    public static final RegistryObject<Block> STICK_WALL_HANGING_SIGN = BLOCKS.register("stick_wall_hanging_sign",
+//            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.STICK));
 
 
 
@@ -142,12 +133,21 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CALCITE_BRICKS = registerBlock("calcite_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
-
     public static final RegistryObject<Block> CHISELED_CALCITE = registerBlock("chiseled_calcite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
-
     public static final RegistryObject<Block> POLISHED_CALCITE = registerBlock("polished_calcite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
+    public static final RegistryObject<Block> CALCITE_STAIRS = registerBlock("calcite_stairs",
+            () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.CALCITE)));
+    public static final RegistryObject<Block> CALCITE_SLAB = registerBlock("calcite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE_SLAB).sound(SoundType.CALCITE)));
+    public static final RegistryObject<Block> CALCITE_BUTTON = registerBlock("calcite_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.WET_SPONGE),
+                    BlockSetType.STONE, 10, true));
+    public static final RegistryObject<Block> CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.WET_SPONGE),
+                    BlockSetType.STONE));
 
     public static final RegistryObject<Block> OLIVE_PLANKS = registerBlock("olive_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {

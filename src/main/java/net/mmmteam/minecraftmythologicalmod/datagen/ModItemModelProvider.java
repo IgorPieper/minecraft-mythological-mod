@@ -4,6 +4,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -30,8 +31,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItemBlockTexture(ModBlocks.ACONITE);
         simpleBlockItemBlockTexture(ModBlocks.SPIDER_LILY);
 
-        saplingItem(ModBlocks.OLIVE_SAPLING);
-
         simpleItem(ModItems.PYXIS);
         simpleItem(ModItems.IRIS_PYXIS);
 
@@ -53,7 +52,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.CALCITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.CALCITE_PRESSURE_PLATE);
+        buttonItem(ModBlocks.CALCITE_BUTTON, ModBlocks.CALCITE_BRICKS);
 
+
+        saplingItem(ModBlocks.OLIVE_SAPLING);
         evenSimplerBlockItem(ModBlocks.OLIVE_STAIRS);
         evenSimplerBlockItem(ModBlocks.OLIVE_SLAB);
         simpleBlockItem(ModBlocks.OLIVE_DOOR);
@@ -64,8 +67,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
         simpleItem(ModItems.OLIVE_BOAT);
         simpleItem(ModItems.OLIVE_CHEST_BOAT);
-        simpleItem(ModItems.OLIVE_SIGN);
-        simpleItem(ModItems.OLIVE_HANGING_SIGN);
+//        simpleItem(ModItems.OLIVE_SIGN);
+//        simpleItem(ModItems.OLIVE_HANGING_SIGN);
 
 
         evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
@@ -78,8 +81,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.STICK_FENCE_GATE);
         simpleItem(ModItems.STICK_BOAT);
         simpleItem(ModItems.STICK_CHEST_BOAT);
-        simpleItem(ModItems.STICK_SIGN);
-        simpleItem(ModItems.STICK_HANGING_SIGN);
+//        simpleItem(ModItems.STICK_SIGN);
+//        simpleItem(ModItems.STICK_HANGING_SIGN);
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);

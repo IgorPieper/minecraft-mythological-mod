@@ -38,12 +38,12 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.STICK_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
 
     }
-    @SubscribeEvent
-    public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
-
-        event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
-        event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
-    }
+//    @SubscribeEvent
+//    public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+//
+//        event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
+//        event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
+//    }
 
     @SubscribeEvent
     public static void registerColoredBlocks(RegisterColorHandlersEvent.Block event) {
