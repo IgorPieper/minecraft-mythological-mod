@@ -28,8 +28,6 @@
   "block.minecraftmythologicalmod.stick_pressure_plate": "Stick Pressure Plate",
   "block.minecraftmythologicalmod.stick_fence": "Stick Fence",
   "block.minecraftmythologicalmod.stick_fence_gate": "Stick Fence Gate",
-  "block.minecraftmythologicalmod.stick_wall": "Stick Wall",
-  "block.minecraftmythologicalmod.stick_door": "Stick Door",
   "block.minecraftmythologicalmod.stick_trapdoor": "Stick Trapdoor",
   "item.minecraftmythologicalmod.stick_boat": "Stick Boat",
   "item.minecraftmythologicalmod.stick_chest_boat": "Stick Chest Boat",
@@ -47,6 +45,19 @@
   "block.minecraftmythologicalmod.calcite_slab": "Calcite Slab",
   "block.minecraftmythologicalmod.calcite_button": "Calcite Button",
   "block.minecraftmythologicalmod.calcite_pressure_plate": "Calcite Pressure Plate",
+
+  "block.minecraftmythologicalmod.dimond_block": "DIMOND",
+  "block.minecraftmythologicalmod.dimond_stairs": "Dimond Stairs",
+  "block.minecraftmythologicalmod.dimond_slab": "Dimond Slab",
+  "block.minecraftmythologicalmod.dimond_button": "Dimond Button",
+  "block.minecraftmythologicalmod.dimond_pressure_plate": "Dimond Pressure Plate",
+  "block.minecraftmythologicalmod.dimond_fence": "Dimond Fence",
+  "block.minecraftmythologicalmod.dimond_fence_gate": "Dimond Fence Gate",
+  "block.minecraftmythologicalmod.dimond_wall": "Dimond Wall",
+  "block.minecraftmythologicalmod.dimond_door": "Dimond Door",
+  "block.minecraftmythologicalmod.dimond_trapdoor": "Dimond Trapdoor",
+
+
 
   "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
   "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",

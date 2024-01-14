@@ -36,7 +36,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.POLISHED_CALCITE.get(),
                         ModBlocks.CHISELED_CALCITE.get(),
                         ModBlocks.CALCITE_BUTTON.get(),
-                        ModBlocks.CALCITE_PRESSURE_PLATE.get());
+                        ModBlocks.CALCITE_PRESSURE_PLATE.get(),
+                        ModBlocks.DIMOND_BLOCK.get(),
+                        ModBlocks.DIMOND_STAIRS.get(),
+                        ModBlocks.DIMOND_SLAB.get(),
+                        ModBlocks.DIMOND_BUTTON.get(),
+                        ModBlocks.DIMOND_PRESSURE_PLATE.get(),
+                        ModBlocks.DIMOND_FENCE.get(),
+                        ModBlocks.DIMOND_FENCE_GATE.get(),
+                        ModBlocks.DIMOND_DOOR.get(),
+                        ModBlocks.DIMOND_TRAPDOOR.get(),
+                        ModBlocks.DIMOND_WALL.get());
 
 
         this.tag(BlockTags.FENCES)
@@ -52,6 +62,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.STICK_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.STICK_WALL.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.DIMOND_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.DIMOND_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.DIMOND_WALL.get());
 
     }
 
