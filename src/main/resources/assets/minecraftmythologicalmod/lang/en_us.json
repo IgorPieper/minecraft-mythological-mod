@@ -18,6 +18,8 @@
   "item.minecraftmythologicalmod.olive_boat": "Olive Boat",
   "item.minecraftmythologicalmod.olive_chest_boat": "Olive Chest Boat",
   "entity.minecraftmythologicalmod.mod_chest_boat": "Boat with Chest",
+  "block.minecraftmythologicalmod.olive_sign": "Olive Sign",
+  "block.minecraftmythologicalmod.olive_hanging_sign": "Olive Hanging Sign",
 
   "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
   "block.minecraftmythologicalmod.stick_stairs": "Stick Stairs",
@@ -31,6 +33,8 @@
   "block.minecraftmythologicalmod.stick_trapdoor": "Stick Trapdoor",
   "item.minecraftmythologicalmod.stick_boat": "Stick Boat",
   "item.minecraftmythologicalmod.stick_chest_boat": "Stick Chest Boat",
+  "block.minecraftmythologicalmod.stick_sign": "Stick Sign",
+  "block.minecraftmythologicalmod.stick_hanging_sign": "Stick Hanging Sign",
 
 
 

@@ -16,8 +16,10 @@
   "block.minecraftmythologicalmod.olive_door": "Oliwne Drzwi",
   "block.minecraftmythologicalmod.olive_trapdoor": "Oliwny Trapdoor",
   "item.minecraftmythologicalmod.olive_boat": "Oliwna Łódka",
-  "item.minecraftmythologicalmod.olive_chest_boat": "Olive Łódka ze Skrzynką",
+  "item.minecraftmythologicalmod.olive_chest_boat": "Oliwna Łódka ze Skrzynką",
   "entity.minecraftmythologicalmod.mod_chest_boat": "Łódka ze Skrzynką",
+  "block.minecraftmythologicalmod.olive_sign": "Oliwna Tabliczka",
+  "block.minecraftmythologicalmod.olive_hanging_sign": "Oliwna Wiszaca Tabliczka",
 
   "block.minecraftmythologicalmod.stick_block": "Góra Patyków",
   "block.minecraftmythologicalmod.stick_stairs": "Patykowe Schody",
@@ -31,6 +33,9 @@
   "block.minecraftmythologicalmod.stick_trapdoor": "Patykowy Trapdoor",
   "item.minecraftmythologicalmod.stick_boat": "Patykowa Łódka",
   "item.minecraftmythologicalmod.stick_chest_boat": "Patykowa Łódka ze Skrzynką",
+  "block.minecraftmythologicalmod.stick_sign": "Patykowa Tabliczka",
+  "block.minecraftmythologicalmod.stick_hanging_sign": "Patykowa Wiszaca Tabliczka",
+
 
   "block.minecraftmythologicalmod.ancient_portal": "Starożytny Portal",
 

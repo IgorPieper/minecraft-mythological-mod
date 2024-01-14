@@ -22,7 +22,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.STICK_BLOCK.get());
 
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.LAUREL_BUSH_CROP.get())
@@ -63,6 +62,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.OLIVE_SLAB.get()));
         this.add(ModBlocks.OLIVE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OLIVE_DOOR.get()));
+        this.add(ModBlocks.OLIVE_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+        this.add(ModBlocks.OLIVE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+        this.add(ModBlocks.OLIVE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
+        this.add(ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
 
 
 
@@ -70,6 +77,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CALCITE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.CALCITE_SLAB.get()));
 
+        this.dropSelf(ModBlocks.STICK_BLOCK.get());
         this.dropSelf(ModBlocks.STICK_STAIRS.get());
         this.dropSelf(ModBlocks.STICK_BUTTON.get());
         this.dropSelf(ModBlocks.STICK_PRESSURE_PLATE.get());
@@ -81,6 +89,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.STICK_SLAB.get()));
         this.add(ModBlocks.STICK_DOOR.get(),
                 block -> createDoorTable(ModBlocks.STICK_DOOR.get()));
+        this.add(ModBlocks.STICK_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_SIGN.get()));
+        this.add(ModBlocks.STICK_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_SIGN.get()));
+        this.add(ModBlocks.STICK_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
+        this.add(ModBlocks.STICK_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
 
 
 

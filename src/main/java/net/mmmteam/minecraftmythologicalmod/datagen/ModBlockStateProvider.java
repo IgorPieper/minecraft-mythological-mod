@@ -74,6 +74,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.OLIVE_DOOR.get()), modLoc("block/olive_door_bottom"), modLoc("block/olive_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.OLIVE_TRAPDOOR.get(), modLoc("block/olive_trapdoor"), true, "cutout");
         blockItem(ModBlocks.OLIVE_TRAPDOOR, "_bottom");
+        signBlock(((StandingSignBlock) ModBlocks.OLIVE_SIGN.get()), ((WallSignBlock) ModBlocks.OLIVE_WALL_SIGN.get()),
+                blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+
+        hangingSignBlock(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
 
 
         blockWithItem(ModBlocks.STICK_BLOCK);
@@ -87,6 +91,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.STICK_DOOR.get()), modLoc("block/stick_door_bottom"), modLoc("block/stick_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.STICK_TRAPDOOR.get(), modLoc("block/stick_trapdoor"), true, "cutout");
         blockItem(ModBlocks.STICK_TRAPDOOR, "_bottom");
+        signBlock(((StandingSignBlock) ModBlocks.STICK_SIGN.get()), ((WallSignBlock) ModBlocks.STICK_WALL_SIGN.get()),
+                blockTexture(ModBlocks.STICK_BLOCK.get()));
+
+        hangingSignBlock(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STICK_BLOCK.get()));
 
 
 
@@ -120,6 +128,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         return ForgeRegistries.BLOCKS.getKey(block);
     }
 
+
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
@@ -151,4 +160,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
 }
