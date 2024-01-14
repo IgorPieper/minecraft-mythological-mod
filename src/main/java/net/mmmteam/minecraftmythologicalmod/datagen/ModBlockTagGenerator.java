@@ -34,7 +34,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CALCITE_SLAB.get(),
                         ModBlocks.CALCITE_BRICKS.get(),
                         ModBlocks.POLISHED_CALCITE.get(),
-                        ModBlocks.CHISELED_CALCITE.get());
+                        ModBlocks.CHISELED_CALCITE.get(),
+                        ModBlocks.CALCITE_BUTTON.get(),
+                        ModBlocks.CALCITE_PRESSURE_PLATE.get());
+
 
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.OLIVE_FENCE.get());

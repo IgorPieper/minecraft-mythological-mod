@@ -117,10 +117,21 @@ public class ModItems {
             () -> new ModBoatItem(false, ModBoatEntity.Type.OLIVE, new Item.Properties()));
     public static final RegistryObject<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE, new Item.Properties()));
+//    public static final RegistryObject<Item> OLIVE_SIGN = ITEMS.register("olive_sign",
+//            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.OLIVE_SIGN.get(), ModBlocks.OLIVE_WALL_SIGN.get()));
+//    public static final RegistryObject<Item> OLIVE_HANGING_SIGN = ITEMS.register("olive_hanging_sign",
+//            () -> new HangingSignItem(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(),
+//                    new Item.Properties().stacksTo(16)));
+
     public static final RegistryObject<Item> STICK_BOAT = ITEMS.register("stick_boat",
             () -> new ModBoatItem(false, ModBoatEntity.Type.STICK, new Item.Properties()));
     public static final RegistryObject<Item> STICK_CHEST_BOAT = ITEMS.register("stick_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.STICK, new Item.Properties()));
+//    public static final RegistryObject<Item> STICK_SIGN = ITEMS.register("stick_sign",
+//            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.STICK_SIGN.get(), ModBlocks.STICK_WALL_SIGN.get()));
+//    public static final RegistryObject<Item> STICK_HANGING_SIGN = ITEMS.register("stick_hanging_sign",
+//            () -> new HangingSignItem(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(),
+//                    new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

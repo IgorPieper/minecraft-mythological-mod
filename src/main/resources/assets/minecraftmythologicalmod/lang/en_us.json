@@ -18,6 +18,8 @@
   "item.minecraftmythologicalmod.olive_boat": "Olive Boat",
   "item.minecraftmythologicalmod.olive_chest_boat": "Olive Chest Boat",
   "entity.minecraftmythologicalmod.mod_chest_boat": "Boat with Chest",
+  "block.minecraftmythologicalmod.olive_sign": "Olive Sign",
+  "block.minecraftmythologicalmod.olive_hanging_sign": "Olive Hanging Sign",
 
   "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
   "block.minecraftmythologicalmod.stick_stairs": "Stick Stairs",
@@ -31,6 +33,8 @@
   "block.minecraftmythologicalmod.stick_trapdoor": "Stick Trapdoor",
   "item.minecraftmythologicalmod.stick_boat": "Stick Boat",
   "item.minecraftmythologicalmod.stick_chest_boat": "Stick Chest Boat",
+  "block.minecraftmythologicalmod.stick_sign": "Stick Sign",
+  "block.minecraftmythologicalmod.stick_hanging_sign": "Stick Hanging Sign",
 
 
 
@@ -41,6 +45,8 @@
   "block.minecraftmythologicalmod.polished_calcite": "Polished Calcite",
   "block.minecraftmythologicalmod.calcite_stairs": "Calcite Stairs",
   "block.minecraftmythologicalmod.calcite_slab": "Calcite Slab",
+  "block.minecraftmythologicalmod.calcite_button": "Calcite Button",
+  "block.minecraftmythologicalmod.calcite_pressure_plate": "Calcite Pressure Plate",
 
   "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
   "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",

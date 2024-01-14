@@ -6,4 +6,6 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class ModWoodTypes {
     public static final WoodType OLIVE = WoodType.register(new WoodType(MinecraftMythologicalMod.MOD_ID + ":olive", BlockSetType.OAK));
+    public static final WoodType STICK = WoodType.register(new WoodType(MinecraftMythologicalMod.MOD_ID + ":olive", BlockSetType.OAK));
+
 }

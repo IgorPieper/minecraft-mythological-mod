@@ -4,6 +4,8 @@
     "minecraftmythologicalmod:calcite_slab",
     "minecraftmythologicalmod:calcite_bricks",
     "minecraftmythologicalmod:polished_calcite",
-    "minecraftmythologicalmod:chiseled_calcite"
+    "minecraftmythologicalmod:chiseled_calcite",
+    "minecraftmythologicalmod:calcite_button",
+    "minecraftmythologicalmod:calcite_pressure_plate"
   ]
 }

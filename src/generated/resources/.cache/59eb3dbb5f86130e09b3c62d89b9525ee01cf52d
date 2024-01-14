@@ -1,6 +1,8 @@
-// 1.20.2	2024-01-12T22:23:16.9427441	Loot Tables
+// 1.20.2	2024-01-14T22:41:59.7433138	Loot Tables
 4008121e3db82fabc854d2e49a299b7c9d43fb51 data/minecraftmythologicalmod/loot_tables/blocks/aconite.json
 13383aac7857236851e3aadeae8076b9d66a97de data/minecraftmythologicalmod/loot_tables/blocks/calcite_bricks.json
+2422b423ebbf8ac5f8bfa0cbfc23dc3019e2c146 data/minecraftmythologicalmod/loot_tables/blocks/calcite_button.json
+8024303d546ce913c144835b227fc8f425def536 data/minecraftmythologicalmod/loot_tables/blocks/calcite_pressure_plate.json
 2289e832599cb97a6205f0ed4f3096f05569aa0c data/minecraftmythologicalmod/loot_tables/blocks/calcite_slab.json
 43f29d75b5fe143d44d9ace12b75dc7009d1563e data/minecraftmythologicalmod/loot_tables/blocks/calcite_stairs.json
 b7c5098275243f8740164f132165830241c0efcd data/minecraftmythologicalmod/loot_tables/blocks/chiseled_calcite.json
