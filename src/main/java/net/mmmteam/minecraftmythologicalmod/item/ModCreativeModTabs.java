@@ -87,6 +87,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ONIGIRI.get());
                         pOutput.accept(ModItems.DANGO.get());
                         pOutput.accept(ModItems.MOCHI.get());
+                        pOutput.accept(ModItems.SUSHI.get());
 
                         pOutput.accept(ModItems.AMBROSIA.get());
                         pOutput.accept(ModItems.ACONITE_ROOT.get());
