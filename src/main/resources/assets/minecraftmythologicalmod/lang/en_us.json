@@ -34,8 +34,6 @@
   "block.minecraftmythologicalmod.stick_sign": "Stick Sign",
   "block.minecraftmythologicalmod.stick_hanging_sign": "Stick Hanging Sign",
 
-
-
   "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal",
 
   "block.minecraftmythologicalmod.calcite_bricks": "Calcite Bricks",
@@ -57,8 +55,6 @@
   "block.minecraftmythologicalmod.dimond_door": "Dimond Door",
   "block.minecraftmythologicalmod.dimond_trapdoor": "Dimond Trapdoor",
 
-
-
   "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
   "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",
   "block.minecraftmythologicalmod.laurel_bush": "Laurel Bush",
@@ -68,6 +64,7 @@
 
   "item.minecraftmythologicalmod.bay_leaf": "Bay Leaf",
   "item.minecraftmythologicalmod.grapes": "Grapes",
+
   "item.minecraftmythologicalmod.rice": "Rice",
   "item.minecraftmythologicalmod.rice_seeds": "Rice Seeds",
 
@@ -77,6 +74,7 @@
   "item.minecraftmythologicalmod.dango": "Dango",
   "item.minecraftmythologicalmod.mochi": "Mochi",
   "item.minecraftmythologicalmod.sushi": "Sushi",
+  "item.minecraftmythologicalmod.bowl_of_rice": "Bowl Of Rice",
 
   "item.minecraftmythologicalmod.good_looking_stick": "Good Looking Stick",
   "item.minecraftmythologicalmod.pyxis": "Pyxis",
