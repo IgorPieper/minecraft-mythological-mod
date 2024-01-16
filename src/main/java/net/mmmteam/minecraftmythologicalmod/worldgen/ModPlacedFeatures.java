@@ -19,7 +19,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> OLIVE_PLACED_KEY = registerKey("olive_placed");
     public static final ResourceKey<PlacedFeature> IRIS_PLACED_KEY = registerKey("iris_placed");
     public static final ResourceKey<PlacedFeature> ACONITE_PLACED_KEY = registerKey("aconite_placed");
-
+    public static final ResourceKey<PlacedFeature> SPIDER_LILY_PLACED_KEY = registerKey("spider_lily_placed");
     public static final ResourceKey<PlacedFeature> LAUREL_PLACED_KEY = registerKey("laurel_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -33,6 +33,9 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, ACONITE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ACONITE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, SPIDER_LILY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SPIDER_LILY_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, LAUREL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAUREL_KEY),

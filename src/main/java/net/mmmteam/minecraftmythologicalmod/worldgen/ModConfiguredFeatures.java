@@ -25,6 +25,7 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> IRIS_KEY = registerKey("iris");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ACONITE_KEY = registerKey("aconite");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SPIDER_LILY_KEY = registerKey("spider_lily");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAUREL_KEY = registerKey("laurel_bush");
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
@@ -45,6 +46,9 @@ public class ModConfiguredFeatures {
                 new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ACONITE.get())))));
 
+        register(context, SPIDER_LILY_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(50, 6, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SPIDER_LILY.get())))));
         register(context, LAUREL_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LAUREL_BUSH.get())))));
