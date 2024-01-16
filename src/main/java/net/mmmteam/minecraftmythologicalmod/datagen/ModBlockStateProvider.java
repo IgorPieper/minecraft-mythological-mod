@@ -13,6 +13,7 @@ import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.mmmteam.minecraftmythologicalmod.block.custom.RiceCropBlock;
 
 
 import java.util.function.Function;
@@ -27,6 +28,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels(){
 
         makeCrop((LaurelBushCrop) ModBlocks.LAUREL_BUSH_CROP.get(), "laurel_bush_stage", "laurel_bush_stage");
+
+        makeRiceCrop(((RiceCropBlock) ModBlocks.RICE_CROP.get()), "rice_crop_stage", "rice_crop_stage");
 
         simpleBlockWithItem(ModBlocks.LAUREL_BUSH.get(), models().cross(blockTexture(ModBlocks.LAUREL_BUSH.get()).getPath(),
                 blockTexture(ModBlocks.LAUREL_BUSH.get())).renderType("cutout"));
@@ -133,6 +136,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         getVariantBuilder(block).forAllStates(function);
     }
 
+    public void makeRiceCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> riceStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
     private String name(Block block) {
         return key(block).getPath();
     }
@@ -158,6 +167,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((LaurelBushCrop) block).getAgeProperty()),
                 new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/" + textureName + state.getValue(((LaurelBushCrop) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    private ConfiguredModel[] riceStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((RiceCropBlock) block).getAgeProperty()),
+                new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/" + textureName + state.getValue(((RiceCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }

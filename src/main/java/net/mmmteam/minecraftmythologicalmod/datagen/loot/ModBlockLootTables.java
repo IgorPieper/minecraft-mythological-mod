@@ -1,6 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.datagen.loot;
-import net.minecraft.world.level.storage.loot.LootTable;
 import net.mmmteam.minecraftmythologicalmod.block.custom.LaurelBushCrop;
+import net.mmmteam.minecraftmythologicalmod.block.custom.RiceCropBlock;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -12,7 +12,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 
 import java.util.Set;
-import java.util.function.Function;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
     public ModBlockLootTables() {
@@ -31,6 +30,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.LAUREL_BUSH.get(),
                 block -> createOreDrop(ModBlocks.LAUREL_BUSH.get(), ModItems.BAY_LEAF.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder2= LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.RICE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RiceCropBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(ModBlocks.RICE_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RiceCropBlock.AGE, 4)));
+
+        this.add(ModBlocks.RICE_CROP.get(), createCropDrops(ModBlocks.RICE_CROP.get(), ModItems.RICE.get(),
+                ModItems.RICE_SEEDS.get(), lootitemcondition$builder2));
 
         this.dropSelf(ModBlocks.IRIS.get());
         this.add(ModBlocks.POTTED_IRIS.get(), createPotFlowerItemTable(ModBlocks.IRIS.get()));

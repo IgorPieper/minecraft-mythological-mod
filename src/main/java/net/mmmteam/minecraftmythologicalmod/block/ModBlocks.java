@@ -36,6 +36,9 @@ public class ModBlocks {
             () -> new FlowerBlock(MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> RICE_CROP = BLOCKS.register("rice_crop",
+            () -> new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
     public static final RegistryObject<Block> IRIS = registerBlock("iris",
             () -> new FlowerBlock(MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));

@@ -33,6 +33,11 @@ public class ModItems {
     public static final RegistryObject<Item> BAY_LEAF = ITEMS.register("bay_leaf",
             () -> new ItemNameBlockItem(ModBlocks.LAUREL_BUSH_CROP.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> PYXIS = ITEMS.register("pyxis",
             () -> new Item(new Item.Properties()));
 

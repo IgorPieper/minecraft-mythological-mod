@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-15T11:57:10.6005163	Loot Tables
+// 1.20.2	2024-01-16T23:24:19.9585583	Loot Tables
 4008121e3db82fabc854d2e49a299b7c9d43fb51 data/minecraftmythologicalmod/loot_tables/blocks/aconite.json
 13383aac7857236851e3aadeae8076b9d66a97de data/minecraftmythologicalmod/loot_tables/blocks/calcite_bricks.json
 2422b423ebbf8ac5f8bfa0cbfc23dc3019e2c146 data/minecraftmythologicalmod/loot_tables/blocks/calcite_button.json
@@ -38,6 +38,7 @@ b444470371cdf56d8f180678f800f503b94a7f0e data/minecraftmythologicalmod/loot_tabl
 923e6dfc7e9ddebcaca94c230135a59c24d9ed9a data/minecraftmythologicalmod/loot_tables/blocks/potted_iris.json
 f45672419be757db470b2ec066ba6d74b709bcc1 data/minecraftmythologicalmod/loot_tables/blocks/potted_olive_sapling.json
 0db6fa073bdb1fab0bf446e30a954b603d8a333f data/minecraftmythologicalmod/loot_tables/blocks/potted_spider_lily.json
+ccbf28e3125f176295544bc01716c7b10478badd data/minecraftmythologicalmod/loot_tables/blocks/rice_crop.json
 0c1db79e6ebad5dec7f0e36a9dc4dd87b5e1439e data/minecraftmythologicalmod/loot_tables/blocks/spider_lily.json
 69bd5d833dd5f89dcc442fcf832a56f400cffb95 data/minecraftmythologicalmod/loot_tables/blocks/stick_block.json
 ddf901225045ee41dc5432f16ee6f7d3f824e573 data/minecraftmythologicalmod/loot_tables/blocks/stick_button.json

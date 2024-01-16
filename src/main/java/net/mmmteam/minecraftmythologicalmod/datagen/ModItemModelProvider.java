@@ -26,6 +26,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GOOD_LOOKING_STICK);
         simpleItem(ModItems.BAY_LEAF);
         simpleBlockItemBlockTexture(ModBlocks.LAUREL_BUSH);
+        simpleItem(ModItems.RICE);
+        simpleItem(ModItems.RICE_SEEDS);
         simpleItem(ModItems.GRAPES);
         simpleBlockItemBlockTexture(ModBlocks.IRIS);
         simpleBlockItemBlockTexture(ModBlocks.ACONITE);
