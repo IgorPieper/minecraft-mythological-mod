@@ -38,6 +38,10 @@ public class ModEntities {
             ENTITY_TYPES.register("oni", () -> EntityType.Builder.of(OniEntity::new, MobCategory.MONSTER)
                     .sized(1.5f, 2f).build("oni"));
 
+    public static final RegistryObject<EntityType<KoiFishEntity>> KOI_FISH =
+            ENTITY_TYPES.register("koi_fish", () -> EntityType.Builder.of(KoiFishEntity::new, MobCategory.WATER_CREATURE)
+                    .sized(0.7f, 0.4f).build("koi_fish"));
+
     public static final RegistryObject<EntityType<ModBoatEntity>> MOD_BOAT =
             ENTITY_TYPES.register("mod_boat", () -> EntityType.Builder.<ModBoatEntity>of(ModBoatEntity::new, MobCategory.MISC)
                     .sized(1.375f, 0.5625f).build("mod_boat"));

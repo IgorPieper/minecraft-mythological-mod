@@ -25,6 +25,7 @@ public class ModEventBusEvents {
         event.put(ModEntities.MINOTAUR.get(), MinotaurEntity.createAttributes().build());
         event.put(ModEntities.KITSUNE.get(), KitsuneEntity.createAttributes().build());
         event.put(ModEntities.ONI.get(), OniEntity.createAttributes().build());
+        event.put(ModEntities.KOI_FISH.get(), OniEntity.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -36,6 +37,8 @@ public class ModEventBusEvents {
         event.register(ModEntities.BALKANLYNX.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Animal::checkAnimalSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(ModEntities.MINOTAUR.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Monster::checkMobSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(ModEntities.KOI_FISH.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Monster::checkMobSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
     }
 }
