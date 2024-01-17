@@ -1,6 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.datagen.loot;
-import net.minecraft.world.level.storage.loot.LootTable;
 import net.mmmteam.minecraftmythologicalmod.block.custom.LaurelBushCrop;
+import net.mmmteam.minecraftmythologicalmod.block.custom.RiceCropBlock;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -12,7 +12,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 
 import java.util.Set;
-import java.util.function.Function;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
     public ModBlockLootTables() {
@@ -22,7 +21,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.STICK_BLOCK.get());
 
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.LAUREL_BUSH_CROP.get())
@@ -32,6 +30,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.LAUREL_BUSH.get(),
                 block -> createOreDrop(ModBlocks.LAUREL_BUSH.get(), ModItems.BAY_LEAF.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder2= LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.RICE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RiceCropBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(ModBlocks.RICE_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RiceCropBlock.AGE, 4)));
+
+        this.add(ModBlocks.RICE_CROP.get(), createCropDrops(ModBlocks.RICE_CROP.get(), ModItems.RICE.get(),
+                ModItems.RICE_SEEDS.get(), lootitemcondition$builder2));
 
         this.dropSelf(ModBlocks.IRIS.get());
         this.add(ModBlocks.POTTED_IRIS.get(), createPotFlowerItemTable(ModBlocks.IRIS.get()));
@@ -63,13 +71,27 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.OLIVE_SLAB.get()));
         this.add(ModBlocks.OLIVE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OLIVE_DOOR.get()));
+//        this.add(ModBlocks.OLIVE_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+//        this.add(ModBlocks.OLIVE_WALL_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+//        this.add(ModBlocks.OLIVE_HANGING_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
+//        this.add(ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
 
 
-
+        this.dropSelf(ModBlocks.CALCITE_BRICKS.get());
+        this.dropSelf(ModBlocks.POLISHED_CALCITE.get());
+        this.dropSelf(ModBlocks.CHISELED_CALCITE.get());
         this.dropSelf(ModBlocks.CALCITE_STAIRS.get());
         this.add(ModBlocks.CALCITE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.CALCITE_SLAB.get()));
+        this.dropSelf(ModBlocks.CALCITE_BUTTON.get());
+        this.dropSelf(ModBlocks.CALCITE_PRESSURE_PLATE.get());
 
+
+        this.dropSelf(ModBlocks.STICK_BLOCK.get());
         this.dropSelf(ModBlocks.STICK_STAIRS.get());
         this.dropSelf(ModBlocks.STICK_BUTTON.get());
         this.dropSelf(ModBlocks.STICK_PRESSURE_PLATE.get());
@@ -81,12 +103,29 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.STICK_SLAB.get()));
         this.add(ModBlocks.STICK_DOOR.get(),
                 block -> createDoorTable(ModBlocks.STICK_DOOR.get()));
+//        this.add(ModBlocks.STICK_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.STICK_SIGN.get()));
+//        this.add(ModBlocks.STICK_WALL_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.STICK_SIGN.get()));
+//        this.add(ModBlocks.STICK_HANGING_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
+//        this.add(ModBlocks.STICK_WALL_HANGING_SIGN.get(), block ->
+//                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
 
 
+        this.dropSelf(ModBlocks.DIMOND_BLOCK.get());
+        this.dropSelf(ModBlocks.DIMOND_STAIRS.get());
+        this.dropSelf(ModBlocks.DIMOND_BUTTON.get());
+        this.dropSelf(ModBlocks.DIMOND_PRESSURE_PLATE.get());
+        this.add(ModBlocks.DIMOND_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.DIMOND_SLAB.get()));
+        this.dropSelf(ModBlocks.DIMOND_FENCE.get());
+        this.dropSelf(ModBlocks.DIMOND_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.DIMOND_WALL.get());
+        this.dropSelf(ModBlocks.DIMOND_TRAPDOOR.get());
+        this.add(ModBlocks.DIMOND_DOOR.get(),
+                block -> createDoorTable(ModBlocks.DIMOND_DOOR.get()));
 
-        this.dropSelf(ModBlocks.CALCITE_BRICKS.get());
-        this.dropSelf(ModBlocks.POLISHED_CALCITE.get());
-        this.dropSelf(ModBlocks.CHISELED_CALCITE.get());
     }
 
     @Override

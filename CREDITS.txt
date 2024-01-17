@@ -1,3 +1,46 @@
-Dźwięki:
-- Water_dropping - pixabay / Dripping Water - Nature Sounds / JuliusH
+===============================================================================
+                          MINECRAFT MITOLOGICZNY MOD
+                                    Dzięki
+===============================================================================
+
+Mod został stworzony przez: Igor Pieper
+                            Natalia Nguyen Huu
+                            Zuzanna Ciecieląg
+                            Katsiaryna Kavaliova
+                            Aleksandra Dorosz
+
+-------------------------------------------------------------------------------
+                                KONTRYBUTORZY
+-------------------------------------------------------------------------------
+
+Twórcy modów i zasobów:
+
+- [Imię/Nick]: Za stworzenie [nazwa modu/zasobu]
+- [Imię/Nick]: Za inspirację i udostępnienie [nazwa modu/zasobu]
+- ...
+
+-------------------------------------------------------------------------------
+                              WSPÓŁPRACA I TESTY
+-------------------------------------------------------------------------------
+
+Osoby, które pomogły w testowaniu i dostarczyły cenną opinię:
+
+- [Natalia Nguyen Huu, Aleksandra Dorosz]: Za cenne uwagi podczas testów beta
+- [Igor Pieper]: Za pomoc w znajdowaniu błędów i zgłaszaniu problemów
+- [Zuzanna Ciecieląg]: Za uczciwą ocenę i inspirację
+
+-------------------------------------------------------------------------------
+                               ZASOBY ZEWNĘTRZNE
+-------------------------------------------------------------------------------
+
+Należy podziękować następującym autorom za udostępnienie zasobów, które zostały
+wykorzystane w tym module:
+
+1. [Imię/Nick] - [Nazwa zasobu] - Licencja: [rodzaj licencji]
+2. [Imię/Nick] - [Nazwa zasobu] - Licencja: [rodzaj licencji]
+3. ...
+
+===============================================================================
+                                DZIĘKUJEMY!
+===============================================================================
 

@@ -13,6 +13,7 @@ import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.mmmteam.minecraftmythologicalmod.block.custom.RiceCropBlock;
 
 
 import java.util.function.Function;
@@ -27,6 +28,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels(){
 
         makeCrop((LaurelBushCrop) ModBlocks.LAUREL_BUSH_CROP.get(), "laurel_bush_stage", "laurel_bush_stage");
+
+        makeRiceCrop(((RiceCropBlock) ModBlocks.RICE_CROP.get()), "rice_crop_stage", "rice_crop_stage");
 
         simpleBlockWithItem(ModBlocks.LAUREL_BUSH.get(), models().cross(blockTexture(ModBlocks.LAUREL_BUSH.get()).getPath(),
                 blockTexture(ModBlocks.LAUREL_BUSH.get())).renderType("cutout"));
@@ -74,6 +77,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.OLIVE_DOOR.get()), modLoc("block/olive_door_bottom"), modLoc("block/olive_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.OLIVE_TRAPDOOR.get(), modLoc("block/olive_trapdoor"), true, "cutout");
         blockItem(ModBlocks.OLIVE_TRAPDOOR, "_bottom");
+//        signBlock(((StandingSignBlock) ModBlocks.OLIVE_SIGN.get()), ((WallSignBlock) ModBlocks.OLIVE_WALL_SIGN.get()),
+//                blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+//
+//        hangingSignBlock(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
 
 
         blockWithItem(ModBlocks.STICK_BLOCK);
@@ -87,6 +94,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.STICK_DOOR.get()), modLoc("block/stick_door_bottom"), modLoc("block/stick_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.STICK_TRAPDOOR.get(), modLoc("block/stick_trapdoor"), true, "cutout");
         blockItem(ModBlocks.STICK_TRAPDOOR, "_bottom");
+//        signBlock(((StandingSignBlock) ModBlocks.STICK_SIGN.get()), ((WallSignBlock) ModBlocks.STICK_WALL_SIGN.get()),
+//                blockTexture(ModBlocks.STICK_BLOCK.get()));
+//
+//        hangingSignBlock(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STICK_BLOCK.get()));
 
 
 
@@ -96,18 +107,37 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         stairsBlock(((StairBlock) ModBlocks.CALCITE_STAIRS.get()), blockTexture(Blocks.CALCITE));
         slabBlock(((SlabBlock) ModBlocks.CALCITE_SLAB.get()), blockTexture(Blocks.CALCITE), blockTexture(Blocks.CALCITE));
-
-
-
-
+        buttonBlock(((ButtonBlock) ModBlocks.CALCITE_BUTTON.get()), blockTexture(Blocks.CALCITE));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.CALCITE_PRESSURE_PLATE.get()), blockTexture(Blocks.CALCITE));
         blockWithItem(ModBlocks.CALCITE_BRICKS);
         blockWithItem(ModBlocks.POLISHED_CALCITE);
         blockWithItem(ModBlocks.CHISELED_CALCITE);
+
+        blockWithItem(ModBlocks.DIMOND_BLOCK);
+        slabBlock(((SlabBlock) ModBlocks.DIMOND_SLAB.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        stairsBlock(((StairBlock) ModBlocks.DIMOND_STAIRS.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.DIMOND_BUTTON.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.DIMOND_PRESSURE_PLATE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        fenceBlock(((FenceBlock) ModBlocks.DIMOND_FENCE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.DIMOND_FENCE_GATE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.DIMOND_WALL.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.DIMOND_DOOR.get()), modLoc("block/dimond_door_bottom"), modLoc("block/dimond_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.DIMOND_TRAPDOOR.get(), modLoc("block/dimond_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.DIMOND_TRAPDOOR, "_bottom");
+
+
+
 
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    public void makeRiceCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> riceStates(state, block, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
     }
@@ -119,6 +149,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private ResourceLocation key(Block block) {
         return ForgeRegistries.BLOCKS.getKey(block);
     }
+
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
@@ -140,6 +171,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         return models;
     }
 
+    private ConfiguredModel[] riceStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((RiceCropBlock) block).getAgeProperty()),
+                new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/" + textureName + state.getValue(((RiceCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
     private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("minecraftmythologicalmod:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
     }
@@ -151,4 +190,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
 }

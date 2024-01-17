@@ -18,6 +18,8 @@
   "item.minecraftmythologicalmod.olive_boat": "Olive Boat",
   "item.minecraftmythologicalmod.olive_chest_boat": "Olive Chest Boat",
   "entity.minecraftmythologicalmod.mod_chest_boat": "Boat with Chest",
+  "block.minecraftmythologicalmod.olive_sign": "Olive Sign",
+  "block.minecraftmythologicalmod.olive_hanging_sign": "Olive Hanging Sign",
 
   "block.minecraftmythologicalmod.stick_block": "Blok of Sticks",
   "block.minecraftmythologicalmod.stick_stairs": "Stick Stairs",
@@ -26,13 +28,11 @@
   "block.minecraftmythologicalmod.stick_pressure_plate": "Stick Pressure Plate",
   "block.minecraftmythologicalmod.stick_fence": "Stick Fence",
   "block.minecraftmythologicalmod.stick_fence_gate": "Stick Fence Gate",
-  "block.minecraftmythologicalmod.stick_wall": "Stick Wall",
-  "block.minecraftmythologicalmod.stick_door": "Stick Door",
   "block.minecraftmythologicalmod.stick_trapdoor": "Stick Trapdoor",
   "item.minecraftmythologicalmod.stick_boat": "Stick Boat",
   "item.minecraftmythologicalmod.stick_chest_boat": "Stick Chest Boat",
-
-
+  "block.minecraftmythologicalmod.stick_sign": "Stick Sign",
+  "block.minecraftmythologicalmod.stick_hanging_sign": "Stick Hanging Sign",
 
   "block.minecraftmythologicalmod.ancient_portal": "Ancient Portal",
 
@@ -41,6 +41,19 @@
   "block.minecraftmythologicalmod.polished_calcite": "Polished Calcite",
   "block.minecraftmythologicalmod.calcite_stairs": "Calcite Stairs",
   "block.minecraftmythologicalmod.calcite_slab": "Calcite Slab",
+  "block.minecraftmythologicalmod.calcite_button": "Calcite Button",
+  "block.minecraftmythologicalmod.calcite_pressure_plate": "Calcite Pressure Plate",
+
+  "block.minecraftmythologicalmod.dimond_block": "DIMOND",
+  "block.minecraftmythologicalmod.dimond_stairs": "Dimond Stairs",
+  "block.minecraftmythologicalmod.dimond_slab": "Dimond Slab",
+  "block.minecraftmythologicalmod.dimond_button": "Dimond Button",
+  "block.minecraftmythologicalmod.dimond_pressure_plate": "Dimond Pressure Plate",
+  "block.minecraftmythologicalmod.dimond_fence": "Dimond Fence",
+  "block.minecraftmythologicalmod.dimond_fence_gate": "Dimond Fence Gate",
+  "block.minecraftmythologicalmod.dimond_wall": "Dimond Wall",
+  "block.minecraftmythologicalmod.dimond_door": "Dimond Door",
+  "block.minecraftmythologicalmod.dimond_trapdoor": "Dimond Trapdoor",
 
   "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
   "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",
@@ -52,11 +65,16 @@
   "item.minecraftmythologicalmod.bay_leaf": "Bay Leaf",
   "item.minecraftmythologicalmod.grapes": "Grapes",
 
+  "item.minecraftmythologicalmod.rice": "Rice",
+  "item.minecraftmythologicalmod.rice_seeds": "Rice Seeds",
+
   "item.minecraftmythologicalmod.ambrosia": "Ambrosia",
   "item.minecraftmythologicalmod.aconite_root": "Aconite Root",
   "item.minecraftmythologicalmod.onigiri": "Onigiri",
   "item.minecraftmythologicalmod.dango": "Dango",
   "item.minecraftmythologicalmod.mochi": "Mochi",
+  "item.minecraftmythologicalmod.sushi": "Sushi",
+  "item.minecraftmythologicalmod.bowl_of_rice": "Bowl Of Rice",
 
   "item.minecraftmythologicalmod.good_looking_stick": "Good Looking Stick",
   "item.minecraftmythologicalmod.pyxis": "Pyxis",

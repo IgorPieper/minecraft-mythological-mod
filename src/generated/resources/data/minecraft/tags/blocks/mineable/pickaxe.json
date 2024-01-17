@@ -4,6 +4,18 @@
     "minecraftmythologicalmod:calcite_slab",
     "minecraftmythologicalmod:calcite_bricks",
     "minecraftmythologicalmod:polished_calcite",
-    "minecraftmythologicalmod:chiseled_calcite"
+    "minecraftmythologicalmod:chiseled_calcite",
+    "minecraftmythologicalmod:calcite_button",
+    "minecraftmythologicalmod:calcite_pressure_plate",
+    "minecraftmythologicalmod:dimond_block",
+    "minecraftmythologicalmod:dimond_stairs",
+    "minecraftmythologicalmod:dimond_slab",
+    "minecraftmythologicalmod:dimond_button",
+    "minecraftmythologicalmod:dimond_pressure_plate",
+    "minecraftmythologicalmod:dimond_fence",
+    "minecraftmythologicalmod:dimond_fence_gate",
+    "minecraftmythologicalmod:dimond_door",
+    "minecraftmythologicalmod:dimond_trapdoor",
+    "minecraftmythologicalmod:dimond_wall"
   ]
 }

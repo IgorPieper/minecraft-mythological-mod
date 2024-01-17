@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crop": "minecraftmythologicalmod:block/rice_crop_stage4"
+  }
+}

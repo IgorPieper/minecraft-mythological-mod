@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#S#",
+    "SYS",
+    "#S#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:kelp"
+    },
+    "S": {
+      "item": "minecraftmythologicalmod:rice"
+    },
+    "Y": {
+      "item": "minecraft:salmon"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:sushi",
+    "count": 1
+  }
+}

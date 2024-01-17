@@ -4,6 +4,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -25,12 +26,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GOOD_LOOKING_STICK);
         simpleItem(ModItems.BAY_LEAF);
         simpleBlockItemBlockTexture(ModBlocks.LAUREL_BUSH);
+        simpleItem(ModItems.RICE);
+        simpleItem(ModItems.RICE_SEEDS);
         simpleItem(ModItems.GRAPES);
         simpleBlockItemBlockTexture(ModBlocks.IRIS);
         simpleBlockItemBlockTexture(ModBlocks.ACONITE);
         simpleBlockItemBlockTexture(ModBlocks.SPIDER_LILY);
-
-        saplingItem(ModBlocks.OLIVE_SAPLING);
 
         simpleItem(ModItems.PYXIS);
         simpleItem(ModItems.IRIS_PYXIS);
@@ -49,11 +50,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ONIGIRI);
         simpleItem(ModItems.DANGO);
         simpleItem(ModItems.MOCHI);
-
+        simpleItem(ModItems.SUSHI);
+        simpleItem(ModItems.BOWL_OF_RICE);
 
         evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.CALCITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.CALCITE_PRESSURE_PLATE);
+        buttonItem(ModBlocks.CALCITE_BUTTON, ModBlocks.CALCITE_BRICKS);
 
+
+        saplingItem(ModBlocks.OLIVE_SAPLING);
         evenSimplerBlockItem(ModBlocks.OLIVE_STAIRS);
         evenSimplerBlockItem(ModBlocks.OLIVE_SLAB);
         simpleBlockItem(ModBlocks.OLIVE_DOOR);
@@ -64,6 +70,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
         simpleItem(ModItems.OLIVE_BOAT);
         simpleItem(ModItems.OLIVE_CHEST_BOAT);
+//        simpleItem(ModItems.OLIVE_SIGN);
+//        simpleItem(ModItems.OLIVE_HANGING_SIGN);
 
 
         evenSimplerBlockItem(ModBlocks.STICK_STAIRS);
@@ -76,6 +84,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.STICK_FENCE_GATE);
         simpleItem(ModItems.STICK_BOAT);
         simpleItem(ModItems.STICK_CHEST_BOAT);
+//        simpleItem(ModItems.STICK_SIGN);
+//        simpleItem(ModItems.STICK_HANGING_SIGN);
+
+        evenSimplerBlockItem(ModBlocks.DIMOND_STAIRS);
+        evenSimplerBlockItem(ModBlocks.DIMOND_SLAB);
+        simpleBlockItem(ModBlocks.DIMOND_DOOR);
+        fenceItem(ModBlocks.DIMOND_FENCE, ModBlocks.DIMOND_BLOCK);
+        buttonItem(ModBlocks.DIMOND_BUTTON, ModBlocks.DIMOND_BLOCK);
+        wallItem(ModBlocks.DIMOND_WALL, ModBlocks.DIMOND_BLOCK);
+        evenSimplerBlockItem(ModBlocks.DIMOND_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.DIMOND_FENCE_GATE);
+
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
         simpleItem(ModItems.GIFT_OF_ATHENA);
