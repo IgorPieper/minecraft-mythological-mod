@@ -58,6 +58,7 @@
   "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
   "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",
   "block.minecraftmythologicalmod.laurel_bush": "Laurel Bush",
+  "block.minecraftmythologicalmod.rice_bush": "Rice Bush",
   "block.minecraftmythologicalmod.iris": "Iris",
   "block.minecraftmythologicalmod.aconite": "Aconite",
   "block.minecraftmythologicalmod.spider_lily": "Spider Lily",
@@ -113,6 +114,9 @@
 
   "item.minecraftmythologicalmod.oni_spawn_egg": "Oni Spawn Egg",
   "entity.minecraftmythologicalmod.oni": "Oni",
+
+  "item.minecraftmythologicalmod.koi_fish_spawn_egg": "Koi Fish Spawn Egg",
+  "entity.minecraftmythologicalmod.koi_fish": "Koi Fish",
 
   "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Gods Smith",
 

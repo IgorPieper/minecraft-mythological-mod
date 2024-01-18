@@ -78,6 +78,7 @@ public class ModCreativeModTabs {
 
 
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());
+                        pOutput.accept(ModBlocks.RICE_BUSH.get());
                         pOutput.accept(ModBlocks.IRIS.get());
                         pOutput.accept(ModBlocks.ACONITE.get());
                         pOutput.accept(ModBlocks.SPIDER_LILY.get());
@@ -121,6 +122,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MINOTAUR_SPAWN_EGG.get());
                         pOutput.accept(ModItems.KITSUNE_SPAWN_EGG.get());
                         pOutput.accept(ModItems.ONI_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.KOI_FISH_SPAWN_EGG.get());
 
                     })
                     .build());

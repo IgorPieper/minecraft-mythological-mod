@@ -61,6 +61,7 @@
   "block.minecraftmythologicalmod.olive_leaves": "Oliwne Liście",
   "block.minecraftmythologicalmod.olive_sapling": "Oliwna Sadzonka",
   "block.minecraftmythologicalmod.laurel_bush": "Krzew Laurowy",
+  "block.minecraftmythologicalmod.rice_bush": "Kępa ryżu",
   "block.minecraftmythologicalmod.iris": "Irys",
   "block.minecraftmythologicalmod.aconite": "Tojad",
   "block.minecraftmythologicalmod.spider_lily": "Lilia Pajęcza",
@@ -115,6 +116,9 @@
 
   "item.minecraftmythologicalmod.oni_spawn_egg": "Jajko Spawnu Oni",
   "entity.minecraftmythologicalmod.oni": "Oni",
+
+  "item.minecraftmythologicalmod.koi_fish_spawn_egg": "Jajko Spawnu Karpia Koi",
+  "entity.minecraftmythologicalmod.koi_fish": "Koi Fish",
 
   "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Boży Kowal",
 

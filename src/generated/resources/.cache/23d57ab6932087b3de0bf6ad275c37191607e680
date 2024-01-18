@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-17T00:04:52.0067118	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-17T14:24:27.5260726	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -30,6 +30,7 @@ c2f8d0e6fa1ac94a91bc328225780874ca513c55 assets/minecraftmythologicalmod/models/
 b3359063cc1f87388a499ba3062eb7a00a77c5cc assets/minecraftmythologicalmod/models/item/iris.json
 5f3df4960b64b97846664bccaa93711775548dd7 assets/minecraftmythologicalmod/models/item/iris_pyxis.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/kitsune_spawn_egg.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/koi_fish_spawn_egg.json
 e09972512e7cc74e16632d4ad1bbf60bb364883d assets/minecraftmythologicalmod/models/item/laurel_bush.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/minecraftmythologicalmod/models/item/minotaur_spawn_egg.json
 4867d00db44aa0462187b79811e874358c4ecc4f assets/minecraftmythologicalmod/models/item/mochi.json
