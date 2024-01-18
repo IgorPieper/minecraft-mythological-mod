@@ -3,6 +3,9 @@ package net.mmmteam.minecraftmythologicalmod.worldgen;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
@@ -19,9 +22,11 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlac
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.custom.OliveTrunkPlacer;
+import net.mmmteam.minecraftmythologicalmod.worldgen.tree.custom.ToriiTrunkPlacer;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OLIVE_KEY = registerKey("olive");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TORII_KEY = registerKey("torii");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> IRIS_KEY = registerKey("iris");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ACONITE_KEY = registerKey("aconite");
@@ -35,6 +40,13 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.OLIVE_LOG.get()),
                 new OliveTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.OLIVE_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, TORII_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.TORII_LOG.get()),
+                new ToriiTrunkPlacer(7, 6, 5),
+                BlockStateProvider.simple(ModBlocks.TORII_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 

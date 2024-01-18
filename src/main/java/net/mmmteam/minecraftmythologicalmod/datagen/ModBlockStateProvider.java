@@ -130,6 +130,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_TORII_WOOD);
         leavesBlock(ModBlocks.TORII_LEAVES);
         saplingBlock(ModBlocks.TORII_SAPLING);
+        simpleBlockWithItem(ModBlocks.POTTED_TORII_SAPLING.get(), models().singleTexture("potted_torii_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.TORII_SAPLING.get())).renderType("cutout"));
         blockWithItem(ModBlocks.TORII_PLANKS);
         slabBlock(((SlabBlock) ModBlocks.TORII_SLAB.get()), blockTexture(ModBlocks.TORII_PLANKS.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
         stairsBlock(((StairBlock) ModBlocks.TORII_STAIRS.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));

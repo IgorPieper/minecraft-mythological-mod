@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-18T08:35:17.2061241	Registries
+// 1.20.2	2024-01-18T20:51:35.1801544	Registries
 74a17c598168a37b0d85fc9fe5e571457e76975e data/minecraftmythologicalmod/dimension/ancient_world.json
 e241e971aacde6f4d0236c622c99d6c9caeb981e data/minecraftmythologicalmod/dimension_type/ancient_world_type.json
 a2a3cba2ddc0676b0560cc90e4d7bee379db8e75 data/minecraftmythologicalmod/forge/biome_modifier/add_aconite.json
@@ -17,6 +17,7 @@ de482578315ba75eaa1864da4306b062b08bea21 data/minecraftmythologicalmod/forge/bio
 ced137de7cb18ec30b7f7a6bcf8675fd15e90910 data/minecraftmythologicalmod/worldgen/configured_feature/laurel_bush.json
 d1128c5b20c96a7829ce3325bab26115e15756c1 data/minecraftmythologicalmod/worldgen/configured_feature/olive.json
 8141489a81dea9a600f91d39803e36b9dddb7b4b data/minecraftmythologicalmod/worldgen/configured_feature/spider_lily.json
+84fd850c9dc047c71f1dec6685d05c766ad8f4b7 data/minecraftmythologicalmod/worldgen/configured_feature/torii.json
 a85533c0ce4891304b59b8d4312f7497ca3324bd data/minecraftmythologicalmod/worldgen/placed_feature/aconite_placed.json
 35a9411ce74b1d2ec618a7ecc312433f8c753af5 data/minecraftmythologicalmod/worldgen/placed_feature/iris_placed.json
 06aa8873c833e9da5fbd68856c276748130fbe29 data/minecraftmythologicalmod/worldgen/placed_feature/laurel_placed.json
