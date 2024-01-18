@@ -36,6 +36,9 @@ public class ModChestBoatEntity extends ChestBoat {
             case STICK -> {
                 return ModItems.STICK_CHEST_BOAT.get();
             }
+            case TORII -> {
+                return ModItems.TORII_CHEST_BOAT.get();
+            }
         }
         return super.getDropItem();
     }

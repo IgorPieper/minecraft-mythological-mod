@@ -35,4 +35,9 @@ public class ModModelLayers {
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "boat/stick"), "main");
     public static final ModelLayerLocation STICK_CHEST_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "chest_boat/stick"), "main");
+
+    public static final ModelLayerLocation TORII_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "boat/torii"), "main");
+    public static final ModelLayerLocation TORII_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "chest_boat/torii"), "main");
 }

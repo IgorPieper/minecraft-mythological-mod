@@ -95,6 +95,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.TORII_WALL, ModBlocks.TORII_PLANKS);
         evenSimplerBlockItem(ModBlocks.TORII_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.TORII_FENCE_GATE);
+        simpleItem(ModItems.TORII_BOAT);
+        simpleItem(ModItems.TORII_CHEST_BOAT);
 
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
