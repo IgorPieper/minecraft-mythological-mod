@@ -5,6 +5,8 @@
   "block.minecraftmythologicalmod.olive_wood": "Olive Wood",
   "block.minecraftmythologicalmod.stripped_olive_log": "Stripped Olive Log",
   "block.minecraftmythologicalmod.stripped_olive_wood": "Stripped Olive Wood",
+  "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
+  "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",
   "block.minecraftmythologicalmod.olive_planks": "Olive Planks",
   "block.minecraftmythologicalmod.olive_stairs": "Olive Stairs",
   "block.minecraftmythologicalmod.olive_slab": "Olive Slab",
@@ -49,6 +51,8 @@
   "block.minecraftmythologicalmod.torii_wood": "Torii Wood",
   "block.minecraftmythologicalmod.stripped_torii_log": "Stripped Torii Log",
   "block.minecraftmythologicalmod.stripped_torii_wood": "Stripped Torii Wood",
+  "block.minecraftmythologicalmod.torii_leaves": "Torii Leaves",
+  "block.minecraftmythologicalmod.torii_sapling": "Torii Sapling",
   "block.minecraftmythologicalmod.torii_planks": "Torii Planks",
   "block.minecraftmythologicalmod.torii_stairs": "Torii Stairs",
   "block.minecraftmythologicalmod.torii_slab": "Torii Slab",
@@ -62,8 +66,7 @@
   "item.minecraftmythologicalmod.torii_boat": "Torii Boat",
   "item.minecraftmythologicalmod.torii_chest_boat": "Torii Chest Boat",
 
-  "block.minecraftmythologicalmod.olive_leaves": "Olive Leaves",
-  "block.minecraftmythologicalmod.olive_sapling": "Olive Sapling",
+
   "block.minecraftmythologicalmod.laurel_bush": "Laurel Bush",
   "block.minecraftmythologicalmod.rice_bush": "Rice Bush",
   "block.minecraftmythologicalmod.iris": "Iris",
