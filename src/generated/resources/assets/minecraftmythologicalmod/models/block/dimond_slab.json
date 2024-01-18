@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "minecraftmythologicalmod:block/dimond_block",
-    "side": "minecraftmythologicalmod:block/dimond_block",
-    "top": "minecraftmythologicalmod:block/dimond_block"
-  }
-}

@@ -116,17 +116,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.POLISHED_CALCITE);
         blockWithItem(ModBlocks.CHISELED_CALCITE);
 
-        blockWithItem(ModBlocks.DIMOND_BLOCK);
-        slabBlock(((SlabBlock) ModBlocks.DIMOND_SLAB.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
-        stairsBlock(((StairBlock) ModBlocks.DIMOND_STAIRS.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
-        buttonBlock(((ButtonBlock) ModBlocks.DIMOND_BUTTON.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
-        pressurePlateBlock(((PressurePlateBlock) ModBlocks.DIMOND_PRESSURE_PLATE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
-        fenceBlock(((FenceBlock) ModBlocks.DIMOND_FENCE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
-        fenceGateBlock(((FenceGateBlock) ModBlocks.DIMOND_FENCE_GATE.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
-        wallBlock(((WallBlock) ModBlocks.DIMOND_WALL.get()), blockTexture(ModBlocks.DIMOND_BLOCK.get()));
-        doorBlockWithRenderType(((DoorBlock) ModBlocks.DIMOND_DOOR.get()), modLoc("block/dimond_door_bottom"), modLoc("block/dimond_door_top"), "cutout");
-        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.DIMOND_TRAPDOOR.get(), modLoc("block/dimond_trapdoor"), true, "cutout");
-        blockItem(ModBlocks.DIMOND_TRAPDOOR, "_bottom");
+//        blockItem(ModBlocks.TORII_LOG);
+//        blockItem(ModBlocks.TORII_WOOD);
+//        blockItem(ModBlocks.STRIPPED_TORII_LOG);
+//        blockItem(ModBlocks.STRIPPED_TORII_WOOD);
+        blockWithItem(ModBlocks.TORII_PLANKS);
+        slabBlock(((SlabBlock) ModBlocks.TORII_SLAB.get()), blockTexture(ModBlocks.TORII_PLANKS.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
+        stairsBlock(((StairBlock) ModBlocks.TORII_STAIRS.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.TORII_BUTTON.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.TORII_PRESSURE_PLATE.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.TORII_FENCE.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.TORII_FENCE_GATE.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
+        wallBlock(((WallBlock) ModBlocks.TORII_WALL.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.TORII_DOOR.get()), modLoc("block/torii_door_bottom"), modLoc("block/torii_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.TORII_TRAPDOOR.get(), modLoc("block/torii_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.TORII_TRAPDOOR, "_bottom");
 
 
 

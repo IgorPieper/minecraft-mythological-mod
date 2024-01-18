@@ -116,18 +116,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 //                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
 
 
-        this.dropSelf(ModBlocks.DIMOND_BLOCK.get());
-        this.dropSelf(ModBlocks.DIMOND_STAIRS.get());
-        this.dropSelf(ModBlocks.DIMOND_BUTTON.get());
-        this.dropSelf(ModBlocks.DIMOND_PRESSURE_PLATE.get());
-        this.add(ModBlocks.DIMOND_SLAB.get(),
-                block -> createSlabItemTable(ModBlocks.DIMOND_SLAB.get()));
-        this.dropSelf(ModBlocks.DIMOND_FENCE.get());
-        this.dropSelf(ModBlocks.DIMOND_FENCE_GATE.get());
-        this.dropSelf(ModBlocks.DIMOND_WALL.get());
-        this.dropSelf(ModBlocks.DIMOND_TRAPDOOR.get());
-        this.add(ModBlocks.DIMOND_DOOR.get(),
-                block -> createDoorTable(ModBlocks.DIMOND_DOOR.get()));
+//        this.dropSelf(ModBlocks.TORII_LOG.get());
+//        this.dropSelf(ModBlocks.TORII_WOOD.get());
+//        this.dropSelf(ModBlocks.STRIPPED_TORII_LOG.get());
+//        this.dropSelf(ModBlocks.STRIPPED_TORII_WOOD.get());
+        this.dropSelf(ModBlocks.TORII_PLANKS.get());
+        this.dropSelf(ModBlocks.TORII_STAIRS.get());
+        this.dropSelf(ModBlocks.TORII_BUTTON.get());
+        this.dropSelf(ModBlocks.TORII_PRESSURE_PLATE.get());
+        this.add(ModBlocks.TORII_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.TORII_SLAB.get()));
+        this.dropSelf(ModBlocks.TORII_FENCE.get());
+        this.dropSelf(ModBlocks.TORII_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.TORII_WALL.get());
+        this.dropSelf(ModBlocks.TORII_TRAPDOOR.get());
+        this.add(ModBlocks.TORII_DOOR.get(),
+                block -> createDoorTable(ModBlocks.TORII_DOOR.get()));
 
     }
 

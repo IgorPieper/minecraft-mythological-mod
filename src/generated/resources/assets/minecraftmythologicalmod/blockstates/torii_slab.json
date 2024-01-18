@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraftmythologicalmod:block/torii_slab"
+    },
+    "type=double": {
+      "model": "minecraftmythologicalmod:block/torii_planks"
+    },
+    "type=top": {
+      "model": "minecraftmythologicalmod:block/torii_slab_top"
+    }
+  }
+}

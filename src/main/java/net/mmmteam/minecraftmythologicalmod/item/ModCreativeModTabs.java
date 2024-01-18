@@ -66,15 +66,19 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.CALCITE_PRESSURE_PLATE.get());
 
 
-                        pOutput.accept(ModBlocks.DIMOND_BLOCK.get());
-                        pOutput.accept(ModBlocks.DIMOND_STAIRS.get());
-                        pOutput.accept(ModBlocks.DIMOND_SLAB.get());
-                        pOutput.accept(ModBlocks.DIMOND_BUTTON.get());
-                        pOutput.accept(ModBlocks.DIMOND_PRESSURE_PLATE.get());
-                        pOutput.accept(ModBlocks.DIMOND_FENCE.get());
-                        pOutput.accept(ModBlocks.DIMOND_FENCE_GATE.get());
-                        pOutput.accept(ModBlocks.DIMOND_DOOR.get());
-                        pOutput.accept(ModBlocks.DIMOND_TRAPDOOR.get());
+//                        pOutput.accept(ModBlocks.TORII_LOG.get());
+//                        pOutput.accept(ModBlocks.TORII_WOOD.get());
+//                        pOutput.accept(ModBlocks.STRIPPED_TORII_LOG.get());
+//                        pOutput.accept(ModBlocks.STRIPPED_TORII_WOOD.get());
+                        pOutput.accept(ModBlocks.TORII_PLANKS.get());
+                        pOutput.accept(ModBlocks.TORII_STAIRS.get());
+                        pOutput.accept(ModBlocks.TORII_SLAB.get());
+                        pOutput.accept(ModBlocks.TORII_BUTTON.get());
+                        pOutput.accept(ModBlocks.TORII_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.TORII_FENCE.get());
+                        pOutput.accept(ModBlocks.TORII_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.TORII_DOOR.get());
+                        pOutput.accept(ModBlocks.TORII_TRAPDOOR.get());
 
 
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());
