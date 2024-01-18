@@ -79,6 +79,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.TORII_FENCE_GATE.get());
                         pOutput.accept(ModBlocks.TORII_DOOR.get());
                         pOutput.accept(ModBlocks.TORII_TRAPDOOR.get());
+                        pOutput.accept(ModItems.TORII_BOAT.get());
+                        pOutput.accept(ModItems.TORII_CHEST_BOAT.get());
 
 
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());

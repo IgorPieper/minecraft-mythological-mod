@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/O/",
+    "/O/"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "item": "minecraftmythologicalmod:torii_planks"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:torii_fence_gate",
+    "count": 1
+  }
+}

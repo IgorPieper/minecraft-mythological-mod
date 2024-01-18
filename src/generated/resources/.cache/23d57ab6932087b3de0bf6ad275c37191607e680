@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-18T17:07:03.6815082	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-18T17:33:07.4427133	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -55,7 +55,9 @@ f24c93d019a51d1d699c41b0bfe20e61cece2590 assets/minecraftmythologicalmod/models/
 93c31c4196e3dea1233aef185642f37a565ae9ad assets/minecraftmythologicalmod/models/item/stick_stairs.json
 2ab25fe14179be55204d76d35073ad058e187234 assets/minecraftmythologicalmod/models/item/stick_wall.json
 0d893f842c25814ea01098463e22521c8198b83d assets/minecraftmythologicalmod/models/item/sushi.json
+22134129257a9666db49029b262d126aafc5f98d assets/minecraftmythologicalmod/models/item/torii_boat.json
 db558c8d174371b29ae74840e94ce0595b7f5cd3 assets/minecraftmythologicalmod/models/item/torii_button.json
+7f4c3ccc2ce05d4b773e575b28980e20557db88b assets/minecraftmythologicalmod/models/item/torii_chest_boat.json
 585d8153dc1d572e64c41677fd76a4cba4d51cc6 assets/minecraftmythologicalmod/models/item/torii_door.json
 843d2f1d2d084977480adf77cf3a65636174c733 assets/minecraftmythologicalmod/models/item/torii_fence.json
 03245acaa74cbb646e3aa28e55493bb5d6455194 assets/minecraftmythologicalmod/models/item/torii_fence_gate.json

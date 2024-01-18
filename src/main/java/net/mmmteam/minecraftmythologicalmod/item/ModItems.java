@@ -147,6 +147,11 @@ public class ModItems {
 //            () -> new HangingSignItem(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(),
 //                    new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> TORII_BOAT = ITEMS.register("torii_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.TORII, new Item.Properties()));
+    public static final RegistryObject<Item> TORII_CHEST_BOAT = ITEMS.register("torii_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.TORII, new Item.Properties()));
+
     public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 

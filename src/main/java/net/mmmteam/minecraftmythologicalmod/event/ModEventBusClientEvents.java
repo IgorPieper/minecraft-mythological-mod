@@ -38,6 +38,9 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.STICK_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.STICK_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
 
+        event.registerLayerDefinition(ModModelLayers.TORII_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.TORII_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
+
     }
 //    @SubscribeEvent
 //    public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
