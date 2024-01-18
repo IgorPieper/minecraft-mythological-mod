@@ -116,10 +116,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 //                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
 
 
-//        this.dropSelf(ModBlocks.TORII_LOG.get());
-//        this.dropSelf(ModBlocks.TORII_WOOD.get());
-//        this.dropSelf(ModBlocks.STRIPPED_TORII_LOG.get());
-//        this.dropSelf(ModBlocks.STRIPPED_TORII_WOOD.get());
+        this.dropSelf(ModBlocks.TORII_LOG.get());
+        this.dropSelf(ModBlocks.TORII_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_TORII_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_TORII_WOOD.get());
         this.dropSelf(ModBlocks.TORII_PLANKS.get());
         this.dropSelf(ModBlocks.TORII_STAIRS.get());
         this.dropSelf(ModBlocks.TORII_BUTTON.get());
@@ -132,6 +132,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TORII_TRAPDOOR.get());
         this.add(ModBlocks.TORII_DOOR.get(),
                 block -> createDoorTable(ModBlocks.TORII_DOOR.get()));
+        this.dropSelf(ModBlocks.TORII_SAPLING.get());
+        this.add(ModBlocks.POTTED_TORII_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.TORII_SAPLING.get()));
+
+        this.add(ModBlocks.TORII_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.TORII_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
     }
 

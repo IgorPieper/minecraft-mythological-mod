@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-18T17:33:07.4427133	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-18T19:21:25.93172	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -62,6 +62,7 @@ db558c8d174371b29ae74840e94ce0595b7f5cd3 assets/minecraftmythologicalmod/models/
 843d2f1d2d084977480adf77cf3a65636174c733 assets/minecraftmythologicalmod/models/item/torii_fence.json
 03245acaa74cbb646e3aa28e55493bb5d6455194 assets/minecraftmythologicalmod/models/item/torii_fence_gate.json
 f220445f233589d0bfb63f15a9c5242dc86d5d98 assets/minecraftmythologicalmod/models/item/torii_pressure_plate.json
+0e210b4c28d2547a5d55b866cdcfbe5c423cbe9e assets/minecraftmythologicalmod/models/item/torii_sapling.json
 6bb239ad55c3a43cea286e00af92154023106a63 assets/minecraftmythologicalmod/models/item/torii_slab.json
 e4cfd32109426719cab55acaa9adfe8b7b5f0a24 assets/minecraftmythologicalmod/models/item/torii_stairs.json
 67b1d6cb58cd07fc751050dd95644704a904b6b2 assets/minecraftmythologicalmod/models/item/torii_wall.json

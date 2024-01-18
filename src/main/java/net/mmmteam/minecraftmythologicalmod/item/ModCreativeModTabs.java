@@ -65,11 +65,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.CALCITE_BUTTON.get());
                         pOutput.accept(ModBlocks.CALCITE_PRESSURE_PLATE.get());
 
-
-//                        pOutput.accept(ModBlocks.TORII_LOG.get());
-//                        pOutput.accept(ModBlocks.TORII_WOOD.get());
-//                        pOutput.accept(ModBlocks.STRIPPED_TORII_LOG.get());
-//                        pOutput.accept(ModBlocks.STRIPPED_TORII_WOOD.get());
+                        pOutput.accept(ModBlocks.TORII_LEAVES.get());
+                        pOutput.accept(ModBlocks.TORII_SAPLING.get());
+                        pOutput.accept(ModBlocks.TORII_LOG.get());
+                        pOutput.accept(ModBlocks.TORII_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_TORII_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_TORII_WOOD.get());
                         pOutput.accept(ModBlocks.TORII_PLANKS.get());
                         pOutput.accept(ModBlocks.TORII_STAIRS.get());
                         pOutput.accept(ModBlocks.TORII_SLAB.get());

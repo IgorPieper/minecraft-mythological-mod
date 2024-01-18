@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraftmythologicalmod:block/torii_sapling"
+  }
+}

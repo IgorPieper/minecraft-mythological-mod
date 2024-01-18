@@ -26,10 +26,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.OLIVE_LOG.get().asItem())
                 .add(ModBlocks.OLIVE_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_OLIVE_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_OLIVE_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_OLIVE_WOOD.get().asItem())
+                .add(ModBlocks.TORII_WOOD.get().asItem())
+                .add(ModBlocks.TORII_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_TORII_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_TORII_LOG.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.OLIVE_PLANKS.get().asItem());
+                .add(ModBlocks.OLIVE_PLANKS.get().asItem())
+                .add(ModBlocks.TORII_PLANKS.get().asItem());
 
     }
 

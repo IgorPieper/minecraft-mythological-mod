@@ -24,10 +24,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.OLIVE_LOG.get())
                 .add(ModBlocks.OLIVE_WOOD.get())
                 .add(ModBlocks.STRIPPED_OLIVE_LOG.get())
-                .add(ModBlocks.STRIPPED_OLIVE_WOOD.get());
+                .add(ModBlocks.STRIPPED_OLIVE_WOOD.get())
+                .add(ModBlocks.TORII_LOG.get())
+                .add(ModBlocks.TORII_WOOD.get())
+                .add(ModBlocks.STRIPPED_TORII_LOG.get())
+                .add(ModBlocks.STRIPPED_TORII_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.OLIVE_PLANKS.get());
+                .add(ModBlocks.OLIVE_PLANKS.get())
+                .add(ModBlocks.TORII_PLANKS.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.CALCITE_STAIRS.get(),

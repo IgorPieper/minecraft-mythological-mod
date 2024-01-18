@@ -116,10 +116,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.POLISHED_CALCITE);
         blockWithItem(ModBlocks.CHISELED_CALCITE);
 
-//        blockItem(ModBlocks.TORII_LOG);
-//        blockItem(ModBlocks.TORII_WOOD);
-//        blockItem(ModBlocks.STRIPPED_TORII_LOG);
-//        blockItem(ModBlocks.STRIPPED_TORII_WOOD);
+
+        logBlock(((RotatedPillarBlock) ModBlocks.TORII_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.TORII_WOOD.get()), blockTexture(ModBlocks.TORII_LOG.get()), blockTexture(ModBlocks.TORII_LOG.get()));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_TORII_LOG.get(), new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/stripped_torii_log"),
+                new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/stripped_torii_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_TORII_WOOD.get(), new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/stripped_torii_log"),
+                new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "block/stripped_torii_log"));
+
+        blockItem(ModBlocks.TORII_LOG);
+        blockItem(ModBlocks.TORII_WOOD);
+        blockItem(ModBlocks.STRIPPED_TORII_LOG);
+        blockItem(ModBlocks.STRIPPED_TORII_WOOD);
+        leavesBlock(ModBlocks.TORII_LEAVES);
+        saplingBlock(ModBlocks.TORII_SAPLING);
         blockWithItem(ModBlocks.TORII_PLANKS);
         slabBlock(((SlabBlock) ModBlocks.TORII_SLAB.get()), blockTexture(ModBlocks.TORII_PLANKS.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));
         stairsBlock(((StairBlock) ModBlocks.TORII_STAIRS.get()), blockTexture(ModBlocks.TORII_PLANKS.get()));

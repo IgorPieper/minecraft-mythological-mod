@@ -87,6 +87,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 //        simpleItem(ModItems.STICK_SIGN);
 //        simpleItem(ModItems.STICK_HANGING_SIGN);
 
+        saplingItem(ModBlocks.TORII_SAPLING);
         evenSimplerBlockItem(ModBlocks.TORII_STAIRS);
         evenSimplerBlockItem(ModBlocks.TORII_SLAB);
         simpleBlockItem(ModBlocks.TORII_DOOR);
