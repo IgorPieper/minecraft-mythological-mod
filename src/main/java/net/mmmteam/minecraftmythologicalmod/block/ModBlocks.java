@@ -155,32 +155,53 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.WET_SPONGE),
                     BlockSetType.STONE));
 
+//    public static final RegistryObject<Block> TORII_WOOD = registerBlock("torii_wood",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+//    public static final RegistryObject<Block> TORII_LOG = registerBlock("torii_log",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+//    public static final RegistryObject<Block> STRIPPED_TORII_LOG = registerBlock("stripped_torii_log",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+//    public static final RegistryObject<Block> STRIPPED_TORII_WOOD = registerBlock("stripped_torii_wood",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> TORII_STAIRS = registerBlock("torii_stairs",
+            () -> new StairBlock(() -> ModBlocks.TORII_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TORII_SLAB = registerBlock("torii_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TORII_BUTTON = registerBlock("torii_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.WOOD),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> TORII_PRESSURE_PLATE = registerBlock("torii_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> TORII_FENCE = registerBlock("torii_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TORII_FENCE_GATE = registerBlock("torii_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+    public static final RegistryObject<Block> TORII_WALL = registerBlock("torii_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TORII_DOOR = registerBlock("torii_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> TORII_TRAPDOOR = registerBlock("torii_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> DIMOND_BLOCK = registerBlock("dimond_block",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
-    public static final RegistryObject<Block> DIMOND_STAIRS = registerBlock("dimond_stairs",
-            () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.PINK_PETALS)));
-    public static final RegistryObject<Block> DIMOND_SLAB = registerBlock("dimond_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE_SLAB).sound(SoundType.PINK_PETALS)));
-    public static final RegistryObject<Block> DIMOND_BUTTON = registerBlock("dimond_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.PINK_PETALS),
-                    BlockSetType.STONE, 10, true));
-    public static final RegistryObject<Block> DIMOND_PRESSURE_PLATE = registerBlock("dimond_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.PINK_PETALS),
-                    BlockSetType.STONE));
-    public static final RegistryObject<Block> DIMOND_FENCE = registerBlock("dimond_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS)));
-    public static final RegistryObject<Block> DIMOND_FENCE_GATE = registerBlock("dimond_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
-    public static final RegistryObject<Block> DIMOND_WALL = registerBlock("dimond_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS)));
-    public static final RegistryObject<Block> DIMOND_DOOR = registerBlock("dimond_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS).noOcclusion(), BlockSetType.IRON));
-    public static final RegistryObject<Block> DIMOND_TRAPDOOR = registerBlock("dimond_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.PINK_PETALS).noOcclusion(), BlockSetType.IRON));
+    public static final RegistryObject<Block> TORII_PLANKS = registerBlock("torii_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
 
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
 
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final RegistryObject<Block> OLIVE_PLANKS = registerBlock("olive_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "minecraftmythologicalmod:block/torii_pressure_plate"
+    },
+    "powered=true": {
+      "model": "minecraftmythologicalmod:block/torii_pressure_plate_down"
+    }
+  }
+}

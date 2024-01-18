@@ -87,14 +87,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 //        simpleItem(ModItems.STICK_SIGN);
 //        simpleItem(ModItems.STICK_HANGING_SIGN);
 
-        evenSimplerBlockItem(ModBlocks.DIMOND_STAIRS);
-        evenSimplerBlockItem(ModBlocks.DIMOND_SLAB);
-        simpleBlockItem(ModBlocks.DIMOND_DOOR);
-        fenceItem(ModBlocks.DIMOND_FENCE, ModBlocks.DIMOND_BLOCK);
-        buttonItem(ModBlocks.DIMOND_BUTTON, ModBlocks.DIMOND_BLOCK);
-        wallItem(ModBlocks.DIMOND_WALL, ModBlocks.DIMOND_BLOCK);
-        evenSimplerBlockItem(ModBlocks.DIMOND_PRESSURE_PLATE);
-        evenSimplerBlockItem(ModBlocks.DIMOND_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.TORII_STAIRS);
+        evenSimplerBlockItem(ModBlocks.TORII_SLAB);
+        simpleBlockItem(ModBlocks.TORII_DOOR);
+        fenceItem(ModBlocks.TORII_FENCE, ModBlocks.TORII_PLANKS);
+        buttonItem(ModBlocks.TORII_BUTTON, ModBlocks.TORII_PLANKS);
+        wallItem(ModBlocks.TORII_WALL, ModBlocks.TORII_PLANKS);
+        evenSimplerBlockItem(ModBlocks.TORII_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.TORII_FENCE_GATE);
 
 
         simpleItem(ModItems.GIFT_OF_APOLLO);
