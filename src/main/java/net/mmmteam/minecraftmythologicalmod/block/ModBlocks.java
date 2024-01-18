@@ -22,6 +22,7 @@ import net.mmmteam.minecraftmythologicalmod.worldgen.tree.OliveTreeGrower;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.sounds.SoundEvents;
 import net.mmmteam.minecraftmythologicalmod.util.*;
+import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ToriiTreeGrower;
 
 import java.util.function.Supplier;
 
@@ -90,6 +91,13 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_OLIVE_WOOD = registerBlock("stripped_olive_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
+            () -> new SaplingBlock(new OliveTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> POTTED_OLIVE_SAPLING = BLOCKS.register("potted_olive_sapling",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.OLIVE_SAPLING,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
+
 //    public static final RegistryObject<Block> OLIVE_SIGN = BLOCKS.register("olive_sign",
 //            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.OLIVE));
 //    public static final RegistryObject<Block> OLIVE_WALL_SIGN = BLOCKS.register("olive_wall_sign",
@@ -185,7 +193,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TORII_TRAPDOOR = registerBlock("torii_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Block> TORII_SAPLING = registerBlock("torii_sapling",
-            () -> new SaplingBlock(new OliveTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new ToriiTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> POTTED_TORII_SAPLING = BLOCKS.register("potted_torii_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.OLIVE_SAPLING,
@@ -262,13 +270,6 @@ public class ModBlocks {
                     return 30;
                 }
             });
-
-    public static final RegistryObject<Block> OLIVE_SAPLING = registerBlock("olive_sapling",
-            () -> new SaplingBlock(new OliveTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-
-    public static final RegistryObject<Block> POTTED_OLIVE_SAPLING = BLOCKS.register("potted_olive_sapling",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.OLIVE_SAPLING,
-                    BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
 
     public static final RegistryObject<Block> ANCIENT_PORTAL = registerBlock("ancient_portal",
             () -> new AncientPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable().noOcclusion().noCollission()));
