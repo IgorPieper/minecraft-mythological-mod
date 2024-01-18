@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "#forge:is_mountain",
+  "biomes": "minecraft:windswept_gravelly_hills",
   "spawners": {
     "type": "minecraftmythologicalmod:balkanlynx",
     "maxCount": 2,
