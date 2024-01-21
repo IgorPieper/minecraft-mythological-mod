@@ -26,6 +26,7 @@ public class ModEventBusEvents {
         event.put(ModEntities.KITSUNE.get(), KitsuneEntity.createAttributes().build());
         event.put(ModEntities.ONI.get(), OniEntity.createAttributes().build());
         event.put(ModEntities.KOI_FISH.get(), KoiFishEntity.createAttributes().build());
+        event.put(ModEntities.SIKADEER.get(), SikaDeerEntity.createAttributes().build());
         event.put(ModEntities.RISSOSDOLPHIN.get(), RissosDolphinEntity.createAttributes().build());
     }
 
@@ -39,7 +40,7 @@ public class ModEventBusEvents {
                 Animal::checkAnimalSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(ModEntities.MINOTAUR.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Monster::checkMobSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
-        event.register(ModEntities.KOI_FISH.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMobSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(ModEntities.KOI_FISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Animal::checkMobSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
     }
 }
