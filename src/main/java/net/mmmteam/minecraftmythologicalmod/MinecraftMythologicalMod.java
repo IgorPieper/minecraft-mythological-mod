@@ -112,6 +112,7 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.ONI.get(), OniRenderer::new);
                 EntityRenderers.register(ModEntities.KOI_FISH.get(), KoiFishRenderer::new);
                 EntityRenderers.register(ModEntities.SIKADEER.get(), SikaDeerRenderer::new);
+                EntityRenderers.register(ModEntities.RISSOSDOLPHIN.get(), RissosDolphinRenderer::new);
                 EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
                 EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 

@@ -76,6 +76,10 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntities.SIKADEER, 0xc4a484, 0xffffff,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> RISSOSDOLPHIN_SPAWN_EGG = ITEMS.register("rissosdolphin_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RISSOSDOLPHIN, 0x5f9ea0, 0xffffff,
+                    new Item.Properties()));
+
     public static final RegistryObject<Item> HADES_TRIDENT = ITEMS.register("hades_trident",
             () -> new ObscuringSwordItem(ModItemTier.TRIDENTS, 9, -3f, new Item.Properties()));
 

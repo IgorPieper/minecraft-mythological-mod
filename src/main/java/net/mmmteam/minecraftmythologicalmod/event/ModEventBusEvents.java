@@ -26,7 +26,7 @@ public class ModEventBusEvents {
         event.put(ModEntities.KITSUNE.get(), KitsuneEntity.createAttributes().build());
         event.put(ModEntities.ONI.get(), OniEntity.createAttributes().build());
         event.put(ModEntities.KOI_FISH.get(), KoiFishEntity.createAttributes().build());
-        event.put(ModEntities.SIKADEER.get(), SikaDeerEntity.createAttributes().build());
+        event.put(ModEntities.RISSOSDOLPHIN.get(), RissosDolphinEntity.createAttributes().build());
     }
 
     @SubscribeEvent
