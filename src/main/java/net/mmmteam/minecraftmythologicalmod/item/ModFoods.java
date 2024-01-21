@@ -20,6 +20,23 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.POISON, 100), 1f)
             .build();
 
+    public static final FoodProperties ONIGIRI = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(0.6f)
+            .build();
 
+    public static final FoodProperties DANGO = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(0.6f)
+            .build();
 
+    public static final FoodProperties MOCHI = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(0.6f)
+            .build();
+
+    public static final FoodProperties SUSHI = new FoodProperties.Builder().nutrition(5)
+            .saturationMod(1.6f)
+            .build();
+
+    public static final FoodProperties BOWL_OF_RICE = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.2f)
+            .build();
 }

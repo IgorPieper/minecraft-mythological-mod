@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraftmythologicalmod:olive_planks"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:olive_slab",
+    "count": 6
+  }
+}

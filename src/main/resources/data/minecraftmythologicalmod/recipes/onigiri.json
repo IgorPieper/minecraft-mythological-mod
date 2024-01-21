@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "B"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraftmythologicalmod:rice"
+    },
+    "B": {
+      "item": "minecraft:kelp"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:onigiri",
+    "count": 1
+  }
+}

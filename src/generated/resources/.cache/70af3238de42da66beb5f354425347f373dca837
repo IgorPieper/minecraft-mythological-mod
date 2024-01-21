@@ -1,4 +1,7 @@
-// 1.20.2	2024-01-05T22:40:32.7422343	Block Tags
-9eb643bc3b74b635e9a64d7328a8f3b9b124bdaf data/minecraft/tags/blocks/logs_that_burn.json
-d27dc2d44201635e9cb744c70b10a7e98b7c993f data/minecraft/tags/blocks/mineable/pickaxe.json
-8d095d8f3deafeefa4985f9a476056e85d7f9e04 data/minecraft/tags/blocks/planks.json
+// 1.20.2	2024-01-18T19:15:39.5988614	Block Tags
+66daf7e05bf482a23b0df1b2109320c6f7feafc8 data/minecraft/tags/blocks/fences.json
+43284d760a4a920bdf315dca4fdac31977ff57aa data/minecraft/tags/blocks/fence_gates.json
+72e28b167d6df8425f7ab20186976c9fbc8a4c73 data/minecraft/tags/blocks/logs_that_burn.json
+c37657fd3d05f380fd77a1ed710c598fb1d7d4e7 data/minecraft/tags/blocks/mineable/pickaxe.json
+ff7f211e8b7644c8294de08cfe50272e52689ab2 data/minecraft/tags/blocks/planks.json
+edb533ab4158ff6bd0bd1b5d12a7db74c05dbfbe data/minecraft/tags/blocks/walls.json

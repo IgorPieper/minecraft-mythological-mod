@@ -8,6 +8,11 @@ import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 public class ModItemProperties {
     public static void addCustomItemProperties() {
         makeBow(ModItems.APOLLO_BOW.get());
+
+        ItemProperties.register(ModItems.SPARTAN_SHIELD.get(), new ResourceLocation("blocking"), (p_174575_, p_174576_, p_174577_, p_174578_) -> {
+            return p_174577_ != null && p_174577_.isUsingItem() && p_174577_.getUseItem() == p_174575_ ? 1.0F : 0.0F;
+        });
+
     }
 
     private static void makeBow(Item item) {

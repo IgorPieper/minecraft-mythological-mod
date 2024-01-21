@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#forge:is_plains",
+  "biomes": "minecraft:stony_shore",
   "features": "minecraftmythologicalmod:laurel_placed",
   "step": "vegetal_decoration"
 }

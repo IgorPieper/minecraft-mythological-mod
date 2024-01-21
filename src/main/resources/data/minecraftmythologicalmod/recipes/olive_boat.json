@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraftmythologicalmod:olive_planks"
+        }
+    },
+    "result": {
+        "item": "minecraftmythologicalmod:olive_boat",
+        "count": 1
+    }
+}
+

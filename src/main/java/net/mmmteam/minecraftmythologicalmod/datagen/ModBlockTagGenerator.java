@@ -24,17 +24,46 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.OLIVE_LOG.get())
                 .add(ModBlocks.OLIVE_WOOD.get())
                 .add(ModBlocks.STRIPPED_OLIVE_LOG.get())
-                .add(ModBlocks.STRIPPED_OLIVE_WOOD.get());
+                .add(ModBlocks.STRIPPED_OLIVE_WOOD.get())
+                .add(ModBlocks.TORII_LOG.get())
+                .add(ModBlocks.TORII_WOOD.get())
+                .add(ModBlocks.STRIPPED_TORII_LOG.get())
+                .add(ModBlocks.STRIPPED_TORII_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.OLIVE_PLANKS.get());
+                .add(ModBlocks.OLIVE_PLANKS.get())
+                .add(ModBlocks.TORII_PLANKS.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.CALCITE_STAIRS.get(),
                         ModBlocks.CALCITE_SLAB.get(),
-                            ModBlocks.CALCITE_BLOCK.get(),
-                                ModBlocks.CALCITE_BRICKS.get(),
-                                    ModBlocks.CARVED_CALCITE_BLOCK.get());
+                        ModBlocks.CALCITE_BRICKS.get(),
+                        ModBlocks.POLISHED_CALCITE.get(),
+                        ModBlocks.CHISELED_CALCITE.get(),
+                        ModBlocks.CALCITE_BUTTON.get(),
+                        ModBlocks.CALCITE_PRESSURE_PLATE.get());
+
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.OLIVE_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.OLIVE_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.OLIVE_WALL.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.STICK_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.STICK_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.STICK_WALL.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.TORII_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.TORII_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.TORII_WALL.get());
 
     }
 

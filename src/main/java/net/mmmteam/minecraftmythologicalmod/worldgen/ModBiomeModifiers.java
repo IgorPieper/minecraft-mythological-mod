@@ -1,5 +1,8 @@
 package net.mmmteam.minecraftmythologicalmod.worldgen;
 
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.minecraft.core.HolderSet;
@@ -21,12 +24,15 @@ public class ModBiomeModifiers {
 
     public static final ResourceKey<BiomeModifier> ADD_IRIS = registerKey("add_iris");
     public static final ResourceKey<BiomeModifier> ADD_ACONITE = registerKey("add_aconite");
+    public static final ResourceKey<BiomeModifier> ADD_SPIDER_LILY = registerKey("add_spider_lily");
     public static final ResourceKey<BiomeModifier> ADD_LAUREL = registerKey("add_laurel");
 
     public static final ResourceKey<BiomeModifier> SPAWN_RACOON = registerKey("spawn_racoon");
     public static final ResourceKey<BiomeModifier> SPAWN_CYCLOP = registerKey("spawn_cyclop");
     public static final ResourceKey<BiomeModifier> SPAWN_LYNX = registerKey("spawn_lynx");
     public static final ResourceKey<BiomeModifier> SPAWN_MINOTAUR = registerKey("spawn_minotaur");
+    public static final ResourceKey<BiomeModifier> SPAWN_KITSUNE = registerKey("spawn_kitsune");
+    public static final ResourceKey<BiomeModifier> SPAWN_ONI = registerKey("spawn_oni");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -47,30 +53,45 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ACONITE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(ADD_SPIDER_LILY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SPIDER_LILY_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));;
+
         context.register(ADD_LAUREL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(biomes.getOrThrow(Biomes.STONY_SHORE)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.LAUREL_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(SPAWN_RACOON, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
-                List.of(new MobSpawnSettings.SpawnerData(ModEntities.RACOON.get(), 40, 1, 6))));
+                HolderSet.direct(biomes.getOrThrow(Biomes.FOREST)),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.RACOON.get(), 50, 1, 6))));
 
         context.register(SPAWN_CYCLOP, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN),
+                HolderSet.direct(biomes.getOrThrow(Biomes.STONY_SHORE)),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.CYCLOPS.get(), 5, 1, 1))));
 
         context.register(SPAWN_LYNX, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN),
+                HolderSet.direct(biomes.getOrThrow(Biomes.WINDSWEPT_GRAVELLY_HILLS)),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.BALKANLYNX.get(), 20, 1, 2))));
 
         context.register(SPAWN_MINOTAUR, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN),
+                HolderSet.direct(biomes.getOrThrow(Biomes.WINDSWEPT_GRAVELLY_HILLS)),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.MINOTAUR.get(), 5, 1, 1))));
+
+        context.register(SPAWN_KITSUNE, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.KITSUNE.get(), 35, 1, 1))));
+
+        context.register(SPAWN_ONI, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.ONI.get(), 20, 1, 4))));
+
     }
 
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
         return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, name));
     }
+
 }

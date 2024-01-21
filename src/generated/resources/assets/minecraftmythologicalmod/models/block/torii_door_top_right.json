@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraftmythologicalmod:block/torii_door_bottom",
+    "top": "minecraftmythologicalmod:block/torii_door_top"
+  }
+}

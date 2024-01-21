@@ -3,6 +3,10 @@
     "minecraftmythologicalmod:olive_log",
     "minecraftmythologicalmod:olive_wood",
     "minecraftmythologicalmod:stripped_olive_log",
-    "minecraftmythologicalmod:stripped_olive_wood"
+    "minecraftmythologicalmod:stripped_olive_wood",
+    "minecraftmythologicalmod:torii_wood",
+    "minecraftmythologicalmod:torii_log",
+    "minecraftmythologicalmod:stripped_torii_wood",
+    "minecraftmythologicalmod:stripped_torii_log"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:cherry_grove",
+  "features": "minecraftmythologicalmod:spider_lily_placed",
+  "step": "vegetal_decoration"
+}

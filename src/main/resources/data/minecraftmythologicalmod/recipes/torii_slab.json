@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraftmythologicalmod:torii_planks"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:torii_slab",
+    "count": 6
+  }
+}

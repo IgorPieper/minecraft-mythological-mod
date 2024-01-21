@@ -1,6 +1,8 @@
 package net.mmmteam.minecraftmythologicalmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
@@ -20,10 +22,13 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.client.*;
+import net.mmmteam.minecraftmythologicalmod.fluid.ModFluidTypes;
+import net.mmmteam.minecraftmythologicalmod.fluid.ModFluids;
 import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.ModLootModifiers;
 import net.mmmteam.minecraftmythologicalmod.item.ModItemProperties;
+import net.mmmteam.minecraftmythologicalmod.villager.ModVillager;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.mmmteam.minecraftmythologicalmod.util.ModWoodTypes;
 import org.slf4j.Logger;
@@ -45,6 +50,11 @@ public class MinecraftMythologicalMod
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
 
+        ModVillager.ModVillagers.register(modEventBus);
+
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
+
         ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -64,7 +74,9 @@ public class MinecraftMythologicalMod
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.IRIS.getId(), ModBlocks.POTTED_IRIS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ACONITE.getId(), ModBlocks.POTTED_ACONITE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SPIDER_LILY.getId(), ModBlocks.POTTED_SPIDER_LILY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.OLIVE_SAPLING.getId(), ModBlocks.POTTED_OLIVE_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.TORII_SAPLING.getId(), ModBlocks.POTTED_TORII_SAPLING);
 
             //SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
         });
@@ -89,6 +101,7 @@ public class MinecraftMythologicalMod
         {
             event.enqueueWork(() -> {
                 Sheets.addWoodType(ModWoodTypes.OLIVE);
+                Sheets.addWoodType(ModWoodTypes.STICK);
 
                 // /summon minecraftmythologicalmod:racoon, cyclops
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);
@@ -96,8 +109,17 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.BALKANLYNX.get(), BalkanLynxRenderer::new);
                 EntityRenderers.register(ModEntities.MINOTAUR.get(), MinotaurRenderer::new);
                 EntityRenderers.register(ModEntities.KITSUNE.get(), KitsuneRenderer::new);
+                EntityRenderers.register(ModEntities.ONI.get(), OniRenderer::new);
+                EntityRenderers.register(ModEntities.KOI_FISH.get(), KoiFishRenderer::new);
+                EntityRenderers.register(ModEntities.SIKADEER.get(), SikaDeerRenderer::new);
+                EntityRenderers.register(ModEntities.RISSOSDOLPHIN.get(), RissosDolphinRenderer::new);
+                EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+                EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
                 ModItemProperties.addCustomItemProperties();
+
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_HADES_WATER.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_HADES_WATER.get(), RenderType.translucent());
             });
         }
     }

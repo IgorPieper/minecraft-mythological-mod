@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraftmythologicalmod:block/torii_log_top",
+    "side": "minecraftmythologicalmod:block/torii_log"
+  }
+}
