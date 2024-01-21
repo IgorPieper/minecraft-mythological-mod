@@ -6,6 +6,8 @@ import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.mmmteam.minecraftmythologicalmod.entity.animations.RacoonModAnimationDefinitions;
+import net.mmmteam.minecraftmythologicalmod.entity.animations.SikaDeerModAnimationDefinitions;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.SikaDeerEntity;
 
 public class SikaDeerModel<T extends SikaDeerEntity> extends HierarchicalModel<T> {
@@ -55,7 +57,8 @@ public class SikaDeerModel<T extends SikaDeerEntity> extends HierarchicalModel<T
 
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
+		this.root().getAllParts().forEach(ModelPart::resetPose);
+		this.animateWalk(SikaDeerModAnimationDefinitions.DEER_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
 	}
 
 	@Override

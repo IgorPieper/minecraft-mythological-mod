@@ -293,7 +293,5 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
     public static final RegistryObject<Block> CARVED_CALCITE_BLOCK = registerBlock("carved_calcite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
-    public static final RegistryObject<Block> CALCITE_BRICKS = registerBlock("calcite_bricks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
 
 }
