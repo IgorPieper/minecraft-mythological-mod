@@ -46,6 +46,10 @@ public class ModEntities {
             ENTITY_TYPES.register("sikadeer", () -> EntityType.Builder.of(SikaDeerEntity::new, MobCategory.CREATURE)
                     .sized(1.7f, 2f).build("sikadeer"));
 
+    public static final RegistryObject<EntityType<RissosDolphinEntity>> RISSOSDOLPHIN =
+            ENTITY_TYPES.register("rissosdolphin", () -> EntityType.Builder.of(RissosDolphinEntity::new, MobCategory.WATER_CREATURE)
+                    .sized(1f, 1f).build("rissosdolphin"));
+
     public static final RegistryObject<EntityType<ModBoatEntity>> MOD_BOAT =
             ENTITY_TYPES.register("mod_boat", () -> EntityType.Builder.<ModBoatEntity>of(ModBoatEntity::new, MobCategory.MISC)
                     .sized(1.375f, 0.5625f).build("mod_boat"));

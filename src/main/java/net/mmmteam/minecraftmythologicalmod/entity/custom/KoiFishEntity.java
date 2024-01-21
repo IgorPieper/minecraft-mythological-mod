@@ -31,15 +31,17 @@ public class KoiFishEntity extends Animal {
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new TryFindWaterGoal(this));
-        this.goalSelector.addGoal(2, new PanicGoal(this, 1D));
+        this.goalSelector.addGoal(2, new PanicGoal(this, 1));
         this.goalSelector.addGoal(5, new RandomSwimmingGoal(this, 1f, 7));
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Animal.createLivingAttributes().add(Attributes.MAX_HEALTH, 35D)
+        return Animal.createLivingAttributes()
+                .add(Attributes.MAX_HEALTH, 35)
                 .add(Attributes.MOVEMENT_SPEED, 0.15D)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.1f);
     }
+
     protected void handleAirSupply(int p_209207_1_) {
         if (this.isAlive() && !this.isInWaterOrBubble()) {
             this.setAirSupply(p_209207_1_ - 1);

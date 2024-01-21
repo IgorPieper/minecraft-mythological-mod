@@ -62,7 +62,7 @@ public class SikaDeerEntity extends Animal {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.is(Items.COCOA_BEANS);
+        return pStack.is(Items.BROWN_MUSHROOM);
     }
 }
 

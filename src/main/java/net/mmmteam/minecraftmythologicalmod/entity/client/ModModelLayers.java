@@ -30,6 +30,9 @@ public class ModModelLayers {
     public static final ModelLayerLocation SIKADEER_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "sikadeer_layer"), "main");
 
+    public static final ModelLayerLocation RISSOSDOLPHIN_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "rissosdolphin_layer"), "main");
+
     public static final ModelLayerLocation OLIVE_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "boat/olive"), "main");
     public static final ModelLayerLocation OLIVE_CHEST_BOAT_LAYER = new ModelLayerLocation(

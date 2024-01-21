@@ -131,6 +131,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ONI_SPAWN_EGG.get());
                         pOutput.accept(ModItems.KOI_FISH_SPAWN_EGG.get());
                         pOutput.accept(ModItems.SIKADEER_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.RISSOSDOLPHIN_SPAWN_EGG.get());
 
                     })
                     .build());
