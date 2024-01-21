@@ -44,7 +44,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModItems.SIKADEER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.RISSOSDOLPHIN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
-
         //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
 
         simpleItem(ModItems.AMBROSIA);
