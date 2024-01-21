@@ -20,11 +20,15 @@ public class ModModelLayers {
 
     public static final ModelLayerLocation KITSUNE_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "kitsune"), "main");
+
     public static final ModelLayerLocation ONI_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "oni"), "main");
 
     public static final ModelLayerLocation KOI_FISH_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "koi_fish_layer"), "main");
+
+    public static final ModelLayerLocation SIKADEER_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "sikadeer_layer"), "main");
 
     public static final ModelLayerLocation OLIVE_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "boat/olive"), "main");

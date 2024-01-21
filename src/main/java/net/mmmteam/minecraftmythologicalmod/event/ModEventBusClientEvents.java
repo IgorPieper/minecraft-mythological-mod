@@ -31,6 +31,7 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.KITSUNE_LAYER, KitsuneModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.ONI_LAYER, OniModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.KOI_FISH_LAYER, KoiFishModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.SIKADEER_LAYER, SikaDeerModel::createBodyLayer);
 
         event.registerLayerDefinition(ModModelLayers.OLIVE_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.OLIVE_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);

@@ -41,6 +41,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModItems.KITSUNE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.ONI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.KOI_FISH_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.SIKADEER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
 
         //simpleBlockItemBlockTexture(ModBlocks.ANCIENT_PORTAL);
