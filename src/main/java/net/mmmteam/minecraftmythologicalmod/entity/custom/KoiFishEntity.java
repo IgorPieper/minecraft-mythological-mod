@@ -1,31 +1,42 @@
 package net.mmmteam.minecraftmythologicalmod.entity.custom;
 
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.AnimationState;
+import net.minecraft.world.entity.*;
 
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
 
-import javax.annotation.Nullable;
-
-public class KoiFishEntity extends Animal {
+public class KoiFishEntity extends WaterAnimal {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
-    public KoiFishEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
+    public KoiFishEntity(EntityType<? extends WaterAnimal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
+        this.setPathfindingMalus(BlockPathTypes.WATER, 0.0F);
+    }
+
+    public boolean canBreatheUnderwater() {
+        return true;
+    }
+
+    public MobType getMobType() {
+        return MobType.WATER;
+    }
+
+    public boolean isPushedByFluid() {
+        return false;
+    }
+
+    public boolean canBeLeashed(Player pPlayer) {
+        return false;
     }
 
     @Override
@@ -39,9 +50,11 @@ public class KoiFishEntity extends Animal {
         return Animal.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 35)
                 .add(Attributes.MOVEMENT_SPEED, 0.15D)
-                .add(Attributes.ARMOR_TOUGHNESS, 0.1f);
+                .add(Attributes.ARMOR_TOUGHNESS, 0.1f)
+                .add(Attributes.FOLLOW_RANGE, 240);
     }
 
+    @Override
     protected void handleAirSupply(int p_209207_1_) {
         if (this.isAlive() && !this.isInWaterOrBubble()) {
             this.setAirSupply(p_209207_1_ - 1);
@@ -53,11 +66,7 @@ public class KoiFishEntity extends Animal {
             this.setAirSupply(2000);
         }
     }
-    @Nullable
-    @Override
-    public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
-        return ModEntities.KOI_FISH.get().create(pLevel);
-    }
+
 
     private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0) {
