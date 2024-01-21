@@ -67,8 +67,13 @@ public class ModItems {
     public static final RegistryObject<Item> ONI_SPAWN_EGG = ITEMS.register("oni_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ONI, 0xff0000, 0xffff00,
                     new Item.Properties()));
+
     public static final RegistryObject<Item> KOI_FISH_SPAWN_EGG = ITEMS.register("koi_fish_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.KOI_FISH, 0xfff000, 0xffff00,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> SIKADEER_SPAWN_EGG = ITEMS.register("sikadeer_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.SIKADEER, 0xc4a484, 0xffffff,
                     new Item.Properties()));
 
     public static final RegistryObject<Item> HADES_TRIDENT = ITEMS.register("hades_trident",
