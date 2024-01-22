@@ -53,6 +53,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MOCHI);
         simpleItem(ModItems.SUSHI);
         simpleItem(ModItems.BOWL_OF_RICE);
+        simpleItem(ModItems.BROTH);
 
         evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.CALCITE_SLAB);
