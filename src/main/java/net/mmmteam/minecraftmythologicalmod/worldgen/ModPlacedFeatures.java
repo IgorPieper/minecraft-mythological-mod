@@ -21,8 +21,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ACONITE_PLACED_KEY = registerKey("aconite_placed");
     public static final ResourceKey<PlacedFeature> SPIDER_LILY_PLACED_KEY = registerKey("spider_lily_placed");
     public static final ResourceKey<PlacedFeature> LAUREL_PLACED_KEY = registerKey("laurel_placed");
-
     public static final ResourceKey<PlacedFeature> RICE_PLACED_KEY = registerKey("rice_placed");
+    public static final ResourceKey<PlacedFeature> TORII_PLACED_KEY = registerKey("torii_placed");
+
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -47,6 +48,9 @@ public class ModPlacedFeatures {
         register(context, RICE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RICE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
+        register(context, TORII_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TORII_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                        ModBlocks.TORII_SAPLING.get()));
     }
 
 

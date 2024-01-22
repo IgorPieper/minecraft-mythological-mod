@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:chicken"
+    },
+    {
+      "item": "minecraftmythologicalmod:bay_leaf"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "minecraftmythologicalmod:broth",
+    "count": 1
+  }
+}
