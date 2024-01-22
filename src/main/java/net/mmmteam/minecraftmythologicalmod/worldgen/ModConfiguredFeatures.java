@@ -31,8 +31,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> IRIS_KEY = registerKey("iris");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ACONITE_KEY = registerKey("aconite");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SPIDER_LILY_KEY = registerKey("spider_lily");
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAUREL_KEY = registerKey("laurel_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RICE_KEY = registerKey("rice_bush");
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
 
@@ -51,19 +51,24 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, IRIS_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new RandomPatchConfiguration(50, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.IRIS.get())))));
 
         register(context, ACONITE_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new RandomPatchConfiguration(50, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ACONITE.get())))));
 
         register(context, SPIDER_LILY_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(50, 6, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SPIDER_LILY.get())))));
+
         register(context, LAUREL_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new RandomPatchConfiguration(50, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LAUREL_BUSH.get())))));
+
+        register(context, RICE_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(100, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RICE_BUSH.get())))));
     }
 
 
