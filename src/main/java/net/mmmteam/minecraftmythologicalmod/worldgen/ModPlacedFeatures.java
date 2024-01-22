@@ -22,6 +22,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SPIDER_LILY_PLACED_KEY = registerKey("spider_lily_placed");
     public static final ResourceKey<PlacedFeature> LAUREL_PLACED_KEY = registerKey("laurel_placed");
 
+    public static final ResourceKey<PlacedFeature> RICE_PLACED_KEY = registerKey("rice_placed");
+
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -40,6 +43,10 @@ public class ModPlacedFeatures {
 
         register(context, LAUREL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAUREL_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, RICE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RICE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
     }
 
 

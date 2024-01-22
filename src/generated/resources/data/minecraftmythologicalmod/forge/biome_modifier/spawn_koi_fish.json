@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "minecraft:cherry_grove",
+  "spawners": {
+    "type": "minecraftmythologicalmod:koi_fish",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 50
+  }
+}

@@ -21,18 +21,20 @@ import java.util.List;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_TREE_OLIVE = registerKey("add_tree_olive");
-
     public static final ResourceKey<BiomeModifier> ADD_IRIS = registerKey("add_iris");
     public static final ResourceKey<BiomeModifier> ADD_ACONITE = registerKey("add_aconite");
     public static final ResourceKey<BiomeModifier> ADD_SPIDER_LILY = registerKey("add_spider_lily");
     public static final ResourceKey<BiomeModifier> ADD_LAUREL = registerKey("add_laurel");
-
+    public static final ResourceKey<BiomeModifier> ADD_RICE = registerKey("add_rice");
     public static final ResourceKey<BiomeModifier> SPAWN_RACOON = registerKey("spawn_racoon");
     public static final ResourceKey<BiomeModifier> SPAWN_CYCLOP = registerKey("spawn_cyclop");
     public static final ResourceKey<BiomeModifier> SPAWN_LYNX = registerKey("spawn_lynx");
     public static final ResourceKey<BiomeModifier> SPAWN_MINOTAUR = registerKey("spawn_minotaur");
     public static final ResourceKey<BiomeModifier> SPAWN_KITSUNE = registerKey("spawn_kitsune");
     public static final ResourceKey<BiomeModifier> SPAWN_ONI = registerKey("spawn_oni");
+    public static final ResourceKey<BiomeModifier> SPAWN_KOI_FISH = registerKey("spawn_koi_fish");
+    public static final ResourceKey<BiomeModifier> SPAWN_SIKADEER = registerKey("spawn_sikadeer");
+    public static final ResourceKey<BiomeModifier> SPAWN_RISSOSDOLPHIN = registerKey("spawn_rissosdolphin");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -63,6 +65,11 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.LAUREL_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(ADD_RICE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RICE_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
         context.register(SPAWN_RACOON, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.FOREST)),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.RACOON.get(), 50, 1, 6))));
@@ -87,6 +94,17 @@ public class ModBiomeModifiers {
                 HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.ONI.get(), 50, 1, 4))));
 
+        context.register(SPAWN_KOI_FISH, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.KOI_FISH.get(), 50, 1, 1))));
+
+        context.register(SPAWN_SIKADEER, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.SIKADEER.get(), 50, 1, 1))));
+
+        context.register(SPAWN_RISSOSDOLPHIN, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.STONY_SHORE)),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.RISSOSDOLPHIN.get(), 50, 1, 1))));
     }
 
 
