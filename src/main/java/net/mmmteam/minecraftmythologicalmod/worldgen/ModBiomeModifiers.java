@@ -26,6 +26,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SPIDER_LILY = registerKey("add_spider_lily");
     public static final ResourceKey<BiomeModifier> ADD_LAUREL = registerKey("add_laurel");
     public static final ResourceKey<BiomeModifier> ADD_RICE = registerKey("add_rice");
+    public static final ResourceKey<BiomeModifier> ADD_TREE_TORII = registerKey("add_tree_torii");
     public static final ResourceKey<BiomeModifier> SPAWN_RACOON = registerKey("spawn_racoon");
     public static final ResourceKey<BiomeModifier> SPAWN_CYCLOP = registerKey("spawn_cyclop");
     public static final ResourceKey<BiomeModifier> SPAWN_LYNX = registerKey("spawn_lynx");
@@ -68,6 +69,11 @@ public class ModBiomeModifiers {
         context.register(ADD_RICE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RICE_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_TREE_TORII, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.TORII_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(SPAWN_RACOON, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
