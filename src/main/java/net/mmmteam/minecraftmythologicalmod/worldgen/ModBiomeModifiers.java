@@ -69,7 +69,7 @@ public class ModBiomeModifiers {
 
         context.register(SPAWN_CYCLOP, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.STONY_SHORE)),
-                List.of(new MobSpawnSettings.SpawnerData(ModEntities.CYCLOPS.get(), 5, 1, 1))));
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.CYCLOPS.get(), 50, 1, 1))));
 
         context.register(SPAWN_LYNX, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.WINDSWEPT_GRAVELLY_HILLS)),

@@ -13,13 +13,14 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.ai.MinotaurAttackGoal;
 import org.jetbrains.annotations.Nullable;
 
-public class MinotaurEntity extends Animal {
+public class MinotaurEntity extends Monster {
 
     private static final EntityDataAccessor<Boolean> ATTACKING =
             SynchedEntityData.defineId(MinotaurEntity.class, EntityDataSerializers.BOOLEAN);
@@ -27,15 +28,13 @@ public class MinotaurEntity extends Animal {
     public final AnimationState attackAnimationState = new AnimationState();
     public int attackAnimationTimeout = 0;
 
-    public MinotaurEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
+    public MinotaurEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
-        this.goalSelector.addGoal(1, new BreedGoal(this, 0.60));
-        this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.10));
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.10));
         this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 3f));
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
@@ -55,11 +54,6 @@ public class MinotaurEntity extends Animal {
                 .add(Attributes.ATTACK_DAMAGE, 6f);
     }
 
-    @Nullable
-    @Override
-    public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
-        return ModEntities.MINOTAUR.get().create(pLevel);
-    }
 
     private void setUpAnimationStates() {
         if (this.isAttacking() && attackAnimationTimeout <=0) {
