@@ -97,6 +97,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MOCHI.get());
                         pOutput.accept(ModItems.SUSHI.get());
                         pOutput.accept(ModItems.BOWL_OF_RICE.get());
+                        pOutput.accept(ModItems.BROTH.get());
 
                         pOutput.accept(ModItems.RICE_SEEDS.get());
                         pOutput.accept(ModItems.RICE.get());

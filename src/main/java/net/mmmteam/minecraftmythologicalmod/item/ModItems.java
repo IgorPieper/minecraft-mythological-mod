@@ -164,6 +164,9 @@ public class ModItems {
     public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final RegistryObject<Item> BROTH = ITEMS.register("broth",
+            () -> new Item(new Item.Properties().food(ModFoods.BROTH)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

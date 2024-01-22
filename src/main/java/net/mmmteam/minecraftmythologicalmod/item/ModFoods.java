@@ -39,4 +39,8 @@ public class ModFoods {
     public static final FoodProperties BOWL_OF_RICE = new FoodProperties.Builder().nutrition(2)
             .saturationMod(1.2f)
             .build();
+
+    public static final FoodProperties BROTH = new FoodProperties.Builder().nutrition(8)
+            .saturationMod(1.2f)
+            .build();
 }
