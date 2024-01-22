@@ -39,7 +39,7 @@ public class ModEntities {
                     .sized(1.5f, 2f).build("oni"));
 
     public static final RegistryObject<EntityType<KoiFishEntity>> KOI_FISH =
-            ENTITY_TYPES.register("koi_fish", () -> EntityType.Builder.of(KoiFishEntity::new, MobCategory.WATER_CREATURE)
+            ENTITY_TYPES.register("koi_fish", () -> EntityType.Builder.of(KoiFishEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(0.7f, 0.4f).build("koi_fish"));
 
     public static final RegistryObject<EntityType<SikaDeerEntity>> SIKADEER =
