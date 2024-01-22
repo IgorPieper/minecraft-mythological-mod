@@ -53,8 +53,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
 
         this.dropSelf(ModBlocks.CALCITE_BRICKS.get());
-        this.dropSelf(ModBlocks.CALCITE_BLOCK.get());
-        this.dropSelf(ModBlocks.CARVED_CALCITE_BLOCK.get());
+        this.dropSelf(ModBlocks.CHISELED_CALCITE.get());
+        this.dropSelf(ModBlocks.POLISHED_CALCITE.get());
 
         this.dropSelf(ModBlocks.OLIVE_LOG.get());
         this.dropSelf(ModBlocks.OLIVE_WOOD.get());

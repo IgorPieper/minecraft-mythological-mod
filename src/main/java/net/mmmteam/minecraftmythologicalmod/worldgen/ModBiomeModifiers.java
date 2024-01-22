@@ -81,11 +81,11 @@ public class ModBiomeModifiers {
 
         context.register(SPAWN_KITSUNE, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
-                List.of(new MobSpawnSettings.SpawnerData(ModEntities.KITSUNE.get(), 35, 1, 1))));
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.KITSUNE.get(), 50, 1, 1))));
 
         context.register(SPAWN_ONI, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE)),
-                List.of(new MobSpawnSettings.SpawnerData(ModEntities.ONI.get(), 20, 1, 4))));
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.ONI.get(), 50, 1, 4))));
 
     }
 

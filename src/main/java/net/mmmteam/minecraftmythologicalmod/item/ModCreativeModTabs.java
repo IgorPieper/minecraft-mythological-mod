@@ -133,10 +133,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SIKADEER_SPAWN_EGG.get());
                         pOutput.accept(ModItems.RISSOSDOLPHIN_SPAWN_EGG.get());
 
-                        pOutput.accept(ModBlocks.CALCITE_BLOCK.get());
-                        pOutput.accept(ModBlocks.CARVED_CALCITE_BLOCK.get());
-                        pOutput.accept(ModBlocks.CALCITE_BRICKS.get());
-
                     })
                     .build());
 
