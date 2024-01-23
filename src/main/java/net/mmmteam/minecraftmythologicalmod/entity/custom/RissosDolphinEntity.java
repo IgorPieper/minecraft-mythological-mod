@@ -13,8 +13,8 @@ import net.mmmteam.minecraftmythologicalmod.entity.ai.AnimalAISwimBottom;
 
 public class RissosDolphinEntity extends AbstractSchoolingFish{
 
-    public RissosDolphinEntity(EntityType<? extends RissosDolphinEntity> p_27523_, Level p_27524_) {
-        super(p_27523_, p_27524_);
+    public RissosDolphinEntity(EntityType<? extends RissosDolphinEntity> p_29790_, Level p_29791_) {
+        super(p_29790_, p_29791_);
     }
 
     @Override
