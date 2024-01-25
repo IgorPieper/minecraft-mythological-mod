@@ -92,6 +92,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.BAY_LEAF.get());
                         pOutput.accept(ModItems.GRAPES.get());
+                        pOutput.accept(ModItems.GRAPE_JUICE.get());
                         pOutput.accept(ModItems.ONIGIRI.get());
                         pOutput.accept(ModItems.DANGO.get());
                         pOutput.accept(ModItems.MOCHI.get());

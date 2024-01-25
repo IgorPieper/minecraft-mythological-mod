@@ -43,4 +43,9 @@ public class ModFoods {
     public static final FoodProperties BROTH = new FoodProperties.Builder().nutrition(8)
             .saturationMod(1.2f)
             .build();
+
+    public static final FoodProperties GRAPE_JUICE = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(0.6f)
+            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 2000), 0.5f)
+            .build();
 }
