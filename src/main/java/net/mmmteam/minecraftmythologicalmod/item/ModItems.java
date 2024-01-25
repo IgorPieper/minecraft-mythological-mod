@@ -1,5 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.item;
 
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,7 +29,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.GRAPES)));
 
     public static final RegistryObject<SwordItem> EXCALIBUR = ITEMS.register("excalibur",
-            () -> new SwordItem(ModItemTier.EXCALIBUR, 9, -3f, new Item.Properties()));
+            () -> new SwordItem(ModItemTier.EXCALIBUR, 9, -3f, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> BAY_LEAF = ITEMS.register("bay_leaf",
             () -> new ItemNameBlockItem(ModBlocks.LAUREL_BUSH_CROP.get(), new Item.Properties()));
@@ -117,7 +118,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.SUSHI)));
 
     public static final RegistryObject<Item> BOWL_OF_RICE = ITEMS.register("bowl_of_rice",
-            () -> new Item(new Item.Properties().food(ModFoods.BOWL_OF_RICE)));
+            () -> new Item(new Item.Properties().food(ModFoods.BOWL_OF_RICE).stacksTo(16)));
 
     public static final RegistryObject<SwordItem> SWORD_OF_PELEUS = ITEMS.register("sword_of_peleus",
             () -> new SwordItem(ModItemTier.PELEUS, 1, -3f, new Item.Properties()));
@@ -137,9 +138,10 @@ public class ModItems {
     public static final RegistryObject<Item> GIFT_OF_POSEIDON = ITEMS.register("gift_of_poseidon",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> OLIVE_BOAT = ITEMS.register("olive_boat",
-            () -> new ModBoatItem(false, ModBoatEntity.Type.OLIVE, new Item.Properties()));
+            () -> new ModBoatItem(false, ModBoatEntity.Type.OLIVE, new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
-            () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE, new Item.Properties()));
+            () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE, new Item.Properties().stacksTo(1)));
+
 //    public static final RegistryObject<Item> OLIVE_SIGN = ITEMS.register("olive_sign",
 //            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.OLIVE_SIGN.get(), ModBlocks.OLIVE_WALL_SIGN.get()));
 //    public static final RegistryObject<Item> OLIVE_HANGING_SIGN = ITEMS.register("olive_hanging_sign",
@@ -147,9 +149,10 @@ public class ModItems {
 //                    new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> STICK_BOAT = ITEMS.register("stick_boat",
-            () -> new ModBoatItem(false, ModBoatEntity.Type.STICK, new Item.Properties()));
+            () -> new ModBoatItem(false, ModBoatEntity.Type.STICK, new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> STICK_CHEST_BOAT = ITEMS.register("stick_chest_boat",
-            () -> new ModBoatItem(true, ModBoatEntity.Type.STICK, new Item.Properties()));
+            () -> new ModBoatItem(true, ModBoatEntity.Type.STICK, new Item.Properties().stacksTo(1)));
+
 //    public static final RegistryObject<Item> STICK_SIGN = ITEMS.register("stick_sign",
 //            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.STICK_SIGN.get(), ModBlocks.STICK_WALL_SIGN.get()));
 //    public static final RegistryObject<Item> STICK_HANGING_SIGN = ITEMS.register("stick_hanging_sign",
@@ -157,15 +160,19 @@ public class ModItems {
 //                    new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> TORII_BOAT = ITEMS.register("torii_boat",
-            () -> new ModBoatItem(false, ModBoatEntity.Type.TORII, new Item.Properties()));
+            () -> new ModBoatItem(false, ModBoatEntity.Type.TORII, new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TORII_CHEST_BOAT = ITEMS.register("torii_chest_boat",
-            () -> new ModBoatItem(true, ModBoatEntity.Type.TORII, new Item.Properties()));
+            () -> new ModBoatItem(true, ModBoatEntity.Type.TORII, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> BROTH = ITEMS.register("broth",
-            () -> new Item(new Item.Properties().food(ModFoods.BROTH)));
+            () -> new MilkBucketItem(new Item.Properties().food(ModFoods.BROTH).stacksTo(16)));
+
+
+    public static final RegistryObject<Item> GRAPE_JUICE = ITEMS.register("grape_juice",
+            () -> new Item(new Item.Properties().food(ModFoods.GRAPE_JUICE).stacksTo(16)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

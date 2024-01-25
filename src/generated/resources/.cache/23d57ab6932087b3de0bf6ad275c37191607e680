@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-22T22:08:57.1458655	Item Models: minecraftmythologicalmod
+// 1.20.2	2024-01-25T09:38:03.5356383	Item Models: minecraftmythologicalmod
 b3b37093c8c967fb93acb269cbf18a3e5aacf8f9 assets/minecraftmythologicalmod/models/item/aconite.json
 145b7dfccd446dfb9b5d4ce1eca8f568f57a31bb assets/minecraftmythologicalmod/models/item/aconite_root.json
 f79cdaffcc95ae609fd75ab73c94eace32f67707 assets/minecraftmythologicalmod/models/item/ambrosia.json
@@ -19,6 +19,7 @@ b59cb35b63cce90f1385cd2f49ff3b2fe820a58b assets/minecraftmythologicalmod/models/
 9d3e01547d15213294a6e3a9474a31e9761ef733 assets/minecraftmythologicalmod/models/item/gift_of_poseidon.json
 2c590dae5e8edfdf5be0f8fa7986bf86ef32f4bb assets/minecraftmythologicalmod/models/item/good_looking_stick.json
 a74014d5e6fd87265f51518dbea8cb134859ee9f assets/minecraftmythologicalmod/models/item/grapes.json
+91c5affb459d0e089ca35416242a864cb38b0f7a assets/minecraftmythologicalmod/models/item/grape_juice.json
 c2f8d0e6fa1ac94a91bc328225780874ca513c55 assets/minecraftmythologicalmod/models/item/hades_water_bucket.json
 b3359063cc1f87388a499ba3062eb7a00a77c5cc assets/minecraftmythologicalmod/models/item/iris.json
 5f3df4960b64b97846664bccaa93711775548dd7 assets/minecraftmythologicalmod/models/item/iris_pyxis.json
