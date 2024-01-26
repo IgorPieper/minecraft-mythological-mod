@@ -3,6 +3,10 @@
     {
       "id": "minecraftmythologicalmod:god_poi",
       "required": false
+    },
+    {
+      "id": "minecraftmythologicalmod:jap_poi",
+      "required": false
     }
   ]
 }

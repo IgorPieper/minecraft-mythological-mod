@@ -140,6 +140,27 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 15 ), 1, 2, 0.02f
             ));
         }
+
+        if(event.getType() == ModVillager.ModVillagers.JAP_SMITH.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 2),
+                    new ItemStack(ModBlocks.TORII_SAPLING.get()), 10, 5, 0.02f
+            ));
+
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 40),
+                    new ItemStack(ModItems.TORII_CHEST_BOAT.get()), 3, 2, 0.02f
+            ));
+
+            trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 50),
+                    new ItemStack(ModItems.ONIGIRI.get()), 3, 2, 0.02f
+            ));
+
+        }
     }
 }
 

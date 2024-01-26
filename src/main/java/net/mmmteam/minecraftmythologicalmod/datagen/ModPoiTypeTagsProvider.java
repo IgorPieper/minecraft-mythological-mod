@@ -20,6 +20,7 @@ public class ModPoiTypeTagsProvider extends PoiTypeTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
-                .addOptional(new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "god_poi"));
+                .addOptional(new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "god_poi"))
+                .addOptional(new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "jap_poi"));
     }
 }
