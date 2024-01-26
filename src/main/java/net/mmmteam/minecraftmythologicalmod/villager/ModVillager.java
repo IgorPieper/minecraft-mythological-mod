@@ -29,6 +29,16 @@ public class ModVillager {
                         x -> x.get() == GOD_POI.get(), x -> x.get() == GOD_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                         SoundEvents.VILLAGER_WORK_TOOLSMITH));
 
+        public static final RegistryObject<PoiType> JAP_POI = POI_TYPES.register("jap_poi",
+                () -> new PoiType(ImmutableSet.copyOf(Blocks.CAKE.getStateDefinition().getPossibleStates()),
+                        1, 1));
+
+        public static final RegistryObject<VillagerProfession> JAP_SMITH =
+                VILLAGER_PROFESSIONS.register("jap_smith", () -> new VillagerProfession("jap_smith",
+                        x -> x.get() == JAP_POI.get(), x -> x.get() == JAP_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
+                        SoundEvents.VILLAGER_WORK_TOOLSMITH));
+
+
 
         public static void register(IEventBus eventBus) {
             POI_TYPES.register(eventBus);
