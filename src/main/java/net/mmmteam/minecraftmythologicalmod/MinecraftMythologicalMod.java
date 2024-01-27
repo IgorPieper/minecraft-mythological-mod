@@ -110,6 +110,7 @@ public class MinecraftMythologicalMod
             event.enqueueWork(() -> {
                 Sheets.addWoodType(ModWoodTypes.OLIVE);
                 Sheets.addWoodType(ModWoodTypes.STICK);
+                Sheets.addWoodType(ModWoodTypes.TORII);
 
                 // /summon minecraftmythologicalmod:racoon, cyclops
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);

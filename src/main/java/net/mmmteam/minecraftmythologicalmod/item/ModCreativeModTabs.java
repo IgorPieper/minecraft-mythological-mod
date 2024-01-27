@@ -51,8 +51,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STICK_TRAPDOOR.get());
                         pOutput.accept(ModItems.STICK_BOAT.get());
                         pOutput.accept(ModItems.STICK_CHEST_BOAT.get());
-//                        pOutput.accept(ModItems.STICK_SIGN.get());
-//                        pOutput.accept(ModItems.STICK_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.STICK_SIGN.get());
+                        pOutput.accept(ModItems.STICK_HANGING_SIGN.get());
 
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 
@@ -82,6 +82,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.TORII_TRAPDOOR.get());
                         pOutput.accept(ModItems.TORII_BOAT.get());
                         pOutput.accept(ModItems.TORII_CHEST_BOAT.get());
+                        pOutput.accept(ModItems.TORII_SIGN.get());
+                        pOutput.accept(ModItems.TORII_HANGING_SIGN.get());
 
 
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());
