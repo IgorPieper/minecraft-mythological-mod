@@ -25,6 +25,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
+import net.mmmteam.minecraftmythologicalmod.block.entity.ModBlockEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.client.*;
 import net.mmmteam.minecraftmythologicalmod.fluid.ModFluidTypes;
@@ -57,6 +58,7 @@ public class MinecraftMythologicalMod
         ModEntities.register(modEventBus);
 
         ModVillager.ModVillagers.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
@@ -121,6 +123,7 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.RISSOSDOLPHIN.get(), RissosDolphinRenderer::new);
                 EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
                 EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+                Sheets.addWoodType(ModWoodTypes.OLIVE);
 
                 ModItemProperties.addCustomItemProperties();
 

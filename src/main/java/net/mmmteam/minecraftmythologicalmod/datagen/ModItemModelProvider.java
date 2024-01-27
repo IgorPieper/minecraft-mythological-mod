@@ -73,8 +73,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.OLIVE_FENCE_GATE);
         simpleItem(ModItems.OLIVE_BOAT);
         simpleItem(ModItems.OLIVE_CHEST_BOAT);
-//        simpleItem(ModItems.OLIVE_SIGN);
-//        simpleItem(ModItems.OLIVE_HANGING_SIGN);
+        simpleItem(ModItems.OLIVE_SIGN);
+        simpleItem(ModItems.OLIVE_HANGING_SIGN);
 
 
         evenSimplerBlockItem(ModBlocks.STICK_STAIRS);

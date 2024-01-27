@@ -79,15 +79,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.OLIVE_SLAB.get()));
         this.add(ModBlocks.OLIVE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OLIVE_DOOR.get()));
-//        this.add(ModBlocks.OLIVE_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
-//        this.add(ModBlocks.OLIVE_WALL_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
-//        this.add(ModBlocks.OLIVE_HANGING_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
-//        this.add(ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
 
+        this.add(ModBlocks.OLIVE_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+        this.add(ModBlocks.OLIVE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+        this.add(ModBlocks.OLIVE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
+        this.add(ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.CALCITE_BRICKS.get());
         this.dropSelf(ModBlocks.POLISHED_CALCITE.get());
