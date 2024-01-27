@@ -87,8 +87,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.STICK_FENCE_GATE);
         simpleItem(ModItems.STICK_BOAT);
         simpleItem(ModItems.STICK_CHEST_BOAT);
-//        simpleItem(ModItems.STICK_SIGN);
-//        simpleItem(ModItems.STICK_HANGING_SIGN);
+        simpleItem(ModItems.STICK_SIGN);
+        simpleItem(ModItems.STICK_HANGING_SIGN);
 
         saplingItem(ModBlocks.TORII_SAPLING);
         evenSimplerBlockItem(ModBlocks.TORII_STAIRS);
@@ -101,6 +101,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.TORII_FENCE_GATE);
         simpleItem(ModItems.TORII_BOAT);
         simpleItem(ModItems.TORII_CHEST_BOAT);
+        simpleItem(ModItems.TORII_SIGN);
+        simpleItem(ModItems.TORII_HANGING_SIGN);
 
 
         simpleItem(ModItems.GIFT_OF_APOLLO);

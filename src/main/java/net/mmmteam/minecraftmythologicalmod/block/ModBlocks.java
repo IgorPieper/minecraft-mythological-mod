@@ -130,14 +130,14 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Block> STICK_BLOCK = registerBlock("stick_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
-//    public static final RegistryObject<Block> STICK_SIGN = BLOCKS.register("stick_sign",
-//            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.STICK));
-//    public static final RegistryObject<Block> STICK_WALL_SIGN = BLOCKS.register("stick_wall_sign",
-//            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.STICK));
-//    public static final RegistryObject<Block> STICK_HANGING_SIGN = BLOCKS.register("stick_hanging_sign",
-//            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.STICK));
-//    public static final RegistryObject<Block> STICK_WALL_HANGING_SIGN = BLOCKS.register("stick_wall_hanging_sign",
-//            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.STICK));
+    public static final RegistryObject<Block> STICK_SIGN = BLOCKS.register("stick_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.STICK));
+    public static final RegistryObject<Block> STICK_WALL_SIGN = BLOCKS.register("stick_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.STICK));
+    public static final RegistryObject<Block> STICK_HANGING_SIGN = BLOCKS.register("stick_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.STICK));
+    public static final RegistryObject<Block> STICK_WALL_HANGING_SIGN = BLOCKS.register("stick_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.STICK));
 
 
 
@@ -197,6 +197,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_TORII_SAPLING = BLOCKS.register("potted_torii_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.OLIVE_SAPLING,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
+
+    public static final RegistryObject<Block> TORII_SIGN = BLOCKS.register("torii_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.TORII));
+    public static final RegistryObject<Block> TORII_WALL_SIGN = BLOCKS.register("torii_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.TORII));
+    public static final RegistryObject<Block> TORII_HANGING_SIGN = BLOCKS.register("torii_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.TORII));
+    public static final RegistryObject<Block> TORII_WALL_HANGING_SIGN = BLOCKS.register("torii_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.TORII));
 
     public static final RegistryObject<Block> TORII_PLANKS = registerBlock("torii_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
