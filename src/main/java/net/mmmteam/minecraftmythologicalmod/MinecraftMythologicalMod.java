@@ -5,11 +5,15 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,6 +33,7 @@ import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.ModLootModifiers;
 import net.mmmteam.minecraftmythologicalmod.item.ModItemProperties;
+import net.mmmteam.minecraftmythologicalmod.potion.BrewingRecipe;
 import net.mmmteam.minecraftmythologicalmod.villager.ModVillager;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.mmmteam.minecraftmythologicalmod.util.ModWoodTypes;
@@ -133,6 +138,8 @@ public class MinecraftMythologicalMod
                 ComposterBlock.COMPOSTABLES.put(ModItems.GRAPES.get(), 1f);
                 ComposterBlock.COMPOSTABLES.put(ModItems.RICE_SEEDS.get(), 0.3f);
                 ComposterBlock.COMPOSTABLES.put(ModItems.ACONITE_ROOT.get(), 0.85f);
+
+                BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Potions.WATER, ModItems.ACONITE_ROOT.get(), Potions.STRONG_POISON));
             });
         }
     }

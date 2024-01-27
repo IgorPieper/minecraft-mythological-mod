@@ -34,13 +34,11 @@ Osoby, które pomogły w testowaniu i dostarczyły cenną opinię:
 -------------------------------------------------------------------------------
 
 Należy podziękować następującym autorom za udostępnienie zasobów, które zostały
-wykorzystane w tym module:
+wykorzystane w tym projekcie:
 
-1. [Imię/Nick] - [Nazwa zasobu] - Licencja: [rodzaj licencji]
-2. [Imię/Nick] - [Nazwa zasobu] - Licencja: [rodzaj licencji]
-3. ...
+1. BetterBrewingRecipe Class by CAS-ual-TY from https://github.com/CAS-ual-TY/Extra-Potions (GPL-3.0 License)
+   https://github.com/CAS-ual-TY/Extra-Potions/blob/main/LICENSE
 
 ===============================================================================
                                 DZIĘKUJEMY!
 ===============================================================================
-
