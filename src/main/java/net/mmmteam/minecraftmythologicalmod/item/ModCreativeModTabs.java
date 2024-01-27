@@ -124,6 +124,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SPEAR_OF_ATHENA.get());
                         pOutput.accept(ModItems.SWORD_OF_PELEUS.get());
                         pOutput.accept(ModItems.SPARTAN_SHIELD.get());
+                        pOutput.accept(ModItems.NUNCHAKU.get());
 
                         pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
                         pOutput.accept(ModItems.RACOON_SPAWN_EGG.get());
