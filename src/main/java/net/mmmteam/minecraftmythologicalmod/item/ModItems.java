@@ -96,6 +96,9 @@ public class ModItems {
     public static final RegistryObject<Item> MINOTAUR_AXE = ITEMS.register("minotaur_axe",
             () -> new ImmobilizingSwordItem(ModItemTier.AXE, 7, -3f, new Item.Properties()));
 
+    public static final RegistryObject<Item> NUNCHAKU = ITEMS.register("nunchaku",
+            () -> new SwordItem(ModItemTier.BLUNT, 4, -2f, new Item.Properties()));
+
     public static final RegistryObject<Item> SPARTAN_SHIELD = ITEMS.register("spartan_shield",
             () -> new ShieldItem(new Item.Properties().durability(500)));
 
