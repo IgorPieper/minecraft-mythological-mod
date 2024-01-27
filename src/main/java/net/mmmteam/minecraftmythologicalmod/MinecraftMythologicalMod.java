@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -120,6 +121,18 @@ public class MinecraftMythologicalMod
 
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_HADES_WATER.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_HADES_WATER.get(), RenderType.translucent());
+
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.OLIVE_SAPLING.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.TORII_SAPLING.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.OLIVE_LEAVES.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.TORII_LEAVES.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.IRIS.get(), 0.65f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.ACONITE.get(), 0.65f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.SPIDER_LILY.get(), 0.65f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.BAY_LEAF.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.GRAPES.get(), 1f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.RICE_SEEDS.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.ACONITE_ROOT.get(), 0.85f);
             });
         }
     }
