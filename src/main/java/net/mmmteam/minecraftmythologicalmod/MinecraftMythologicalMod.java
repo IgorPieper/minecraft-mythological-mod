@@ -5,10 +5,15 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +25,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
+import net.mmmteam.minecraftmythologicalmod.block.entity.ModBlockEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.client.*;
 import net.mmmteam.minecraftmythologicalmod.fluid.ModFluidTypes;
@@ -28,6 +34,7 @@ import net.mmmteam.minecraftmythologicalmod.item.ModCreativeModTabs;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 import net.mmmteam.minecraftmythologicalmod.loot.ModLootModifiers;
 import net.mmmteam.minecraftmythologicalmod.item.ModItemProperties;
+import net.mmmteam.minecraftmythologicalmod.potion.BrewingRecipe;
 import net.mmmteam.minecraftmythologicalmod.villager.ModVillager;
 import net.mmmteam.minecraftmythologicalmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.mmmteam.minecraftmythologicalmod.util.ModWoodTypes;
@@ -51,6 +58,7 @@ public class MinecraftMythologicalMod
         ModEntities.register(modEventBus);
 
         ModVillager.ModVillagers.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
@@ -102,6 +110,7 @@ public class MinecraftMythologicalMod
             event.enqueueWork(() -> {
                 Sheets.addWoodType(ModWoodTypes.OLIVE);
                 Sheets.addWoodType(ModWoodTypes.STICK);
+                Sheets.addWoodType(ModWoodTypes.TORII);
 
                 // /summon minecraftmythologicalmod:racoon, cyclops
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);
@@ -115,11 +124,26 @@ public class MinecraftMythologicalMod
                 EntityRenderers.register(ModEntities.RISSOSDOLPHIN.get(), RissosDolphinRenderer::new);
                 EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
                 EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+                Sheets.addWoodType(ModWoodTypes.OLIVE);
 
                 ModItemProperties.addCustomItemProperties();
 
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_HADES_WATER.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_HADES_WATER.get(), RenderType.translucent());
+
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.OLIVE_SAPLING.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.TORII_SAPLING.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.OLIVE_LEAVES.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.TORII_LEAVES.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.IRIS.get(), 0.65f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.ACONITE.get(), 0.65f);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.SPIDER_LILY.get(), 0.65f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.BAY_LEAF.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.GRAPES.get(), 1f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.RICE_SEEDS.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(ModItems.ACONITE_ROOT.get(), 0.85f);
+
+                BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Potions.WATER, ModItems.ACONITE_ROOT.get(), Potions.STRONG_POISON));
             });
         }
     }

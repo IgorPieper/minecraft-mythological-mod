@@ -65,7 +65,8 @@
   "block.minecraftmythologicalmod.torii_trapdoor": "Torii Trapdoor",
   "item.minecraftmythologicalmod.torii_boat": "Torii Boat",
   "item.minecraftmythologicalmod.torii_chest_boat": "Torii Chest Boat",
-
+  "block.minecraftmythologicalmod.torii_sign": "Torii Sign",
+  "block.minecraftmythologicalmod.torii_hanging_sign": "Torii Hanging Sign",
 
   "block.minecraftmythologicalmod.laurel_bush": "Laurel Bush",
   "block.minecraftmythologicalmod.rice_bush": "Rice Bush",
@@ -107,6 +108,7 @@
   "item.minecraftmythologicalmod.spear_of_athena": "Spear of Athena",
   "item.minecraftmythologicalmod.sword_of_peleus": "Peleus Sword",
   "item.minecraftmythologicalmod.spartan_shield": "Spartan Shield",
+  "item.minecraftmythologicalmod.nunchaku": "Nunchaku",
 
 
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Cyclops Spawn Egg",

@@ -21,7 +21,7 @@
   "item.minecraftmythologicalmod.olive_chest_boat": "Oliwna Łódka ze Skrzynką",
   "entity.minecraftmythologicalmod.mod_chest_boat": "Łódka ze Skrzynką",
   "block.minecraftmythologicalmod.olive_sign": "Oliwna Tabliczka",
-  "block.minecraftmythologicalmod.olive_hanging_sign": "Oliwna Wiszaca Tabliczka",
+  "block.minecraftmythologicalmod.olive_hanging_sign": "Oliwna Wisząca Tabliczka",
 
   "block.minecraftmythologicalmod.stick_block": "Góra Patyków",
   "block.minecraftmythologicalmod.stick_stairs": "Patykowe Schody",
@@ -66,6 +66,8 @@
   "block.minecraftmythologicalmod.torii_trapdoor": "Torii Trapdoor",
   "item.minecraftmythologicalmod.torii_boat": "Torii Łódka",
   "item.minecraftmythologicalmod.torii_chest_boat": "Torii Łódka ze Skrzynką",
+  "block.minecraftmythologicalmod.torii_sign": "Torii Tabliczka",
+  "block.minecraftmythologicalmod.torii_hanging_sign": "Torii Wiszaca Tabliczka",
 
   "block.minecraftmythologicalmod.laurel_bush": "Krzew Laurowy",
   "block.minecraftmythologicalmod.rice_bush": "Kępa ryżu",
@@ -107,6 +109,7 @@
   "item.minecraftmythologicalmod.spear_of_athena": "Włócznia Ateny",
   "item.minecraftmythologicalmod.sword_of_peleus": "Miecz Peleusa",
   "item.minecraftmythologicalmod.spartan_shield": "Tarcza Spartańska",
+  "item.minecraftmythologicalmod.nunchaku": "Nunczako",
 
   "item.minecraftmythologicalmod.cyclops_spawn_egg": "Jajko Spawnu Cyklopa",
   "entity.minecraftmythologicalmod.cyclops": "Cyklop",

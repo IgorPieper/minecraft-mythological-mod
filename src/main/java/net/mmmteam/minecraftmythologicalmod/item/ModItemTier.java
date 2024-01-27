@@ -34,7 +34,11 @@ public enum ModItemTier implements Tier {
 
         PELEUS(1, 1, 10.0F, 0.1F, 5, () -> {
             return Ingredient.of(Items.OAK_WOOD);
-        });
+        }),
+
+        BLUNT(1, 40, 5.0F, 0.1F, 5, () -> {
+            return Ingredient.of(Items.IRON_BARS);
+         });
 
         private final int level;
         private final int uses;

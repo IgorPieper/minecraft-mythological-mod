@@ -96,6 +96,9 @@ public class ModItems {
     public static final RegistryObject<Item> MINOTAUR_AXE = ITEMS.register("minotaur_axe",
             () -> new ImmobilizingSwordItem(ModItemTier.AXE, 7, -3f, new Item.Properties()));
 
+    public static final RegistryObject<Item> NUNCHAKU = ITEMS.register("nunchaku",
+            () -> new SwordItem(ModItemTier.BLUNT, 4, -2f, new Item.Properties()));
+
     public static final RegistryObject<Item> SPARTAN_SHIELD = ITEMS.register("spartan_shield",
             () -> new ShieldItem(new Item.Properties().durability(500)));
 
@@ -142,27 +145,33 @@ public class ModItems {
     public static final RegistryObject<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE, new Item.Properties().stacksTo(1)));
 
-//    public static final RegistryObject<Item> OLIVE_SIGN = ITEMS.register("olive_sign",
-//            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.OLIVE_SIGN.get(), ModBlocks.OLIVE_WALL_SIGN.get()));
-//    public static final RegistryObject<Item> OLIVE_HANGING_SIGN = ITEMS.register("olive_hanging_sign",
-//            () -> new HangingSignItem(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(),
-//                    new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> OLIVE_SIGN = ITEMS.register("olive_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.OLIVE_SIGN.get(), ModBlocks.OLIVE_WALL_SIGN.get()));
+    public static final RegistryObject<Item> OLIVE_HANGING_SIGN = ITEMS.register("olive_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(),
+                    new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> STICK_BOAT = ITEMS.register("stick_boat",
             () -> new ModBoatItem(false, ModBoatEntity.Type.STICK, new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> STICK_CHEST_BOAT = ITEMS.register("stick_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.STICK, new Item.Properties().stacksTo(1)));
 
-//    public static final RegistryObject<Item> STICK_SIGN = ITEMS.register("stick_sign",
-//            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.STICK_SIGN.get(), ModBlocks.STICK_WALL_SIGN.get()));
-//    public static final RegistryObject<Item> STICK_HANGING_SIGN = ITEMS.register("stick_hanging_sign",
-//            () -> new HangingSignItem(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(),
-//                    new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> STICK_SIGN = ITEMS.register("stick_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.STICK_SIGN.get(), ModBlocks.STICK_WALL_SIGN.get()));
+    public static final RegistryObject<Item> STICK_HANGING_SIGN = ITEMS.register("stick_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(),
+                    new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> TORII_BOAT = ITEMS.register("torii_boat",
             () -> new ModBoatItem(false, ModBoatEntity.Type.TORII, new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TORII_CHEST_BOAT = ITEMS.register("torii_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.TORII, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TORII_SIGN = ITEMS.register("torii_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.TORII_SIGN.get(), ModBlocks.TORII_WALL_SIGN.get()));
+    public static final RegistryObject<Item> TORII_HANGING_SIGN = ITEMS.register("torii_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.TORII_HANGING_SIGN.get(), ModBlocks.TORII_WALL_HANGING_SIGN.get(),
+                    new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
             () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

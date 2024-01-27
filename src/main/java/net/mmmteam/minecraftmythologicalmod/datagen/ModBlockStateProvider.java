@@ -80,11 +80,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.OLIVE_DOOR.get()), modLoc("block/olive_door_bottom"), modLoc("block/olive_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.OLIVE_TRAPDOOR.get(), modLoc("block/olive_trapdoor"), true, "cutout");
         blockItem(ModBlocks.OLIVE_TRAPDOOR, "_bottom");
-//        signBlock(((StandingSignBlock) ModBlocks.OLIVE_SIGN.get()), ((WallSignBlock) ModBlocks.OLIVE_WALL_SIGN.get()),
-//                blockTexture(ModBlocks.OLIVE_PLANKS.get()));
-//
-//        hangingSignBlock(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.OLIVE_PLANKS.get()));
 
+        signBlock(((StandingSignBlock) ModBlocks.OLIVE_SIGN.get()), ((WallSignBlock) ModBlocks.OLIVE_WALL_SIGN.get()),
+                blockTexture(ModBlocks.OLIVE_PLANKS.get()));
+        hangingSignBlock(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(),
+                blockTexture(ModBlocks.OLIVE_PLANKS.get()));
 
         blockWithItem(ModBlocks.STICK_BLOCK);
         slabBlock(((SlabBlock) ModBlocks.STICK_SLAB.get()), blockTexture(ModBlocks.STICK_BLOCK.get()), blockTexture(ModBlocks.STICK_BLOCK.get()));
@@ -97,10 +97,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.STICK_DOOR.get()), modLoc("block/stick_door_bottom"), modLoc("block/stick_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.STICK_TRAPDOOR.get(), modLoc("block/stick_trapdoor"), true, "cutout");
         blockItem(ModBlocks.STICK_TRAPDOOR, "_bottom");
-//        signBlock(((StandingSignBlock) ModBlocks.STICK_SIGN.get()), ((WallSignBlock) ModBlocks.STICK_WALL_SIGN.get()),
-//                blockTexture(ModBlocks.STICK_BLOCK.get()));
-//
-//        hangingSignBlock(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STICK_BLOCK.get()));
+        signBlock(((StandingSignBlock) ModBlocks.STICK_SIGN.get()), ((WallSignBlock) ModBlocks.STICK_WALL_SIGN.get()),
+                blockTexture(ModBlocks.STICK_BLOCK.get()));
+        hangingSignBlock(ModBlocks.STICK_HANGING_SIGN.get(), ModBlocks.STICK_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STICK_BLOCK.get()));
 
 
 
@@ -143,6 +142,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.TORII_DOOR.get()), modLoc("block/torii_door_bottom"), modLoc("block/torii_door_top"), "cutout");
         trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.TORII_TRAPDOOR.get(), modLoc("block/torii_trapdoor"), true, "cutout");
         blockItem(ModBlocks.TORII_TRAPDOOR, "_bottom");
+        signBlock(((StandingSignBlock) ModBlocks.TORII_SIGN.get()), ((WallSignBlock) ModBlocks.TORII_WALL_SIGN.get()),
+                blockTexture(ModBlocks.TORII_PLANKS.get()));
+        hangingSignBlock(ModBlocks.TORII_HANGING_SIGN.get(), ModBlocks.TORII_WALL_HANGING_SIGN.get(),
+                blockTexture(ModBlocks.TORII_PLANKS.get()));
 
 
 
@@ -161,6 +164,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         getVariantBuilder(block).forAllStates(function);
     }
 
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
     private String name(Block block) {
         return key(block).getPath();
     }
@@ -168,7 +181,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private ResourceLocation key(Block block) {
         return ForgeRegistries.BLOCKS.getKey(block);
     }
-
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
@@ -208,15 +220,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
-    }
-    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
-        ModelFile sign = models().sign(name(signBlock), texture);
-        hangingSignBlock(signBlock, wallSignBlock, sign);
-    }
-
-    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
-        simpleBlock(signBlock, sign);
-        simpleBlock(wallSignBlock, sign);
     }
 
 }

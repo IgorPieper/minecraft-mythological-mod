@@ -79,15 +79,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.OLIVE_SLAB.get()));
         this.add(ModBlocks.OLIVE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OLIVE_DOOR.get()));
-//        this.add(ModBlocks.OLIVE_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
-//        this.add(ModBlocks.OLIVE_WALL_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
-//        this.add(ModBlocks.OLIVE_HANGING_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
-//        this.add(ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
 
+        this.add(ModBlocks.OLIVE_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+        this.add(ModBlocks.OLIVE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_SIGN.get()));
+        this.add(ModBlocks.OLIVE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
+        this.add(ModBlocks.OLIVE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OLIVE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.CALCITE_BRICKS.get());
         this.dropSelf(ModBlocks.POLISHED_CALCITE.get());
@@ -111,14 +111,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.STICK_SLAB.get()));
         this.add(ModBlocks.STICK_DOOR.get(),
                 block -> createDoorTable(ModBlocks.STICK_DOOR.get()));
-//        this.add(ModBlocks.STICK_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.STICK_SIGN.get()));
-//        this.add(ModBlocks.STICK_WALL_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.STICK_SIGN.get()));
-//        this.add(ModBlocks.STICK_HANGING_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
-//        this.add(ModBlocks.STICK_WALL_HANGING_SIGN.get(), block ->
-//                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
+        this.add(ModBlocks.STICK_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_SIGN.get()));
+        this.add(ModBlocks.STICK_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_SIGN.get()));
+        this.add(ModBlocks.STICK_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
+        this.add(ModBlocks.STICK_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STICK_HANGING_SIGN.get()));
 
 
         this.dropSelf(ModBlocks.TORII_LOG.get());
@@ -140,9 +140,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TORII_SAPLING.get());
         this.add(ModBlocks.POTTED_TORII_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.TORII_SAPLING.get()));
-
         this.add(ModBlocks.TORII_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.TORII_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.TORII_SIGN.get(), block ->
+                createSingleItemTable(ModItems.TORII_SIGN.get()));
+        this.add(ModBlocks.TORII_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.TORII_SIGN.get()));
+        this.add(ModBlocks.TORII_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.TORII_HANGING_SIGN.get()));
+        this.add(ModBlocks.TORII_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.TORII_HANGING_SIGN.get()));
 
     }
 

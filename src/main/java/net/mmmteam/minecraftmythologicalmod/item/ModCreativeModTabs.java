@@ -37,8 +37,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OLIVE_TRAPDOOR.get());
                         pOutput.accept(ModItems.OLIVE_BOAT.get());
                         pOutput.accept(ModItems.OLIVE_CHEST_BOAT.get());
-//                        pOutput.accept(ModItems.OLIVE_SIGN.get());
-//                        pOutput.accept(ModItems.OLIVE_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.OLIVE_SIGN.get());
+                        pOutput.accept(ModItems.OLIVE_HANGING_SIGN.get());
 
                         pOutput.accept(ModBlocks.STICK_BLOCK.get());
                         pOutput.accept(ModBlocks.STICK_STAIRS.get());
@@ -51,8 +51,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STICK_TRAPDOOR.get());
                         pOutput.accept(ModItems.STICK_BOAT.get());
                         pOutput.accept(ModItems.STICK_CHEST_BOAT.get());
-//                        pOutput.accept(ModItems.STICK_SIGN.get());
-//                        pOutput.accept(ModItems.STICK_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.STICK_SIGN.get());
+                        pOutput.accept(ModItems.STICK_HANGING_SIGN.get());
 
                         pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
 
@@ -82,6 +82,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.TORII_TRAPDOOR.get());
                         pOutput.accept(ModItems.TORII_BOAT.get());
                         pOutput.accept(ModItems.TORII_CHEST_BOAT.get());
+                        pOutput.accept(ModItems.TORII_SIGN.get());
+                        pOutput.accept(ModItems.TORII_HANGING_SIGN.get());
 
 
                         pOutput.accept(ModBlocks.LAUREL_BUSH.get());
@@ -124,6 +126,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SPEAR_OF_ATHENA.get());
                         pOutput.accept(ModItems.SWORD_OF_PELEUS.get());
                         pOutput.accept(ModItems.SPARTAN_SHIELD.get());
+                        pOutput.accept(ModItems.NUNCHAKU.get());
 
                         pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
                         pOutput.accept(ModItems.RACOON_SPAWN_EGG.get());
