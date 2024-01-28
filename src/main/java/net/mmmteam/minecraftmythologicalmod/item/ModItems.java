@@ -121,7 +121,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_KOI = ITEMS.register("raw_koi",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_KOI)));
-
     public static final RegistryObject<Item> COOKED_KOI = ITEMS.register("cooked_koi",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_KOI)));
 
