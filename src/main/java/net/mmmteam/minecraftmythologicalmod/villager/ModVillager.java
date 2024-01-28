@@ -3,6 +3,7 @@ package net.mmmteam.minecraftmythologicalmod.villager;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.level.block.Blocks;
@@ -11,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
+import net.mmmteam.minecraftmythologicalmod.entity.animations.VillagerModAnimationDefinitions;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 
 public class ModVillager {
