@@ -48,4 +48,11 @@ public class ModFoods {
             .saturationMod(0.6f)
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 2000), 0.5f)
             .build();
+
+    public static final FoodProperties RAW_KOI = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(0.2f)
+            .build();
+    public static final FoodProperties COOKED_KOI = new FoodProperties.Builder().nutrition(6)
+            .saturationMod(1.6f)
+            .build();
 }

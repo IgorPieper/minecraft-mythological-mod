@@ -1,6 +1,5 @@
 package net.mmmteam.minecraftmythologicalmod.item;
 
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,10 +11,7 @@ import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.ModBoatEntity;
 import net.mmmteam.minecraftmythologicalmod.fluid.ModFluids;
-import net.mmmteam.minecraftmythologicalmod.item.custom.ImmobilizingSwordItem;
-import net.mmmteam.minecraftmythologicalmod.item.custom.ModBoatItem;
-import net.mmmteam.minecraftmythologicalmod.item.custom.ObscuringSwordItem;
-import net.mmmteam.minecraftmythologicalmod.item.custom.WeakeningSwordItem;
+import net.mmmteam.minecraftmythologicalmod.item.custom.*;
 
 import static net.minecraft.world.item.Items.registerItem;
 
@@ -70,7 +66,7 @@ public class ModItems {
                     new Item.Properties()));
 
     public static final RegistryObject<Item> KOI_FISH_SPAWN_EGG = ITEMS.register("koi_fish_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntities.KOI_FISH, 0xfff000, 0xffff00,
+            () -> new ForgeSpawnEggItem(ModEntities.KOI_FISH, 0xefdecc, 0xff8200,
                     new Item.Properties()));
 
     public static final RegistryObject<Item> SIKADEER_SPAWN_EGG = ITEMS.register("sikadeer_spawn_egg",
@@ -122,6 +118,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> BOWL_OF_RICE = ITEMS.register("bowl_of_rice",
             () -> new Item(new Item.Properties().food(ModFoods.BOWL_OF_RICE).stacksTo(16)));
+
+    public static final RegistryObject<Item> RAW_KOI = ITEMS.register("raw_koi",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_KOI)));
+    public static final RegistryObject<Item> COOKED_KOI = ITEMS.register("cooked_koi",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_KOI)));
 
     public static final RegistryObject<SwordItem> SWORD_OF_PELEUS = ITEMS.register("sword_of_peleus",
             () -> new SwordItem(ModItemTier.PELEUS, 1, -3f, new Item.Properties()));

@@ -1,0 +1,10 @@
+  {
+    "type": "minecraft:campfire_cooking",
+    "ingredient": {
+      "item": "minecraftmythologicalmod:raw_koi"
+    },
+    "result": "minecraftmythologicalmod:cooked_koi",
+    "experience": 0.1,
+    "cookingtime": 200
+  }
+
