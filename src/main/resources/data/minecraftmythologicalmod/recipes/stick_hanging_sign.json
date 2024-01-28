@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:chain"
+    },
+    "S": {
+      "item": "minecraftmythologicalmod:stick_block"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:stick_hanging_sign",
+    "count": 1
+  }
+}
