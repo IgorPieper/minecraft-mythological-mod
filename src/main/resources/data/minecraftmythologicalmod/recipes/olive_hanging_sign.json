@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:chain"
+    },
+    "S": {
+      "item": "minecraftmythologicalmod:stripped_olive_log"
+    }
+  },
+  "result": {
+    "item": "minecraftmythologicalmod:olive_hanging_sign",
+    "count": 1
+  }
+}
