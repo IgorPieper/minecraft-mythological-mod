@@ -22,7 +22,7 @@
               "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "minecraft:salmon"
+          "name": "minecraftmythologicalmod:raw_koi"
         }
       ],
       "rolls": 1.0
