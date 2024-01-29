@@ -12,8 +12,7 @@ import net.mmmteam.minecraftmythologicalmod.entity.ModEntities;
 import net.mmmteam.minecraftmythologicalmod.entity.custom.ModBoatEntity;
 import net.mmmteam.minecraftmythologicalmod.fluid.ModFluids;
 import net.mmmteam.minecraftmythologicalmod.item.custom.*;
-
-import static net.minecraft.world.item.Items.registerItem;
+import net.mmmteam.minecraftmythologicalmod.item.custom.BucketItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MinecraftMythologicalMod.MOD_ID);
@@ -123,6 +122,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.RAW_KOI)));
     public static final RegistryObject<Item> COOKED_KOI = ITEMS.register("cooked_koi",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_KOI)));
+    public static final RegistryObject<Item> KOI_FISH_BUCKET = ITEMS.register("koi_fish_bucket",
+            () -> new BucketItem(ModEntities.KOI_FISH, (new Item.Properties()).stacksTo(1)));
+
 
     public static final RegistryObject<SwordItem> SWORD_OF_PELEUS = ITEMS.register("sword_of_peleus",
             () -> new SwordItem(ModItemTier.PELEUS, 1, -3f, new Item.Properties()));
@@ -175,7 +177,7 @@ public class ModItems {
                     new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> HADES_WATER_BUCKET = ITEMS.register("hades_water_bucket",
-            () -> new BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+            () -> new net.minecraft.world.item.BucketItem(ModFluids.SOURCE_HADES_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> BROTH = ITEMS.register("broth",
             () -> new MilkBucketItem(new Item.Properties().food(ModFoods.BROTH).stacksTo(16)));

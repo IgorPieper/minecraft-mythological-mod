@@ -103,7 +103,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BROTH.get());
                         pOutput.accept(ModItems.COOKED_KOI.get());
                         pOutput.accept(ModItems.RAW_KOI.get());
-
+                        pOutput.accept(ModItems.KOI_FISH_BUCKET.get());
 
                         pOutput.accept(ModItems.RICE_SEEDS.get());
                         pOutput.accept(ModItems.RICE.get());
