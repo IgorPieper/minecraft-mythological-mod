@@ -24,10 +24,10 @@ import net.minecraft.world.phys.HitResult;
 import javax.annotation.Nonnull;
 import java.util.function.Supplier;
 
-public class BucketItem extends MobBucketItem {
+public class FishBucketItem extends MobBucketItem {
     private final Supplier<? extends EntityType<?>> fishType;
 
-    public BucketItem(Supplier<? extends EntityType<?>> entityType, Properties properties) {
+    public FishBucketItem(Supplier<? extends EntityType<?>> entityType, Properties properties) {
         super(entityType, () -> Fluids.WATER, () -> SoundEvents.BUCKET_EMPTY_FISH, properties);
         this.fishType = entityType;
     }
