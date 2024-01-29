@@ -57,7 +57,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GRAPE_JUICE);
         simpleItem(ModItems.COOKED_KOI);
         simpleItem(ModItems.RAW_KOI);
-
+        simpleItem(ModItems.KOI_FISH_BUCKET);
 
         evenSimplerBlockItem(ModBlocks.CALCITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.CALCITE_SLAB);

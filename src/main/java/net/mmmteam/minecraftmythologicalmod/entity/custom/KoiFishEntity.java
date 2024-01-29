@@ -8,6 +8,7 @@ import net.minecraft.world.entity.animal.AbstractSchoolingFish;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.mmmteam.minecraftmythologicalmod.item.ModItems;
 
 public class KoiFishEntity extends AbstractSchoolingFish {
     public KoiFishEntity(EntityType<? extends KoiFishEntity> p_27523_, Level p_27524_) {
@@ -19,7 +20,7 @@ public class KoiFishEntity extends AbstractSchoolingFish {
     }
 
     public ItemStack getBucketItemStack() {
-        return new ItemStack(Items.SALMON_BUCKET);
+        return new ItemStack(ModItems.KOI_FISH_BUCKET.get());
     }
 
     protected SoundEvent getAmbientSound() {
