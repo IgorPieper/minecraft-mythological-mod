@@ -17,8 +17,10 @@ import java.util.ArrayList;
 
 public class BrothItem extends Item {
     public BrothItem(Properties pProperties) {
-        super(pProperties);
-
+        super(pProperties.food(new FoodProperties.Builder()
+                .nutrition(8)
+                .saturationMod(1.2f)
+                .build()));
     }
 
     @NotNull

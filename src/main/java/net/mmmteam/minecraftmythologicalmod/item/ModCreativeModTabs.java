@@ -54,8 +54,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.STICK_SIGN.get());
                         pOutput.accept(ModItems.STICK_HANGING_SIGN.get());
 
-                        pOutput.accept(ModBlocks.ANCIENT_PORTAL.get());
-
                         pOutput.accept(Blocks.CALCITE);
                         pOutput.accept(ModBlocks.CALCITE_BRICKS.get());
                         pOutput.accept(ModBlocks.POLISHED_CALCITE.get());
