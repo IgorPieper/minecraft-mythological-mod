@@ -181,7 +181,6 @@ public class ModItems {
     public static final RegistryObject<Item> BROTH = ITEMS.register("broth",
             () -> new BrothItem(new Item.Properties().stacksTo(1)));
 
-
     public static final RegistryObject<Item> GRAPE_JUICE = ITEMS.register("grape_juice",
             () -> new Item(new Item.Properties().food(ModFoods.GRAPE_JUICE).stacksTo(16)));
 
