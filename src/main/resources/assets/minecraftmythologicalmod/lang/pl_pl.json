@@ -141,8 +141,8 @@
   "item.minecraftmythologicalmod.rissosdolphin_spawn_egg": "Jajko Spawnu Risso Szarego",
   "entity.minecraftmythologicalmod.rissosdolphin": "Risso Szary",
 
-  "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Boży Kowal",
-  "entity.minecraft.villager.minecraftmythologicalmod.jap_smith": "Kupiec",
+  "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Archeolog",
+  "entity.minecraft.villager.minecraftmythologicalmod.jap_smith": "Kucharz",
 
   "item.minecraftmythologicalmod.hades_water_bucket": "Wiadro Wody Podziemnej"
 }
