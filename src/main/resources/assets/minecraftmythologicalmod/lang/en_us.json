@@ -144,5 +144,7 @@
   "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Archaeologist",
   "entity.minecraft.villager.minecraftmythologicalmod.jap_smith": "Chef",
 
-  "item.minecraftmythologicalmod.hades_water_bucket": "Hades Water Bucket"
+  "item.minecraftmythologicalmod.hades_water_bucket": "Hades Water Bucket",
+
+  "item.minecraftmythologicalmod.laurel_wreath": "Laurel Wreath"
 }

@@ -129,6 +129,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SPARTAN_SHIELD.get());
                         pOutput.accept(ModItems.NUNCHAKU.get());
 
+                        pOutput.accept(ModItems.LAUREL_WREATH.get());
+
                         pOutput.accept(ModItems.CYCLOPS_SPAWN_EGG.get());
                         pOutput.accept(ModItems.RACOON_SPAWN_EGG.get());
                         pOutput.accept(ModItems.BALKANLYNX_SPAWN_EGG.get());

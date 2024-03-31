@@ -184,6 +184,9 @@ public class ModItems {
     public static final RegistryObject<Item> GRAPE_JUICE = ITEMS.register("grape_juice",
             () -> new Item(new Item.Properties().food(ModFoods.GRAPE_JUICE).stacksTo(16)));
 
+    public static final RegistryObject<Item> LAUREL_WREATH = ITEMS.register("laurel_wreath",
+            () -> new ArmorItem(ModArmorMaterials.LAUREL, ArmorItem.Type.HELMET, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
