@@ -144,5 +144,7 @@
   "entity.minecraft.villager.minecraftmythologicalmod.gods_smith": "Archeolog",
   "entity.minecraft.villager.minecraftmythologicalmod.jap_smith": "Kucharz",
 
-  "item.minecraftmythologicalmod.hades_water_bucket": "Wiadro Wody Podziemnej"
+  "item.minecraftmythologicalmod.hades_water_bucket": "Wiadro Podziemnej Wody",
+
+  "item.minecraftmythologicalmod.laurel_wreath": "Wieniec Laurowy"
 }

@@ -116,6 +116,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.HADES_WATER_BUCKET);
 
+        simpleItem(ModItems.LAUREL_WREATH);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
