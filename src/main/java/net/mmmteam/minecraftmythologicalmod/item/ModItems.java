@@ -1,5 +1,6 @@
 package net.mmmteam.minecraftmythologicalmod.item;
 
+import net.minecraft.util.datafix.fixes.GoatHornIdFix;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -186,6 +187,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> LAUREL_WREATH = ITEMS.register("laurel_wreath",
             () -> new ArmorItem(ModArmorMaterials.LAUREL, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> MINOTAUR_HORN = ITEMS.register("minotaur_horn",
+            () -> new MinotaurHorn(new Item.Properties().durability(2137)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
