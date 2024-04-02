@@ -118,6 +118,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.LAUREL_WREATH);
 
+        simpleItem(ModItems.MINOTAUR_HORN);
+
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
