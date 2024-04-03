@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:grapes",
+  "criteria": {
+    "has_Excalibur": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:excalibur"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nOnly the most persistent hero will extract it from the stone"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:excalibur",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Excalibur"
+    }
+  },
+  "requirements": [
+    [
+      "has_Excalibur"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

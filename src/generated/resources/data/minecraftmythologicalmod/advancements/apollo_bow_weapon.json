@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:apollo_gift_gift",
+  "criteria": {
+    "has_Apollo_Bow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:apollo_bow"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nConnect the bow with the gift of apollo"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:apollo_bow",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Apollo Bow"
+    }
+  },
+  "requirements": [
+    [
+      "has_Apollo_Bow"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

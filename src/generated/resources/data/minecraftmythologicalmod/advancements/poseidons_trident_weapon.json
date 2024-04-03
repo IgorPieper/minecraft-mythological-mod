@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:poseidons_gift_gift",
+  "criteria": {
+    "has_Poseidon_Trident": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:poseidons_trident"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nConnect the trident with the gift of Poseidon"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:poseidons_trident",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Poseidon Trident"
+    }
+  },
+  "requirements": [
+    [
+      "has_Poseidon_Trident"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

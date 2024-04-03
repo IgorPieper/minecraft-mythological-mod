@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:rice_food",
+  "criteria": {
+    "has_dango": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:dango"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Buy Dango from cake lover"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:dango"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Dango Connoisseur"
+    }
+  },
+  "requirements": [
+    [
+      "has_dango"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

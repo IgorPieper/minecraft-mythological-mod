@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:bay_leaf_food",
+  "criteria": {
+    "has_laurel_wreath": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:laurel_wreath"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Craft Laurel Wreath"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:laurel_wreath",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Laurel Wreath"
+    }
+  },
+  "requirements": [
+    [
+      "has_laurel_wreath"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:rice_food",
+  "criteria": {
+    "has_rice_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:bowl_of_rice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Craft Bowl of Rice"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:bowl_of_rice"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Bowl of Rice"
+    }
+  },
+  "requirements": [
+    [
+      "has_rice_bowl"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

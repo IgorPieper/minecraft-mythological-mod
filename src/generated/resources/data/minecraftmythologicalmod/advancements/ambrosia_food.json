@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:grapes",
+  "criteria": {
+    "has_ambrosia": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:ambrosia"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Kill the Stony Shores Cyclops"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:ambrosia"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Ambrosia"
+    }
+  },
+  "requirements": [
+    [
+      "has_ambrosia"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

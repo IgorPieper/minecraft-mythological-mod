@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:grapes",
+  "criteria": {
+    "defeat_minotaur": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:minotaur_horn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Kill the Windswept Gravelly Hills Minotaur"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:minotaur_horn",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Defeat Minotaur"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_minotaur"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

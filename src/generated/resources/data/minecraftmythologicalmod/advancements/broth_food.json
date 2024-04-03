@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:bay_leaf_food",
+  "criteria": {
+    "has_broth": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:broth"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Craft Broth"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:broth"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Broth"
+    }
+  },
+  "requirements": [
+    [
+      "has_broth"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

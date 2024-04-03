@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:grapes",
+  "criteria": {
+    "has_olive_tree": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:olive_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Search for it in the mountain biomes"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:olive_sapling"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Find Olive Tree"
+    }
+  },
+  "requirements": [
+    [
+      "has_olive_tree"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

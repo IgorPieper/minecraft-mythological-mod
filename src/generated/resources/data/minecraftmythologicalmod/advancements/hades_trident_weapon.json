@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:hades_gift_gift",
+  "criteria": {
+    "has_Hades_Trident": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:hades_trident"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nConnect the trident with the gift of Hades"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:hades_trident",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Poseidon Trident"
+    }
+  },
+  "requirements": [
+    [
+      "has_Hades_Trident"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -43,7 +43,6 @@ import org.slf4j.Logger;
 @Mod(MinecraftMythologicalMod.MOD_ID)
 public class MinecraftMythologicalMod
 {
-    // Nadajemy id dla naszej modyfikacji
     public static final String MOD_ID = "minecraftmythologicalmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -67,7 +66,6 @@ public class MinecraftMythologicalMod
 
         modEventBus.addListener(this::commonSetup);
 
-        // Dzięki temu przedmioty z pliku item/Moditems działają
         MinecraftForge.EVENT_BUS.register(this);
 
         ModTrunkPlacerTypes.register(modEventBus);
@@ -85,8 +83,6 @@ public class MinecraftMythologicalMod
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SPIDER_LILY.getId(), ModBlocks.POTTED_SPIDER_LILY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.OLIVE_SAPLING.getId(), ModBlocks.POTTED_OLIVE_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.TORII_SAPLING.getId(), ModBlocks.POTTED_TORII_SAPLING);
-
-            //SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
         });
     }
 
@@ -112,7 +108,6 @@ public class MinecraftMythologicalMod
                 Sheets.addWoodType(ModWoodTypes.STICK);
                 Sheets.addWoodType(ModWoodTypes.TORII);
 
-                // /summon minecraftmythologicalmod:racoon, cyclops
                 EntityRenderers.register(ModEntities.RACOON.get(), RacoonRenderer::new);
                 EntityRenderers.register(ModEntities.CYCLOPS.get(), CyclopsRenderer::new);
                 EntityRenderers.register(ModEntities.BALKANLYNX.get(), BalkanLynxRenderer::new);

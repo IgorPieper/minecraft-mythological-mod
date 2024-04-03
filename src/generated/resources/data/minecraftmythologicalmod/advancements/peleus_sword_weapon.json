@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:hephaestus_gift_gift",
+  "criteria": {
+    "has_Peleus_Sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:sword_of_peleus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nConnect the Netherite Sword with the gift of Hephaestus"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:sword_of_peleus",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Peleus Sword"
+    }
+  },
+  "requirements": [
+    [
+      "has_Peleus_Sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

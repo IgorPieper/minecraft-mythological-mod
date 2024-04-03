@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:grapes",
+  "criteria": {
+    "has_rice_seeds": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:rice_seeds"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Search for it in the cherry groves"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:rice_seeds"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Rice Seeds"
+    }
+  },
+  "requirements": [
+    [
+      "has_rice_seeds"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

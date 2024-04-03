@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:rice_food",
+  "criteria": {
+    "has_mochi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:mochi"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Buy Mochi from cake lover"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:mochi"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Mochi"
+    }
+  },
+  "requirements": [
+    [
+      "has_mochi"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
