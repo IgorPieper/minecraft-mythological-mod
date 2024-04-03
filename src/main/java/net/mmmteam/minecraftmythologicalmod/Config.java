@@ -32,9 +32,8 @@ public class Config
             .define("magicNumberIntroduction", "The magic number is... ");
 
     // a list of strings that are treated as resource locations for items
-    private static final ForgeConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
-            .comment("A list of items to log on common setup.")
-            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), Config::validateItemName);
+
+
 
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
@@ -55,9 +54,6 @@ public class Config
         magicNumber = MAGIC_NUMBER.get();
         magicNumberIntroduction = MAGIC_NUMBER_INTRODUCTION.get();
 
-        // convert the list of strings into a set of items
-        items = ITEM_STRINGS.get().stream()
-                .map(itemName -> ForgeRegistries.ITEMS.getValue(new ResourceLocation(itemName)))
-                .collect(Collectors.toSet());
+
     }
 }

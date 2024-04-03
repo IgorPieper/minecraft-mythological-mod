@@ -18,7 +18,6 @@ public class OniAttackGoal extends MeleeAttackGoal {
         entity = ((OniEntity) pMob);
     }
 
-    @Override
     protected void checkAndPerformAttack(LivingEntity pEnemy) {
 
         if (this.entity.isWithinMeleeAttackRange(pEnemy) && this.entity.getSensing().hasLineOfSight(pEnemy)) {
