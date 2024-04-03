@@ -156,10 +156,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> CALCITE_SLAB = registerBlock("calcite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE_SLAB).sound(SoundType.CALCITE)));
     public static final RegistryObject<Block> CALCITE_BUTTON = registerBlock("calcite_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.WET_SPONGE),
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.WET_GRASS),
                     BlockSetType.STONE, 10, true));
     public static final RegistryObject<Block> CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.WET_SPONGE),
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.WET_GRASS),
                     BlockSetType.STONE));
 
     public static final RegistryObject<Block> TORII_WOOD = registerBlock("torii_wood",

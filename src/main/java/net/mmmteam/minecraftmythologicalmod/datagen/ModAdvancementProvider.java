@@ -1,6 +1,5 @@
 package net.mmmteam.minecraftmythologicalmod.datagen;
 
-import net.minecraft.advancements.AdvancementHolder;
 import net.mmmteam.minecraftmythologicalmod.MinecraftMythologicalMod;
 import net.mmmteam.minecraftmythologicalmod.block.ModBlocks;
 import net.mmmteam.minecraftmythologicalmod.item.ModItems;
@@ -20,8 +19,7 @@ import java.util.function.Consumer;
 public class ModAdvancementProvider implements ForgeAdvancementProvider.AdvancementGenerator {
 
     @Override
-    public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> saver, ExistingFileHelper existingFileHelper) {
-//        Advancement rootAdvancement = Advancement.Builder.advancement()
+    public void generate(HolderLookup.Provider registries, Consumer<Advancement> saver, ExistingFileHelper existingFileHelper) {//        Advancement rootAdvancement = Advancement.Builder.advancement()
 //                .display(new DisplayInfo(new ItemStack(ModItems.GRAPES.get()),
 //                        Component.literal("Mythological"), Component.literal("Immerse yourself in the world of mythology"),
 //                        new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "textures/block/polished_calcite.png"), FrameType.TASK,
@@ -36,8 +34,6 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
 //                        true, true, false))
 //                .addCriterion("has_olive_tree", InventoryChangeTrigger.TriggerInstance.hasItems(ModBlocks.OLIVE_SAPLING.get()))
 //                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "olive_tree")).value();
-
-
 
     }
 }

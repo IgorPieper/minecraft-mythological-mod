@@ -18,7 +18,6 @@ public class MinotaurAttackGoal extends MeleeAttackGoal {
         entity = ((MinotaurEntity) pMob);
     }
 
-    @Override
     protected void checkAndPerformAttack(LivingEntity pEnemy) {
 
         if (this.entity.isWithinMeleeAttackRange(pEnemy) && this.entity.getSensing().hasLineOfSight(pEnemy)) {
