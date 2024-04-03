@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_grapes": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:grapes"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraftmythologicalmod:textures/block/polished_calcite.png",
+    "description": {
+      "text": "Immerse yourself in the world of mythology"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:grapes"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Mythological"
+    }
+  },
+  "requirements": [
+    [
+      "has_grapes"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

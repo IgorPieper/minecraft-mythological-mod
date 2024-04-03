@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:grapes",
+  "criteria": {
+    "has_bay_leaf": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:bay_leaf"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Search for it in the Windswept Gravelly Hills"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:bay_leaf"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Laura"
+    }
+  },
+  "requirements": [
+    [
+      "has_bay_leaf"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

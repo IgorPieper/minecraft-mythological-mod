@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:rice_food",
+  "criteria": {
+    "has_onigiri": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:onigiri"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Craft Onigiri"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:onigiri"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Onigiri"
+    }
+  },
+  "requirements": [
+    [
+      "has_onigiri"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

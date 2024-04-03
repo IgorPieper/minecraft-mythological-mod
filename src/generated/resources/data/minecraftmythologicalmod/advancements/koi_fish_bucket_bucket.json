@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:grapes",
+  "criteria": {
+    "has_Koi_Fish_Bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:koi_fish_bucket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Catch the koi fish in a bucket "
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:koi_fish_bucket"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Great Catch"
+    }
+  },
+  "requirements": [
+    [
+      "has_Koi_Fish_Bucket"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

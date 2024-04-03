@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:olive_tree",
+  "criteria": {
+    "has_torii_tree": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:torii_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Search for it in the cherry groves"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:torii_sapling"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Find Torii Tree"
+    }
+  },
+  "requirements": [
+    [
+      "has_torii_tree"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

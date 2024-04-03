@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:rice_food",
+  "criteria": {
+    "has_sushi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:sushi"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Craft Sushi"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:sushi"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Sushi"
+    }
+  },
+  "requirements": [
+    [
+      "has_sushi"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

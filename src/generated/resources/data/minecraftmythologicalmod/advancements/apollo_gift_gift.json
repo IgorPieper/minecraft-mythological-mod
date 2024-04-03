@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:excalibur_weapon",
+  "criteria": {
+    "has_Apollo_Gift": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:gift_of_apollo"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nSacrifice ____ at the bonfire"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:gift_of_apollo"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Apollo Gift"
+    }
+  },
+  "requirements": [
+    [
+      "has_Apollo_Gift"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

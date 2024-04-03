@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:excalibur_weapon",
+  "criteria": {
+    "has_Hephaestus_Gift": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:gift_of_hephaestus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nSacrifice ____ at the bonfire"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:gift_of_hephaestus"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Hephaestus Gift"
+    }
+  },
+  "requirements": [
+    [
+      "has_Hephaestus_Gift"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "minecraftmythologicalmod:atena_gift_gift",
+  "criteria": {
+    "has_Atena_Trident": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:spear_of_athena"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "\nConnect the stick with the gift of Atena"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:spear_of_athena",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Atena Spear"
+    }
+  },
+  "requirements": [
+    [
+      "has_Atena_Trident"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

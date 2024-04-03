@@ -1,0 +1,38 @@
+{
+  "parent": "minecraftmythologicalmod:rice_seeds_food",
+  "criteria": {
+    "has_rice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmythologicalmod:rice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "Grow Rice"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmythologicalmod:rice"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Rice"
+    }
+  },
+  "requirements": [
+    [
+      "has_rice"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
