@@ -1,12 +1,12 @@
 {
   "parent": "minecraftmythologicalmod:excalibur_weapon",
   "criteria": {
-    "has_Hades_Gift": {
+    "has_Pyxis": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraftmythologicalmod:gift_of_hades"
+              "minecraftmythologicalmod:pyxis"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "\nSacrifice wither rose at the bonfire"
+      "text": "\nFind pyxis in suspicious sand in the warm ocean"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraftmythologicalmod:gift_of_hades"
+      "item": "minecraftmythologicalmod:pyxis"
     },
     "show_toast": true,
     "title": {
-      "text": "Hades Gift"
+      "text": "Pyxis"
     }
   },
   "requirements": [
     [
-      "has_Hades_Gift"
+      "has_Pyxis"
     ]
   ],
   "sends_telemetry_event": true

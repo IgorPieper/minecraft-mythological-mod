@@ -165,7 +165,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
 
         Advancement obtainPoseidonGift = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModItems.GIFT_OF_POSEIDON.get()),
-                        Component.literal("Poseidon Gift"), Component.literal("\n" + "Sacrifice ____ at the bonfire"),
+                        Component.literal("Poseidon Gift"), Component.literal("\n" + "Sacrifice heart of the sea at the bonfire"),
                         null, FrameType.TASK,
                         true, true, false))
                 .parent(obtainExcalibur)
@@ -181,28 +181,9 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_Poseidon_Trident", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.POSEIDONS_TRIDENT.get()))
                 .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "poseidons_trident_weapon"), existingFileHelper);
 
-        Advancement obtainHephaestusGift = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(ModItems.GIFT_OF_HEPHAESTUS.get()),
-                        Component.literal("Hephaestus Gift"), Component.literal("\n" + "Sacrifice ____ at the bonfire"),
-                        null, FrameType.TASK,
-                        true, true, false))
-                .parent(obtainExcalibur)
-                .addCriterion("has_Hephaestus_Gift", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.GIFT_OF_HEPHAESTUS.get()))
-                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "hephaestus_gift_gift"), existingFileHelper);
-
-        Advancement obtainPeleusSword = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(ModItems.SWORD_OF_PELEUS.get()),
-                        Component.literal("Peleus Sword"), Component.literal("\n" + "Connect the Netherite Sword with the gift of Hephaestus"),
-                        null, FrameType.TASK,
-                        true, true, false))
-                .parent(obtainHephaestusGift)
-                .addCriterion("has_Peleus_Sword", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.SWORD_OF_PELEUS.get()))
-                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "peleus_sword_weapon"), existingFileHelper);
-
-
         Advancement obtainHadesGift = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModItems.GIFT_OF_HADES.get()),
-                        Component.literal("Hades Gift"), Component.literal("\n" + "Sacrifice ____ at the bonfire"),
+                        Component.literal("Hades Gift"), Component.literal("\n" + "Sacrifice wither rose at the bonfire"),
                         null, FrameType.TASK,
                         true, true, false))
                 .parent(obtainExcalibur)
@@ -218,12 +199,49 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .addCriterion("has_Hades_Trident", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.HADES_TRIDENT.get()))
                 .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "hades_trident_weapon"), existingFileHelper);
 
-        Advancement obtainAtenaGift = Advancement.Builder.advancement()
-                .display(new DisplayInfo(new ItemStack(ModItems.GIFT_OF_ATHENA.get()),
-                        Component.literal("Atena Gift"), Component.literal("\n" + "Sacrifice ____ at the bonfire"),
+        Advancement obtainPyxis = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.PYXIS.get()),
+                        Component.literal("Pyxis"), Component.literal("\n" + "Find pyxis in suspicious sand in the warm ocean"),
                         null, FrameType.TASK,
                         true, true, false))
                 .parent(obtainExcalibur)
+                .addCriterion("has_Pyxis", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PYXIS.get()))
+                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "pyxis_item"), existingFileHelper);
+
+        Advancement obtainIrisPyxis = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.IRIS_PYXIS.get()),
+                        Component.literal("Iris_Pyxis"), Component.literal("\n" + "craft an iris pyxis out of pyxis and iris. Amazing!!!"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(obtainPyxis)
+                .addCriterion("has_Iris_Pyxis", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.IRIS_PYXIS.get()))
+                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "iris_pyxis_item"), existingFileHelper);
+
+
+        Advancement obtainHephaestusGift = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.GIFT_OF_HEPHAESTUS.get()),
+                        Component.literal("Hephaestus Gift"), Component.literal("\n" + "Sacrifice pyxis at the bonfire"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(obtainPyxis)
+                .addCriterion("has_Hephaestus_Gift", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.GIFT_OF_HEPHAESTUS.get()))
+                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "hephaestus_gift_gift"), existingFileHelper);
+
+        Advancement obtainPeleusSword = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.SWORD_OF_PELEUS.get()),
+                        Component.literal("Peleus Sword"), Component.literal("\n" + "Connect the Netherite Sword with the gift of Hephaestus"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(obtainHephaestusGift)
+                .addCriterion("has_Peleus_Sword", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.SWORD_OF_PELEUS.get()))
+                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "peleus_sword_weapon"), existingFileHelper);
+
+        Advancement obtainAtenaGift = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.GIFT_OF_ATHENA.get()),
+                        Component.literal("Atena Gift"), Component.literal("\n" + "Sacrifice iris pyxis at the bonfire"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(obtainIrisPyxis)
                 .addCriterion("has_Atena_Gift", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.GIFT_OF_ATHENA.get()))
                 .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "atena_gift_gift"), existingFileHelper);
 
@@ -239,7 +257,7 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
 
         Advancement obtainApolloGift = Advancement.Builder.advancement()
                 .display(new DisplayInfo(new ItemStack(ModItems.GIFT_OF_APOLLO.get()),
-                        Component.literal("Apollo Gift"), Component.literal("\n" + "Sacrifice ____ at the bonfire"),
+                        Component.literal("Apollo Gift"), Component.literal("\n" + "Sacrifice Ambrosia at the bonfire"),
                         null, FrameType.TASK,
                         true, true, false))
                 .parent(obtainExcalibur)
@@ -263,6 +281,24 @@ public class ModAdvancementProvider implements ForgeAdvancementProvider.Advancem
                 .parent(Mythological)
                 .addCriterion("defeat_minotaur", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MINOTAUR_HORN.get()))
                 .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "defeat_minotaur"), existingFileHelper);
+
+        Advancement buyShield = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.SPARTAN_SHIELD.get()),
+                        Component.literal("Obtain Spartan Shield"), Component.literal("Buy Shield from mythology lover"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(Mythological)
+                .addCriterion("buy_spartan_shield", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.SPARTAN_SHIELD.get()))
+                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "spartan_shield_weapon"), existingFileHelper);
+
+        Advancement chefSecret = Advancement.Builder.advancement()
+                .display(new DisplayInfo(new ItemStack(ModItems.NUNCHAKU.get()),
+                        Component.literal("Discover the chef's secret"), Component.literal("Buy Nunchaku from cake lover"),
+                        null, FrameType.TASK,
+                        true, true, false))
+                .parent(Mythological)
+                .addCriterion("buy_nunchaku", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.NUNCHAKU.get()))
+                .save(saver, new ResourceLocation(MinecraftMythologicalMod.MOD_ID, "nunchaku_weapon"), existingFileHelper);
 
     }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraftmythologicalmod:excalibur_weapon",
+  "parent": "minecraftmythologicalmod:pyxis_item",
   "criteria": {
     "has_Hephaestus_Gift": {
       "conditions": {
@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "\nSacrifice ____ at the bonfire"
+      "text": "\nSacrifice pyxis at the bonfire"
     },
     "frame": "task",
     "hidden": false,

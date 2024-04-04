@@ -1,12 +1,12 @@
 {
-  "parent": "minecraftmythologicalmod:excalibur_weapon",
+  "parent": "minecraftmythologicalmod:grapes",
   "criteria": {
-    "has_Hades_Gift": {
+    "buy_spartan_shield": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraftmythologicalmod:gift_of_hades"
+              "minecraftmythologicalmod:spartan_shield"
             ]
           }
         ]
@@ -17,21 +17,22 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "\nSacrifice wither rose at the bonfire"
+      "text": "Buy Shield from mythology lover"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraftmythologicalmod:gift_of_hades"
+      "item": "minecraftmythologicalmod:spartan_shield",
+      "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "text": "Hades Gift"
+      "text": "Obtain Spartan Shield"
     }
   },
   "requirements": [
     [
-      "has_Hades_Gift"
+      "buy_spartan_shield"
     ]
   ],
   "sends_telemetry_event": true
