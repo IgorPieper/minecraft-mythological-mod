@@ -1,12 +1,12 @@
 {
-  "parent": "minecraftmythologicalmod:excalibur_weapon",
+  "parent": "minecraftmythologicalmod:grapes",
   "criteria": {
-    "has_Hades_Gift": {
+    "buy_nunchaku": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraftmythologicalmod:gift_of_hades"
+              "minecraftmythologicalmod:nunchaku"
             ]
           }
         ]
@@ -17,21 +17,22 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "\nSacrifice wither rose at the bonfire"
+      "text": "Buy Nunchaku from cake lover"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraftmythologicalmod:gift_of_hades"
+      "item": "minecraftmythologicalmod:nunchaku",
+      "nbt": "{Damage:0}"
     },
     "show_toast": true,
     "title": {
-      "text": "Hades Gift"
+      "text": "Discover the chef's secret"
     }
   },
   "requirements": [
     [
-      "has_Hades_Gift"
+      "buy_nunchaku"
     ]
   ],
   "sends_telemetry_event": true

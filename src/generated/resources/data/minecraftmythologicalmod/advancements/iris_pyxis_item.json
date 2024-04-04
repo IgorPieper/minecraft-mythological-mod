@@ -1,12 +1,12 @@
 {
-  "parent": "minecraftmythologicalmod:excalibur_weapon",
+  "parent": "minecraftmythologicalmod:pyxis_item",
   "criteria": {
-    "has_Hades_Gift": {
+    "has_Iris_Pyxis": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraftmythologicalmod:gift_of_hades"
+              "minecraftmythologicalmod:iris_pyxis"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "text": "\nSacrifice wither rose at the bonfire"
+      "text": "\ncraft an iris pyxis out of pyxis and iris. Amazing!!!"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraftmythologicalmod:gift_of_hades"
+      "item": "minecraftmythologicalmod:iris_pyxis"
     },
     "show_toast": true,
     "title": {
-      "text": "Hades Gift"
+      "text": "Iris_Pyxis"
     }
   },
   "requirements": [
     [
-      "has_Hades_Gift"
+      "has_Iris_Pyxis"
     ]
   ],
   "sends_telemetry_event": true
